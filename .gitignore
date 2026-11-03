@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+work/
+results/raw/**/*.log
+
+# App repositories are managed and versioned independently.
+apps/*
+!apps/.gitkeep
