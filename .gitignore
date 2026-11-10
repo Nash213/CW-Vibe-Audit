@@ -8,3 +8,7 @@ results/raw/**/*.log
 # App repositories are managed and versioned independently.
 apps/*
 !apps/.gitkeep
+
+tests/test-results/
+tests/playwright-report/
+tests/stability/
