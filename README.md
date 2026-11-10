@@ -2,6 +2,9 @@
 
 Repository scaffold for the vibe-audit project.
 
+## Final report overleaf link:
+https://www.overleaf.com/project/6af2fd98f286360784298521/share#9bf9ea43d0d88136a31c94b7786eefc3e70313cd62d68d6a
+
 ## Repository layout
 
 - `docs/` — project decisions, contributions, review protocol, and run metadata.
