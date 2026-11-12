@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: novastore-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgrespassword
+      POSTGRES_DB: shop_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d shop_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: novastore-app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      NODE_ENV: production
+      DATABASE_URL: postgres://postgres:postgrespassword@db:5432/shop_db
+      JWT_SECRET: novastore_production_secret_key_12345
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

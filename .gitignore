@@ -6,7 +6,7 @@ work/
 results/raw/**/*.log
 
 # App repositories are managed and versioned independently.
-apps/*
+# apps/*
 !apps/.gitkeep
 
 tests/test-results/
