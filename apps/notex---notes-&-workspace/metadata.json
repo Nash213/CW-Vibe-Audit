@@ -1,0 +1,6 @@
+{
+  "name": "Notex - Notes & Workspace",
+  "description": "A fast, modern personal workspace to write notes, organize with tags, manage user profiles with avatars, and manage system users with Node/Express and SQLite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
