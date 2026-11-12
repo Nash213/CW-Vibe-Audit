@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks - TaskFlow</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="navbar">
+    <a href="/" class="nav-brand">
+      <span class="brand-icon">📋</span>
+      <span>TaskFlow</span>
+    </a>
+    <div class="nav-user">
+      <span class="user-badge">
+        <span>👤</span>
+        <span id="user-email">Loading...</span>
+      </span>
+      <button id="logout-btn" class="btn btn-secondary btn-sm" title="Log out">
+        Log Out
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Notification Banner -->
+    <div id="dashboard-alert" class="alert hidden" role="alert"></div>
+
+    <!-- Statistics Overview -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <div id="stat-total" class="stat-value">0</div>
+        <div class="stat-label">Total Tasks</div>
+      </div>
+      <div class="stat-card">
+        <div id="stat-todo" class="stat-value" style="color: var(--status-todo-text);">0</div>
+        <div class="stat-label">To Do</div>
+      </div>
+      <div class="stat-card">
+        <div id="stat-progress" class="stat-value" style="color: var(--status-progress-text);">0</div>
+        <div class="stat-label">In Progress</div>
+      </div>
+      <div class="stat-card">
+        <div id="stat-done" class="stat-value" style="color: var(--status-done-text);">0</div>
+        <div class="stat-label">Done</div>
+      </div>
+    </div>
+
+    <!-- Add Task Card -->
+    <section class="card">
+      <div class="card-header">
+        <h2 class="card-title">Add New Task</h2>
+        <p class="card-subtitle">Create a task to stay organized and on schedule</p>
+      </div>
+
+      <form id="add-task-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="task-title">Task Title *</label>
+            <input 
+              type="text" 
+              id="task-title" 
+              class="form-control" 
+              placeholder="e.g. Prepare weekly report" 
+              required 
+              maxlength="255"
+            >
+          </div>
+          <div class="form-group">
+            <label for="task-status">Status</label>
+            <select id="task-status" class="form-control">
+              <option value="to do" selected>To Do</option>
+              <option value="in progress">In Progress</option>
+              <option value="done">Done</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="task-desc">Description (Optional)</label>
+          <textarea 
+            id="task-desc" 
+            class="form-control" 
+            placeholder="Add any extra details, notes, or links..."
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          ➕ Add Task
+        </button>
+      </form>
+    </section>
+
+    <!-- Task List & Filter Section -->
+    <section>
+      <div class="dashboard-header">
+        <h2>Your Tasks</h2>
+        <div class="filter-bar">
+          <label for="status-filter" class="filter-label">Filter by status:</label>
+          <select id="status-filter" class="filter-select">
+            <option value="all" selected>All Statuses</option>
+            <option value="to do">To Do</option>
+            <option value="in progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="empty-state hidden">
+        <div class="empty-icon">📭</div>
+        <div class="empty-title">No tasks found</div>
+        <p>No tasks match your selected filter, or you haven't added any tasks yet.</p>
+      </div>
+
+      <!-- Task Items List -->
+      <div id="task-list" class="task-list"></div>
+    </section>
+  </main>
+
+  <!-- Edit Task Modal -->
+  <div id="edit-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title" class="card-title">Edit Task</h3>
+        <button id="close-edit-modal" class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <form id="edit-task-form">
+        <input type="hidden" id="edit-task-id">
+
+        <div class="form-group">
+          <label for="edit-title">Task Title *</label>
+          <input 
+            type="text" 
+            id="edit-title" 
+            class="form-control" 
+            required 
+            maxlength="255"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="edit-status">Status</label>
+          <select id="edit-status" class="form-control">
+            <option value="to do">To Do</option>
+            <option value="in progress">In Progress</option>
+            <option value="done">Done</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="edit-description">Description</label>
+          <textarea 
+            id="edit-description" 
+            class="form-control" 
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" id="cancel-edit-btn" class="btn btn-secondary">
+            Cancel
+          </button>
+          <button type="submit" class="btn btn-primary">
+            Save Changes
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <p>TaskFlow &copy; 2026 &bull; Keep track of your tasks simply.</p>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
