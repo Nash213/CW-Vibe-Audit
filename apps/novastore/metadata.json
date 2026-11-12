@@ -1,0 +1,6 @@
+{
+  "name": "NovaStore",
+  "description": "Full-stack online shop with product catalog, shopping cart, customer order history, and admin inventory management powered by Express and PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
