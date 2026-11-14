@@ -4,8 +4,7 @@
 import { test, expect } from '@playwright/test';
 import { apps, TEST_PASSWORD, type AppId } from './apps';
 import { apiLoginStatus, createItem, uniqueEmail, uniqueTitle, withUser } from './auth';
-import { clickable, uiLogin, uiLogout, uiRegister } from './ui';
-
+import { clickable, editScope, uiLogin, uiLogout, uiRegister, visible } from './ui';
 export function defineStandardTests(appId: AppId): void {
   const app = apps[appId];
 
@@ -34,8 +33,8 @@ export function defineStandardTests(appId: AppId): void {
       await uiLogin(page, appId, user);
       await page.goto(app.pages.list);
       if (app.ui.addItem) await clickable(page, app.ui.addItem).click();
-      await page.getByLabel(app.ui.itemTitle).fill(title);
-      await page.getByRole('button', { name: app.ui.saveItem }).click();
+      await visible(page.getByLabel(app.ui.itemTitle)).fill(title);
+      await visible(page.getByRole('button', { name: app.ui.saveItem })).click();
       await expect(page.getByText(title).first()).toBeVisible();
     });
   });
@@ -57,9 +56,10 @@ export function defineStandardTests(appId: AppId): void {
       await page.goto(app.pages.list);
       await expect(page.getByText(title).first()).toBeVisible();
       await clickable(page, app.ui.editItem).click();
-      if (app.ui.editReady) await expect(page.getByRole('button', { name: app.ui.editReady })).toBeVisible();
-      await page.getByLabel(app.ui.itemTitle).fill(newTitle);
-      await page.getByRole('button', { name: app.ui.saveItem }).click();
+      const scope = await editScope(page); // the edit dialog if there is one
+      if (app.ui.editReady) await expect(scope.getByRole('button', { name: app.ui.editReady })).toBeVisible();
+      await visible(scope.getByLabel(app.ui.itemTitle)).fill(newTitle);
+      await visible(scope.getByRole('button', { name: app.ui.saveItem })).click();
       await expect(page.getByText(newTitle).first()).toBeVisible();
       await expect(page.getByText(title)).toHaveCount(0);
     });
