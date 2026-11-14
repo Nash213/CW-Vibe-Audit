@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile — Community Board</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand">Community Board</a>
+      <nav id="nav" class="nav"></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p><a href="/">&larr; Back to all posts</a></p>
+    <section id="profile-header" class="card"><p class="empty">Loading...</p></section>
+    <section>
+      <h2>Posts</h2>
+      <div id="profile-posts"></div>
+    </section>
+  </main>
+
+  <script src="/common.js"></script>
+  <script>
+    const userId = window.location.pathname.split('/')[2];
+
+    (async () => {
+      await initNav();
+      const header = document.getElementById('profile-header');
+      const postsEl = document.getElementById('profile-posts');
+      try {
+        const { user, posts } = await api(`/api/users/${userId}`);
+        document.title = `${user.displayName} — Community Board`;
+        header.innerHTML = `
+          <h1>${escapeHtml(user.displayName)}</h1>
+          <div class="meta">
+            Member since ${formatDate(user.createdAt)} &middot;
+            ${posts.length} ${posts.length === 1 ? 'post' : 'posts'}
+          </div>
+        `;
+
+        if (posts.length === 0) {
+          postsEl.innerHTML = '<p class="empty">This user has not written any posts yet.</p>';
+          return;
+        }
+
+        postsEl.innerHTML = posts.map((p) => {
+          const preview = p.body.length > 240 ? `${p.body.slice(0, 240)}...` : p.body;
+          return `
+            <article class="card">
+              <h3><a href="/posts/${p.id}">${escapeHtml(p.title)}</a></h3>
+              <div class="meta">
+                ${formatDate(p.createdAt)}
+                ${isEdited(p) ? ' (edited)' : ''}
+                &middot; ${p.commentCount} ${p.commentCount === 1 ? 'comment' : 'comments'}
+              </div>
+              <p class="post-body">${escapeHtml(preview)}</p>
+            </article>
+          `;
+        }).join('');
+      } catch (err) {
+        header.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
+      }
+    })();
+  </script>
+</body>
+</html>

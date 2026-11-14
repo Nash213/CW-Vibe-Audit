@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Post — Community Board</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand">Community Board</a>
+      <nav id="nav" class="nav"></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <p><a href="/">&larr; Back to all posts</a></p>
+    <article id="post-container" class="card"><p class="empty">Loading...</p></article>
+
+    <section id="comments-section">
+      <h2>Comments</h2>
+      <div id="comment-compose" class="card"></div>
+      <div id="comments-list"></div>
+    </section>
+  </main>
+
+  <script src="/common.js"></script>
+  <script>
+    const postId = window.location.pathname.split('/')[2];
+    let currentUser = null;
+
+    async function loadPostPage() {
+      const postBox = document.getElementById('post-container');
+      try {
+        const { post, comments } = await api(`/api/posts/${postId}`);
+        document.title = `${post.title} — Community Board`;
+        renderPost(post);
+        renderCommentBox();
+        renderComments(comments);
+      } catch (err) {
+        postBox.innerHTML = `<p class="error">${escapeHtml(err.message)}</p>`;
+        document.getElementById('comments-section').hidden = true;
+      }
+    }
+
+    function renderPost(post) {
+      const postBox = document.getElementById('post-container');
+      const isOwner = currentUser && currentUser.id === post.authorId;
+
+      postBox.innerHTML = `
+        <div id="post-view">
+          <h1>${escapeHtml(post.title)}</h1>
+          <div class="meta">
+            By <a href="/users/${post.authorId}">${escapeHtml(post.authorDisplayName)}</a>
+            &middot; ${formatDate(post.createdAt)}
+            ${isEdited(post) ? ' (edited)' : ''}
+          </div>
+          <p class="post-body">${escapeHtml(post.body)}</p>
+          ${isOwner ? `
+            <div class="actions">
+              <button type="button" id="edit-post-btn" class="btn btn-sm">Edit</button>
+              <button type="button" id="delete-post-btn" class="btn btn-danger btn-sm">Delete</button>
+            </div>
+          ` : ''}
+        </div>
+        <form id="edit-post-form" hidden>
+          <div id="edit-post-error" class="error" hidden></div>
+          <div class="form-group">
+            <label for="edit-post-title">Title</label>
+            <input id="edit-post-title" type="text" maxlength="150" required value="${escapeHtml(post.title)}">
+          </div>
+          <div class="form-group">
+            <label for="edit-post-body">Message</label>
+            <textarea id="edit-post-body" maxlength="10000" required>${escapeHtml(post.body)}</textarea>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn btn-primary btn-sm">Save</button>
+            <button type="button" id="cancel-edit-post" class="btn btn-sm">Cancel</button>
+          </div>
+        </form>
+      `;
+
+      if (!isOwner) return;
+
+      const viewEl = document.getElementById('post-view');
+      const formEl = document.getElementById('edit-post-form');
+
+      document.getElementById('edit-post-btn').addEventListener('click', () => {
+        viewEl.hidden = true;
+        formEl.hidden = false;
+      });
+
+      document.getElementById('cancel-edit-post').addEventListener('click', () => {
+        formEl.hidden = true;
+        viewEl.hidden = false;
+      });
+
+      formEl.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const errBox = document.getElementById('edit-post-error');
+        errBox.hidden = true;
+        try {
+          await api(`/api/posts/${post.id}`, {
+            method: 'PATCH',
+            body: JSON.stringify({
+              title: document.getElementById('edit-post-title').value,
+              body: document.getElementById('edit-post-body').value,
+            }),
+          });
+          await loadPostPage();
+        } catch (err) {
+          errBox.textContent = err.message;
+          errBox.hidden = false;
+        }
+      });
+
+      document.getElementById('delete-post-btn').addEventListener('click', async () => {
+        if (!confirm('Delete this post and all its comments?')) return;
+        await api(`/api/posts/${post.id}`, { method: 'DELETE' });
+        window.location.href = '/';
+      });
+    }
+
+    function renderCommentBox() {
+      const box = document.getElementById('comment-compose');
+      if (!currentUser) {
+        box.innerHTML = `<p style="margin:0;"><a href="/login">Log in</a> to leave a comment.</p>`;
+        return;
+      }
+
+      box.innerHTML = `
+        <div id="comment-error" class="error" hidden></div>
+        <form id="new-comment-form">
+          <div class="form-group">
+            <label for="comment-body">Add a comment</label>
+            <textarea id="comment-body" maxlength="4000" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm">Post Comment</button>
+        </form>
+      `;
+
+      document.getElementById('new-comment-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const errBox = document.getElementById('comment-error');
+        errBox.hidden = true;
+        try {
+          await api(`/api/posts/${postId}/comments`, {
+            method: 'POST',
+            body: JSON.stringify({ body: document.getElementById('comment-body').value }),
+          });
+          await loadPostPage();
+        } catch (err) {
+          errBox.textContent = err.message;
+          errBox.hidden = false;
+        }
+      });
+    }
+
+    function renderComments(comments) {
+      const list = document.getElementById('comments-list');
+      if (comments.length === 0) {
+        list.innerHTML = '<p class="empty">No comments yet.</p>';
+        return;
+      }
+
+      list.innerHTML = comments.map((c) => {
+        const isOwner = currentUser && currentUser.id === c.authorId;
+        return `
+          <div class="card" data-comment-id="${c.id}">
+            <div class="comment-view">
+              <div class="meta">
+                <a href="/users/${c.authorId}">${escapeHtml(c.authorDisplayName)}</a>
+                &middot; ${formatDate(c.createdAt)}
+                ${isEdited(c) ? ' (edited)' : ''}
+              </div>
+              <p class="comment-body">${escapeHtml(c.body)}</p>
+              ${isOwner ? `
+                <div class="actions">
+                  <button type="button" class="btn btn-sm edit-comment-btn">Edit</button>
+                  <button type="button" class="btn btn-danger btn-sm delete-comment-btn">Delete</button>
+                </div>
+              ` : ''}
+            </div>
+            ${isOwner ? `
+              <form class="edit-comment-form" hidden>
+                <div class="error edit-comment-error" hidden></div>
+                <div class="form-group">
+                  <textarea class="edit-comment-textarea" maxlength="4000" required>${escapeHtml(c.body)}</textarea>
+                </div>
+                <div class="actions">
+                  <button type="submit" class="btn btn-primary btn-sm">Save</button>
+                  <button type="button" class="btn btn-sm cancel-edit-comment">Cancel</button>
+                </div>
+              </form>
+            ` : ''}
+          </div>
+        `;
+      }).join('');
+
+      list.querySelectorAll('[data-comment-id]').forEach((card) => {
+        const commentId = card.dataset.commentId;
+        const view = card.querySelector('.comment-view');
+        const form = card.querySelector('.edit-comment-form');
+        if (!form) return;
+
+        card.querySelector('.edit-comment-btn').addEventListener('click', () => {
+          view.hidden = true;
+          form.hidden = false;
+        });
+
+        card.querySelector('.cancel-edit-comment').addEventListener('click', () => {
+          form.hidden = true;
+          view.hidden = false;
+        });
+
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const errBox = card.querySelector('.edit-comment-error');
+          errBox.hidden = true;
+          try {
+            await api(`/api/comments/${commentId}`, {
+              method: 'PATCH',
+              body: JSON.stringify({
+                body: card.querySelector('.edit-comment-textarea').value,
+              }),
+            });
+            await loadPostPage();
+          } catch (err) {
+            errBox.textContent = err.message;
+            errBox.hidden = false;
+          }
+        });
+
+        card.querySelector('.delete-comment-btn').addEventListener('click', async () => {
+          if (!confirm('Delete this comment?')) return;
+          await api(`/api/comments/${commentId}`, { method: 'DELETE' });
+          await loadPostPage();
+        });
+      });
+    }
+
+    (async () => {
+      currentUser = await initNav();
+      await loadPostPage();
+    })();
+  </script>
+</body>
+</html>
