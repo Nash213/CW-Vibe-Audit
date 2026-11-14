@@ -1,0 +1,22 @@
+# Good sample: nothing here should be flagged.
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: change-me-test-only
+      POSTGRES_DB: app
+    volumes:
+      - db_data:/var/lib/postgresql/data   # named volume: fine
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"              # localhost only
+    environment:
+      DATABASE_URL: postgres://app:change-me-test-only@db:5432/app
+    volumes:
+      - ./uploads:/usr/src/app/uploads     # bind mount inside the project: fine
+    depends_on:
+      - db
+volumes:
+  db_data:
