@@ -1,0 +1,74 @@
+# Bad sample: EVERY service below must be flagged, and each rule id listed in
+# tools/test_compose_check.sh must appear. Never boot this file.
+services:
+  priv:
+    image: alpine
+    privileged: true                         # C01
+  hostnet:
+    image: alpine
+    network_mode: host                       # C02
+  hostpid:
+    image: alpine
+    pid: host                                # C03
+  hostipc:
+    image: alpine
+    ipc: host                                # C04
+  hostuserns:
+    image: alpine
+    userns_mode: host                        # C05
+  hostuts:
+    image: alpine
+    uts: host                                # C06
+  caps:
+    image: alpine
+    cap_add:
+      - SYS_ADMIN                            # C07
+  dev:
+    image: alpine
+    devices:
+      - /dev/sda:/dev/sda                    # C08
+  noprot:
+    image: alpine
+    security_opt:
+      - seccomp=unconfined                   # C09
+  sysctl:
+    image: alpine
+    sysctls:
+      - net.ipv4.ip_forward=1                # C10
+  sock:
+    image: alpine
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock   # C11
+  rootmount:
+    image: alpine
+    volumes:
+      - /:/host                              # C11
+  home:
+    image: alpine
+    volumes:
+      - ~:/home-copy                         # C11
+  outside:
+    image: alpine
+    volumes:
+      - ../../../secrets:/secrets            # C11
+  openport:
+    image: alpine
+    ports:
+      - "3000:3000"                          # C12 (all interfaces)
+      - "0.0.0.0:3001:3001"                  # C12
+  outsidefile:
+    image: alpine
+    env_file: /etc/passwd                    # C13
+    build:
+      context: ../../..                      # C13
+  extvol:
+    image: alpine
+    networks: [shared_net]
+    volumes:
+      - shared:/data
+networks:
+  shared_net:
+    external: true                           # C14
+volumes:
+  shared:
+    external: true                           # C14
