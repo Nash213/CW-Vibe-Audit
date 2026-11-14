@@ -1,0 +1,96 @@
+{
+  "config": {
+    "argv": [
+      "/home/muhdf/.nvm/versions/node/v26.13.0/bin/node",
+      "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/node_modules/@playwright/test/cli.js",
+      "test",
+      "specs/g1",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {},
+        "name": "",
+        "testDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/specs",
+        "snapshotDir": "/mnt/c/Users/muhdf/coder/security-audit-on-web-app/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3001",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-12T23:57:45.140Z",
+    "duration": 76.20700000000033,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

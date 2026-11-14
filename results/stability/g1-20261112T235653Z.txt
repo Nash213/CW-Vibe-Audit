@@ -1,0 +1,5 @@
+app=g1 runs=3 stamp=20261112T235653Z source=/mnt/c/Users/muhdf/coder/security-audit-on-web-app/apps/task-manager-corpus
+--- run 1: boot=ok
+--- run 2: boot=ok
+--- run 3: boot=ok
+RESULT: OK, rule holds in all 3 runs

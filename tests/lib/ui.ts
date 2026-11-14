@@ -46,3 +46,22 @@ export async function uiLogout(page: Page, appId: AppId): Promise<void> {
   // still in flight made T08 flaky.
   await expect(logout).toBeHidden();
 }
+
+/** First VISIBLE match. getByLabel also matches hidden inputs (e.g. a closed edit modal). */
+export function visible(locator: Locator): Locator {
+  return locator.filter({ visible: true }).first();
+}
+
+/**
+ * Where the edit form lives after clicking Edit: an open dialog if the app uses one,
+ * otherwise the whole page (inline editing). Wording-free, so it survives restyling.
+ */
+export async function editScope(page: Page): Promise<Page | Locator> {
+  const dialog = page.getByRole('dialog').filter({ visible: true }).first();
+  try {
+    await dialog.waitFor({ state: 'visible', timeout: 2_000 });
+    return dialog;
+  } catch {
+    return page;
+  }
+}
