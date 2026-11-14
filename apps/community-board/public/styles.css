@@ -1,0 +1,182 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1b1f23;
+  --muted: #59636e;
+  --border: #d8dee4;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --danger: #dc2626;
+  --danger-hover: #b91c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.topbar {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0.85rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 760px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.post-body,
+.comment-body {
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin: 0.5rem 0 0;
+}
+
+.form-group {
+  margin-bottom: 0.85rem;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f0f2f5;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: var(--danger-hover);
+}
+
+.btn-sm {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.82rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.9rem;
+}
+
+.empty {
+  color: var(--muted);
+  font-style: italic;
+}

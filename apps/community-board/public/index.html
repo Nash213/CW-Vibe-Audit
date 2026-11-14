@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community Board</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand">Community Board</a>
+      <nav id="nav" class="nav"></nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="compose-section" class="card"></section>
+
+    <section>
+      <h2>Latest Posts</h2>
+      <div id="posts-list"><p class="empty">Loading posts...</p></div>
+    </section>
+  </main>
+
+  <script src="/common.js"></script>
+  <script>
+    async function loadPosts() {
+      const { posts } = await api('/api/posts');
+      const list = document.getElementById('posts-list');
+      if (posts.length === 0) {
+        list.innerHTML = '<p class="empty">No posts yet. Be the first to share something!</p>';
+        return;
+      }
+
+      list.innerHTML = posts.map((p) => {
+        const preview = p.body.length > 240 ? `${p.body.slice(0, 240)}...` : p.body;
+        return `
+          <article class="card">
+            <h3><a href="/posts/${p.id}">${escapeHtml(p.title)}</a></h3>
+            <div class="meta">
+              By <a href="/users/${p.authorId}">${escapeHtml(p.authorDisplayName)}</a>
+              &middot; ${formatDate(p.createdAt)}
+              ${isEdited(p) ? ' (edited)' : ''}
+              &middot; ${p.commentCount} ${p.commentCount === 1 ? 'comment' : 'comments'}
+            </div>
+            <p class="post-body">${escapeHtml(preview)}</p>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function renderCompose(user) {
+      const section = document.getElementById('compose-section');
+      if (!user) {
+        section.innerHTML = `
+          <p style="margin:0;">
+            <a href="/login">Log in</a> or <a href="/signup">sign up</a> to write a post or comment.
+          </p>
+        `;
+        return;
+      }
+
+      section.innerHTML = `
+        <h2>New Post</h2>
+        <div id="post-error" class="error" hidden></div>
+        <form id="new-post-form">
+          <div class="form-group">
+            <label for="post-title">Title</label>
+            <input id="post-title" type="text" maxlength="150" required>
+          </div>
+          <div class="form-group">
+            <label for="post-body">Message</label>
+            <textarea id="post-body" maxlength="10000" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Publish</button>
+        </form>
+      `;
+
+      document.getElementById('new-post-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const errBox = document.getElementById('post-error');
+        errBox.hidden = true;
+        try {
+          const title = document.getElementById('post-title').value;
+          const body = document.getElementById('post-body').value;
+          await api('/api/posts', {
+            method: 'POST',
+            body: JSON.stringify({ title, body }),
+          });
+          e.target.reset();
+          await loadPosts();
+        } catch (err) {
+          errBox.textContent = err.message;
+          errBox.hidden = false;
+        }
+      });
+    }
+
+    (async () => {
+      const user = await initNav();
+      renderCompose(user);
+      await loadPosts();
+    })();
+  </script>
+</body>
+</html>
