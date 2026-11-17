@@ -48,16 +48,16 @@ export interface AppConfig {
 const g1: AppConfig = {
   id: 'g1',
   api: {
-    register: '/api/auth/register', // FILL
+    register: '/api/auth/signup', // checked against apps/task-manager-corpus/src/routes/auth.js
     login: '/api/auth/login', // FILL
     items: '/api/tasks', // FILL
     authStyle: 'cookie', // FILL: 'cookie' or 'bearer'
     // tokenField: 'token', // FILL, bearer only
     registerBody: (email, password) => ({ email, password }), // FILL: field names
     loginBody: (email, password) => ({ email, password }), // FILL
-    itemBody: (title) => ({ title, description: 'created by test', status: 'todo' }), // FILL
+    itemBody: (title) => ({ title, description: 'created by test', status: 'to do' }), // g1 statuses: 'to do' | 'in progress' | 'done'
   },
-  pages: { register: '/register', login: '/login', list: '/' }, // FILL
+  pages: { register: '/signup', login: '/login', list: '/' }, // checked against src/app.js
   ui: {
     email: /e-?mail/i,
     password: /^\s*password\b/i, // anchored so "Confirm password" does not match
