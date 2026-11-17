@@ -18,7 +18,7 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3004:3000"
     environment:
       PORT: "3000"
       DATABASE_URL: postgres://board:board_password@db:5432/board
