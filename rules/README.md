@@ -12,8 +12,13 @@ open-source **semgrep-rules** repository:
 scan results stay reproducible; the online registry changes over time.
 
 **What was copied.** The rule files (YAML files containing `rules:`) from the
-`javascript`, `typescript`, `generic`, `yaml` and `dockerfile` folders: 594 files.
+`javascript`, `typescript`, `generic`, `yaml` and `dockerfile` folders: 593 files.
 Test targets (`*.test.*`, `*.fixed.*`) and non-rule files were left out.
+
+**One rule left out on purpose.** `generic/secrets/security/detected-slack-webhook.yaml`
+contains an example Slack webhook URL, and GitHub push protection rejects it as a
+secret. It was removed (2026-11-17) rather than bypassing push protection. Slack
+webhooks are still covered by Gitleaks' default `slack-webhook-url` rule.
 
 **How it is used.** `tools/scan.py` runs Semgrep (`semgrep/semgrep:1.184.0`, pinned
 by digest) with `--config rules/ --metrics=off`. Do not edit these files; to update,
