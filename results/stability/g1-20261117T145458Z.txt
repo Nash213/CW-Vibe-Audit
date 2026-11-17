@@ -1,0 +1,38 @@
+app=g1 runs=3 stamp=20261117T145458Z source=/home/muhdf/vibe-audit/apps/task-manager-corpus
+--- run 1: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 2: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 3: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+RESULT: OK, rule holds in all 3 runs
