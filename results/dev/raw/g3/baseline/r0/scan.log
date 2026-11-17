@@ -1,0 +1,3 @@
+semgrep	exit=0	20.5s	results=149 errors=1
+gitleaks	exit=0	3.6s	findings=0
+npm-audit	exit=0	1.1s	folder=. lock=own vulns=0
