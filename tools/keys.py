@@ -69,22 +69,52 @@ def _read_lines(checkout: Path, rel_path: str, start: int, end: int) -> str:
 # --- Semgrep ---------------------------------------------------------------
 
 
-def semgrep_findings(report: Any, checkout: Path | str) -> list[Finding]:
-    """Findings from Semgrep JSON output, keyed on rule id + normalised code."""
+def semgrep_code(report: Any, checkout: Path | str) -> list[str]:
+    """Matched source for each Semgrep result, read from our checkout.
+
+    The scan step saves this next to semgrep.json (as semgrep.code.json) while
+    the throw-away clone still exists, so ingest can key findings later from
+    results/raw/ alone.
+    """
     data = _load(report) or {}
     checkout = Path(checkout)
+    return [
+        _read_lines(checkout, r["path"], int(r["start"]["line"]), int(r["end"]["line"]))
+        for r in data.get("results") or []
+    ]
+
+
+def semgrep_findings(
+    report: Any,
+    checkout: Path | str | None = None,
+    code: list[str] | None = None,
+) -> list[Finding]:
+    """Findings from Semgrep JSON output, keyed on rule id + normalised code.
+
+    Pass either the `checkout` to read matched lines from, or the `code` list
+    saved by `semgrep_code` (one entry per result, same order).
+    """
+    data = _load(report) or {}
+    results = data.get("results") or []
+    if code is None:
+        if checkout is None:
+            raise ValueError("semgrep_findings needs a checkout or saved code")
+        code = semgrep_code(data, checkout)
+    if len(code) != len(results):
+        raise ValueError(
+            f"semgrep code list has {len(code)} entries for {len(results)} results"
+        )
     out: list[Finding] = []
-    for r in data.get("results") or []:
+    for r, matched in zip(results, code):
         rule = r["check_id"]
         path = r["path"]
         start = int(r["start"]["line"])
-        end = int(r["end"]["line"])
-        code = normalise_code(_read_lines(checkout, path, start, end))
+        code_norm = normalise_code(matched)
         out.append(
             Finding(
                 tool="semgrep",
                 rule=rule,
-                key=f"semgrep:{rule}:{stable_hash(code)}",
+                key=f"semgrep:{rule}:{stable_hash(code_norm)}",
                 path=path,
                 line=start,
                 severity=str((r.get("extra") or {}).get("severity", "")),
