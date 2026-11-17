@@ -56,7 +56,7 @@ statuses() {
 } | tee "$SUMMARY"
 
 # Check the rule across all runs. Every expected test must be PRESENT, not just "not failing".
-EXPECTED_IDS="T01 T02 T03 T04 T05 T06 T07 T08 T09 TA TB"
+EXPECTED_IDS="${EXPECTED_IDS:-T01 T02 T03 T04 T05 T06 T07 T08 T09 T10 T11 T12 T13 T14 T15 TA TB}"
 PROBLEMS=0
 for i in $(seq 1 "$RUNS"); do
   report="$RAW_ROOT/$APP/stability/r$i/playwright.json"
@@ -75,8 +75,8 @@ for i in $(seq 1 "$RUNS"); do
       echo "PROBLEM: run $i $id is missing from the report"; PROBLEMS=$((PROBLEMS + 1)); continue
     fi
     case "$id" in
-      T0[1-9]) [ "$status" = "pass" ] || { echo "PROBLEM: run $i $id is $status (must pass every run)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
-      TA|TB)   [ "$status" = "fail" ] || { echo "PROBLEM: run $i $id is $status (must fail on baseline)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
+      T0[1-9]|T1[0-5]) [ "$status" = "pass" ] || { echo "PROBLEM: run $i $id is $status (must pass every run)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
+      TA|TB)           [ "$status" = "fail" ] || { echo "PROBLEM: run $i $id is $status (must fail on baseline)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
     esac
   done
 done | tee -a "$SUMMARY"

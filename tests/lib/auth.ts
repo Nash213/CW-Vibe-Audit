@@ -96,3 +96,15 @@ export async function apiLoginStatus(appId: AppId, email: string, password: stri
     await ctx.dispose();
   }
 }
+
+/** HTTP status of an API registration with these credentials (used by T14). */
+export async function apiRegisterStatus(appId: AppId, email: string, password: string): Promise<number> {
+  const cfg = apps[appId].api;
+  const ctx = await request.newContext({ baseURL: baseURL() });
+  try {
+    const res = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });
+    return res.status();
+  } finally {
+    await ctx.dispose();
+  }
+}

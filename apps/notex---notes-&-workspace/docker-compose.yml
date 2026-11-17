@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: notex-app
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3002:3000"
+    environment:
+      PORT: 3000
+      NODE_ENV: production
