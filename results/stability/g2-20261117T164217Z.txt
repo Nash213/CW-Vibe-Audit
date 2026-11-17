@@ -1,0 +1,5 @@
+app=g2 runs=1 stamp=20261117T164217Z source=/home/muhdf/vibe-audit/apps/notex---notes-&-workspace
+--- run 1: boot=fail
+(no playwright report)
+PROBLEM: run 1 has no report
+RESULT: 1 problem(s), see above
