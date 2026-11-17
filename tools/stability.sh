@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # tools/stability.sh  (M2, Faris-4)
 # Boot + test one app's baseline N times and check the rule:
-#   T01..T09 pass in EVERY run, TA and TB fail in EVERY run.
+#   T01..T09 pass in EVERY run, TA and TB fail in EVERY run, and none are missing.
 # Also saves run 1's Playwright report as the parser fixture for M3.
 #
 # Usage: tools/stability.sh <app-id> <app-folder> [runs]
@@ -30,7 +30,7 @@ for i in $(seq 1 "$RUNS"); do
   # Fresh copy every run, never the original; skip node_modules and any .git.
   ( cd "$SRC" && tar --exclude=node_modules --exclude=.git -cf - . ) | ( cd "$WORK" && tar -xf - )
   echo "=== run $i of $RUNS ==="
-  "$REPO_ROOT/tools/boot_and_test.sh" "$APP" stability "$i" "$WORK"
+  bash "$REPO_ROOT/tools/boot_and_test.sh" "$APP" stability "$i" "$WORK"
   rm -rf "$WORK"
 done
 
@@ -55,19 +55,34 @@ statuses() {
   done
 } | tee "$SUMMARY"
 
-# Check the rule across all runs.
+# Check the rule across all runs. Every expected test must be PRESENT, not just "not failing".
+EXPECTED_IDS="T01 T02 T03 T04 T05 T06 T07 T08 T09 TA TB"
 PROBLEMS=0
 for i in $(seq 1 "$RUNS"); do
   report="$RAW_ROOT/$APP/stability/r$i/playwright.json"
   if [ ! -s "$report" ]; then echo "PROBLEM: run $i has no report"; PROBLEMS=$((PROBLEMS + 1)); continue; fi
-  while IFS=$'\t' read -r title status; do
-    id="${title%% *}"
+
+  # Playwright-level errors (no tests found, syntax error in a spec, ...).
+  errs="$(jq -r '.errors[]?.message | split("\n")[0]' "$report")"
+  if [ -n "$errs" ]; then
+    printf 'PROBLEM: run %s playwright error: %s\n' "$i" "$errs"; PROBLEMS=$((PROBLEMS + 1))
+  fi
+
+  results="$(statuses "$report")"
+  for id in $EXPECTED_IDS; do
+    status="$(printf '%s\n' "$results" | awk -F'\t' -v id="$id" '{ split($1, w, " ") } w[1] == id { print $2; exit }')"
+    if [ -z "$status" ]; then
+      echo "PROBLEM: run $i $id is missing from the report"; PROBLEMS=$((PROBLEMS + 1)); continue
+    fi
     case "$id" in
       T0[1-9]) [ "$status" = "pass" ] || { echo "PROBLEM: run $i $id is $status (must pass every run)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
       TA|TB)   [ "$status" = "fail" ] || { echo "PROBLEM: run $i $id is $status (must fail on baseline)"; PROBLEMS=$((PROBLEMS + 1)); } ;;
     esac
-  done < <(statuses "$report")
-done
+  done
+done | tee -a "$SUMMARY"
+
+# The loop above ran in a pipe (because of tee), so recount the problems from the summary.
+PROBLEMS="$(grep -c '^PROBLEM:' "$SUMMARY")"
 if [ "$PROBLEMS" -eq 0 ]; then echo "RESULT: OK, rule holds in all $RUNS runs" | tee -a "$SUMMARY"
 else echo "RESULT: $PROBLEMS problem(s), see above" | tee -a "$SUMMARY"; fi
 
