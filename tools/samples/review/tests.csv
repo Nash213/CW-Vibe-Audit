@@ -1,0 +1,6 @@
+app,checkpoint,previous_checkpoint,test,first_error,boot_status
+g2,DCBA-r2,DCBA-r1,T04 delete task,"Error: expected 200
+  at spec.ts:41",ok
+g1,DCBA-r1,DCBA-r0,T02 login works,"Error: locator not found: getByRole('button', {name: /log in/i})",ok
+g1,DCBA-r3,DCBA-r2,T05 edit task,Error: timeout,fail
+g1,ABCD-r1,ABCD-r0,T01 signup works,"Error: expected 201",ok
