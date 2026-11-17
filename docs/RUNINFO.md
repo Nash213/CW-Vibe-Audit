@@ -17,7 +17,9 @@ running them in containers. The images are set in `tools/scan.py`.
 
 **Semgrep rules.** Vendored in `rules/` from https://github.com/semgrep/semgrep-rules
 at commit `a5ad1714f00c9f7fde980cab0ea1d6dc6d414fd2` (2026-11-10): the `javascript`,
-`typescript`, `generic`, `yaml` and `dockerfile` folders, 594 rule files. Run with
+`typescript`, `generic`, `yaml` and `dockerfile` folders, 593 rule files (one Slack
+webhook rule left out because GitHub push protection blocks its example URL; see
+`rules/README.md`). Run with
 `--metrics=off`, no network (`--network none`). Checked on 2026-11-17: a file with
 `res.send(eval(req.query.code))` fires `javascript.lang.security.audit.code-string-concat`
 (ERROR) and `javascript.browser.security.eval-detected` (WARNING).

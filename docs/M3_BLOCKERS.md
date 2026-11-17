@@ -56,7 +56,7 @@ and date it when it is unblocked.
 
 ## Done by M3 alone (17 Nov)
 
-- M3-1: scanners pinned as Docker images; Semgrep rules vendored (594 files,
+- M3-1: scanners pinned as Docker images; Semgrep rules vendored (593 files,
   commit `a5ad171`) and shown to fire; RUNINFO.md filled; Makefile targets defined;
   CSV header files for labels and links.
 - M3-3: Playwright parser and transition lister, with the plan's self-check cases
