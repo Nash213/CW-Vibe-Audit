@@ -1,0 +1,7 @@
+app,key,tool,rule,severity,path,line,checkpoint,snippet
+g2,semgrep:sql-concat:src/db.js,semgrep,javascript.sql-injection,ERROR,src/db.js,12,DCBA-r2,"db.query('SELECT * FROM t WHERE id=' + id)"
+g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r0,JWT_SECRET: example-secret
+g1,semgrep:no-csrf:src/app.js,semgrep,express.no-csrf,INFO,src/app.js,9,DCBA-r0,app.use(cookieParser())
+g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r1,JWT_SECRET: example-secret
+g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r1,JWT_SECRET: example-secret
+g2,semgrep:sql-concat:src/db.js,semgrep,javascript.sql-injection,ERROR,src/db.js,14,DCBA-r3,
