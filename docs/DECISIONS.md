@@ -44,3 +44,36 @@ crashed twice) gets a `not_run` row for every test id seen for that app elsewher
 is deleted after assessment and ingest reads only `results/raw/`. Saving the
 lines at scan time keeps ingest reproducible from raw files alone, and lets the
 key rule change later without re-scanning.
+
+## 2026-11-17 — Scanners run in pinned Docker images (Wuth, M3)
+
+**Decision.** Semgrep, Gitleaks and npm audit run in Docker images pinned by tag and
+digest (`tools/scan.py`, versions in `docs/RUNINFO.md`), not as host binaries.
+Semgrep and Gitleaks run with `--network none`.
+
+**Why.** It makes results the same on every host, and the batch host needs only
+Docker. Windows Application Control also blocks the native Semgrep and Gitleaks
+binaries on the development machine.
+
+## 2026-11-17 — npm lockfile fallback (Wuth, M3)
+
+**Decision.** When a folder has no npm lockfile, `scan.py` generates one with
+`npm install --package-lock-only --ignore-scripts`. If that fails, it retries once
+with `--legacy-peer-deps`, and `scan.log` records `lock=generated-legacy-peer-deps`.
+
+**Why.** The g2 baseline (notes app, `bun.lock` only) fails the plain lockfile build
+with ERESOLVE, a peer-dependency conflict, so npm audit could not run on it at all.
+The fallback resolves the same declared dependencies, and the log keeps it visible.
+
+## 2026-11-17 — Transitions across a round that did not boot (Wuth, M3) — PROVISIONAL
+
+**Decision (to confirm with Nazrul).** In `tools/transitions.py`, when the previous
+round did not boot, or the test was `not_run` there, a round is compared with the
+last earlier round of the same chain where that test has a result. Such rows have
+`prev_adjacent = no`, and the lister prints how many there are.
+
+**Why.** This is the plan's suggested choice (Wuth-3). It keeps a break that happened
+across a non-booting round, rather than losing it.
+
+**Status.** Nazrul has not confirmed it yet. If the team picks a different rule,
+only `list_transitions` and its `test_previous_round_did_not_boot` case change.
