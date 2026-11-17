@@ -23,3 +23,24 @@ later {x:2} → reintroduced {x:1}, survival 0. Comparing the later round agains
 **Where.** `analysis/measures.py` (`reintroduced`, `fix_survival`), tested in
 `analysis/tests/test_measures.py`. Nazrul's statistics scripts must use the same
 definition.
+
+## 2026-11-17 — Scan output files and ingest rules (Wuth, M3)
+
+**Decision.** The scan step writes these files into each checkpoint's raw folder,
+next to the files from `tools/boot_and_test.sh`:
+
+- `semgrep.json` — Semgrep JSON output.
+- `semgrep.code.json` — a JSON list with the matched source lines for each Semgrep
+  result, in the same order, read from the throw-away clone at scan time.
+- `gitleaks.json` — Gitleaks JSON output (`null` when nothing is found).
+- `npm-audit/<folder>.json` — `npm audit --json` for each folder with a
+  `package.json`; `root.json` for the top folder, `/` written as `__`.
+
+`tools/ingest.py` only ingests folders whose `stage` file says `done`, and lists
+the others. A checkpoint with no Playwright report (did not boot, or Playwright
+crashed twice) gets a `not_run` row for every test id seen for that app elsewhere.
+
+**Why.** Semgrep keys hash the matched code read from our checkout, but the clone
+is deleted after assessment and ingest reads only `results/raw/`. Saving the
+lines at scan time keeps ingest reproducible from raw files alone, and lets the
+key rule change later without re-scanning.
