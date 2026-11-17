@@ -139,7 +139,7 @@ def gitleaks_findings(report: Any) -> list[Finding]:
                 tool="gitleaks",
                 rule=rule,
                 key=f"gitleaks:{rule}:{stable_hash(r['Secret'])}",
-                path=r.get("File", ""),
+                path=r.get("File", "").removeprefix("/src/"),  # scan.py mounts at /src
                 line=r.get("StartLine"),
                 severity="",
             )
