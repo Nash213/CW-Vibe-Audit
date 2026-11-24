@@ -34,9 +34,12 @@ and date it when it is unblocked.
 
 ## 📌 Faris (boot and feature tests)
 
-- [ ] **A real Playwright report** to replace the synthetic fixture
+- [x] **A real Playwright report** to replace the synthetic fixture
       `tools/tests/fixtures/playwright-sample.json` (the parser is written to
       Playwright's JSON format; one real report confirms it).
+      *(Done 17 Nov by Faris: `tests/fixtures/g1-baseline.json` and `g4-baseline.json`
+      on `origin/m2/playwright-project`. Checked 24 Nov: `tools/parse_playwright.py`
+      reads both with no error.)*
 - [x] **Specs for g3 and g4.** `tests/specs/` has only `g1` and `g2`.
       *(Done 17 Nov by Faris: `tests/specs/g3/feature.spec.ts` and
       `tests/specs/g4/feature.spec.ts` on `origin/m2/playwright-project`; not merged
