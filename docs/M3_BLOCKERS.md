@@ -13,10 +13,18 @@ and date it when it is unblocked.
       `novastore` and `community-board`; the plan expects `apps/g1` … `apps/g4`
       (or i1/i2). The dev scans assume g1 = task manager, g2 = notes,
       g3 = shop, g4 = community board. Please confirm or rename.
-- [ ] **g2 has no Compose file or Dockerfile.** `boot_and_test.sh` will record
+      *(24 Nov: still open. `origin/m2/playwright-project` renamed
+      `task-manager-corpus` → `taskmanager`, but no folder is named g1 … g4.)*
+- [x] **g2 has no Compose file or Dockerfile.** `boot_and_test.sh` will record
       `boot=fail` (no compose file) on every g2 checkpoint.
+      *(Done 17 Nov by Faris, commit `314f4ab` on `origin/m2/playwright-project`;
+      not merged into `main` yet.)*
 - [ ] **`meta/<app>/PORT` files.** Only `meta/g1/ROUTES.md` exists; there is no PORT file
       for any app, and the boot script uses it to find the port.
+      *(24 Nov: partial. `origin/m2/playwright-project` has `meta/g1/PORT` = 3001, but
+      g1's compose file still publishes `3000:3000`, so every g1 baseline would be
+      noted `port_changed`. g2 … g4 compose files publish `127.0.0.1:3002/3003/3004`
+      but have no PORT file.)*
 - [ ] **Pilot chain DCBA on g1** (Gate 3, was due Fri 13 Nov): tags `DCBA-r1` … `DCBA-r4`.
       Until it exists, there is nothing to assess, ingest or measure, and no timing
       to estimate the batch from.
@@ -26,10 +34,16 @@ and date it when it is unblocked.
 
 ## 📌 Faris (boot and feature tests)
 
-- [ ] **A real Playwright report** to replace the synthetic fixture
+- [x] **A real Playwright report** to replace the synthetic fixture
       `tools/tests/fixtures/playwright-sample.json` (the parser is written to
       Playwright's JSON format; one real report confirms it).
-- [ ] **Specs for g3 and g4.** `tests/specs/` has only `g1` and `g2`.
+      *(Done 17 Nov by Faris: `tests/fixtures/g1-baseline.json` and `g4-baseline.json`
+      on `origin/m2/playwright-project`. Checked 24 Nov: `tools/parse_playwright.py`
+      reads both with no error.)*
+- [x] **Specs for g3 and g4.** `tests/specs/` has only `g1` and `g2`.
+      *(Done 17 Nov by Faris: `tests/specs/g3/feature.spec.ts` and
+      `tests/specs/g4/feature.spec.ts` on `origin/m2/playwright-project`; not merged
+      into `main` yet.)*
 - [ ] **`tests_version`.** Nothing writes it yet; ingest reads a `tests_version` file in
       each checkpoint folder. Agree who writes it (`boot_and_test.sh` or `assess.py`).
 
