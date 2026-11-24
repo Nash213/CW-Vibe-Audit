@@ -1,0 +1,56 @@
+app=g3 runs=3 stamp=20261124T172210Z source=/home/muhdf/vibe-audit/apps/novastore
+--- run 1: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T08 log out and the protected view is unreachable	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T04 add a product to the cart via UI	pass
+T05 cart lists the item	pass
+T06 change the quantity and it is saved	pass
+T07 remove from the cart and it disappears	pass
+T09 log in again and the cart is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 2: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T08 log out and the protected view is unreachable	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T04 add a product to the cart via UI	pass
+T05 cart lists the item	pass
+T06 change the quantity and it is saved	pass
+T07 remove from the cart and it disappears	pass
+T09 log in again and the cart is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 3: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T08 log out and the protected view is unreachable	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T04 add a product to the cart via UI	pass
+T05 cart lists the item	pass
+T06 change the quantity and it is saved	pass
+T07 remove from the cart and it disappears	pass
+T09 log in again and the cart is still there	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+PROBLEM: run 1 T10 is missing from the report
+PROBLEM: run 1 T15 is missing from the report
+PROBLEM: run 2 T10 is missing from the report
+PROBLEM: run 2 T15 is missing from the report
+PROBLEM: run 3 T10 is missing from the report
+PROBLEM: run 3 T15 is missing from the report
+RESULT: 6 problem(s), see above

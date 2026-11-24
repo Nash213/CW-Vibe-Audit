@@ -1,0 +1,762 @@
+{
+  "config": {
+    "argv": [
+      "/home/muhdf/.nvm/versions/node/v26.13.0/bin/node",
+      "/home/muhdf/vibe-audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g3",
+      "--reporter=json"
+    ],
+    "configFile": "/home/muhdf/vibe-audit/tests/playwright.config.ts",
+    "rootDir": "/home/muhdf/vibe-audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/muhdf/vibe-audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/muhdf/vibe-audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/home/muhdf/vibe-audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/home/muhdf/vibe-audit/tests/specs",
+        "snapshotDir": "/home/muhdf/vibe-audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3003",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g3/feature.spec.ts",
+      "file": "g3/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:22:56.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e4cdb13b6a0df499bce5",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 911,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:22:56.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-68ec4a44c35ec3fbf98a",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 905,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:22:57.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-93109ba52d2d7e65cac8",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:22:58.709Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-1745d462616ac545f239",
+          "file": "../lib/suite.ts",
+          "line": 85,
+          "column": 3
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1725,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:00.090Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-3d57a627953f8cd19213",
+          "file": "../lib/suite.ts",
+          "line": 121,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:01.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-c6559c37daaddc9f2ed5",
+          "file": "../lib/suite.ts",
+          "line": 140,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 417,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:02.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e3e7b663001cd5eebb3e",
+          "file": "../lib/suite.ts",
+          "line": 149,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 241,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:03.269Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7ebc59929fd06e81f3a4",
+          "file": "../lib/suite.ts",
+          "line": 156,
+          "column": 3
+        },
+        {
+          "title": "T04 add a product to the cart via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:03.521Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-319777deb0afc6e2732d",
+          "file": "g3/feature.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "T05 cart lists the item",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:04.615Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-dd4a93eac89825758bd4",
+          "file": "g3/feature.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "T06 change the quantity and it is saved",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 972,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:05.512Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7cc8876053a9f82b28bb",
+          "file": "g3/feature.spec.ts",
+          "line": 67,
+          "column": 1
+        },
+        {
+          "title": "T07 remove from the cart and it disappears",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 939,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:06.499Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-62afa2876ecaf3bd7c84",
+          "file": "g3/feature.spec.ts",
+          "line": 78,
+          "column": 1
+        },
+        {
+          "title": "T09 log in again and the cart is still there",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:07.455Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-afd7fa0091e71b4f3288",
+          "file": "g3/feature.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2,
+                  "error": {
+                    "message": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:103:90",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                      "column": 90,
+                      "line": 103
+                    },
+                    "snippet": " \u001b[90m 101 |\u001b[39m \u001b[90m// TA: request A = order history with cancel (prompts/g3/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 102 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                        "column": 90,
+                        "line": 103
+                      },
+                      "message": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  101 | // TA: request A = order history with cancel (prompts/g3/A.md). Must FAIL on baseline.\n  102 | test('TA requested feature works', async () => {\n> 103 |   expect(false, 'placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)').toBe(true);\n      |                                                                                          ^\n  104 | });\n  105 |\n  106 | // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:103:90"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:08.887Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g3-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                    "column": 90,
+                    "line": 103
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9,
+                  "error": {
+                    "message": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:103:90",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                      "column": 90,
+                      "line": 103
+                    },
+                    "snippet": " \u001b[90m 101 |\u001b[39m \u001b[90m// TA: request A = order history with cancel (prompts/g3/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 102 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 103 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 104 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 105 |\u001b[39m\n \u001b[90m 106 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                        "column": 90,
+                        "line": 103
+                      },
+                      "message": "Error: placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  101 | // TA: request A = order history with cancel (prompts/g3/A.md). Must FAIL on baseline.\n  102 | test('TA requested feature works', async () => {\n> 103 |   expect(false, 'placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)').toBe(true);\n      |                                                                                          ^\n  104 | });\n  105 |\n  106 | // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:103:90"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-24T17:23:09.394Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g3-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                    "column": 90,
+                    "line": 103
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-0e8935969121eae16ef2",
+          "file": "g3/feature.spec.ts",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:108:62",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                      "column": 62,
+                      "line": 108
+                    },
+                    "snippet": " \u001b[90m 106 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 107 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g3/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                        "column": 62,
+                        "line": 108
+                      },
+                      "message": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  106 | // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\n  107 | test('TB seeded bug is gone', async () => {\n> 108 |   expect(false, 'placeholder: write TB from meta/g3/BUG.md').toBe(true);\n      |                                                              ^\n  109 | });\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:108:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-24T17:23:09.871Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g3-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                    "column": 62,
+                    "line": 108
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8,
+                  "error": {
+                    "message": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                    "stack": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:108:62",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                      "column": 62,
+                      "line": 108
+                    },
+                    "snippet": " \u001b[90m 106 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 107 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 108 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g3/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 109 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                        "column": 62,
+                        "line": 108
+                      },
+                      "message": "Error: placeholder: write TB from meta/g3/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  106 | // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.\n  107 | test('TB seeded bug is gone', async () => {\n> 108 |   expect(false, 'placeholder: write TB from meta/g3/BUG.md').toBe(true);\n      |                                                              ^\n  109 | });\n    at /home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts:108:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-24T17:23:10.322Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g3-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g3/feature.spec.ts",
+                    "column": 62,
+                    "line": 108
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-862ce33bf1601cd9f467",
+          "file": "g3/feature.spec.ts",
+          "line": 107,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-24T17:22:55.145Z",
+    "duration": 15239.952,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
