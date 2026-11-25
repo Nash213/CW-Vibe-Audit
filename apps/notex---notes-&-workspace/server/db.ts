@@ -268,7 +268,7 @@ export function getNotes(userId: number, options?: { search?: string; category?:
     params.push(searchPattern, searchPattern, searchPattern);
   }
 
-  query += ' ORDER BY is_pinned DESC, updated_at DESC';
+  query += ' ORDER BY is_pinned DESC, updated_at ASC';
 
   const rows = db.prepare(query).all(...params) as any[];
   return rows.map((r) => ({
