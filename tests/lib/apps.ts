@@ -77,7 +77,7 @@ const g1: AppConfig = {
     extraRegisterFields: [{ label: /confirm/i, value: TEST_PASSWORD }],
     itemTitle: /title|name/i,
     saveItem: /add|save|create|submit/i,
-    editItem: /edit/i,
+    editItem: /\bedit\b/i, // whole word: T06 titles start with "edited-"    deleteItem: /delete|remove/i,
     deleteItem: /delete|remove/i,
     editReady: /save/i, // the edit dialog's "Save Changes"
   },
@@ -176,7 +176,7 @@ const g4: AppConfig = {
     itemTitle: /title/i,
     extraItemFields: [{ label: /message|body|content/i, value: 'created by test' }], // required
     saveItem: /publish|save|post|add|create|submit/i,
-    editItem: /edit/i,
+    editItem: /\bedit\b/i, // whole word: T06 titles start with "edited-"    deleteItem: /delete|remove/i,
     deleteItem: /delete|remove/i,
   },
 };

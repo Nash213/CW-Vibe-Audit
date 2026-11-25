@@ -104,6 +104,9 @@ test('TA requested feature works', async () => {
 });
 
 // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.
-test('TB seeded bug is gone', async () => {
-  expect(false, 'placeholder: write TB from meta/g3/BUG.md').toBe(true);
+test('TB seeded bug is gone', async ({ request }) => {
+  const res = await request.get('/api/products?sort=price-low');
+  expect(res.ok()).toBeTruthy();
+  const prices = ((await res.json()).products as { price: string | number }[]).map((p) => Number(p.price));
+  expect(prices, 'price-low should be cheapest first').toEqual([...prices].sort((a, b) => a - b));
 });

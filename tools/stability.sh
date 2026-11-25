@@ -56,7 +56,12 @@ statuses() {
 } | tee "$SUMMARY"
 
 # Check the rule across all runs. Every expected test must be PRESENT, not just "not failing".
-EXPECTED_IDS="${EXPECTED_IDS:-T01 T02 T03 T04 T05 T06 T07 T08 T09 T10 T11 T12 T13 T14 T15 TA TB}"
+if [ -z "${EXPECTED_IDS:-}" ]; then
+  case "$APP" in
+    g3) EXPECTED_IDS="T01 T02 T03 T04 T05 T06 T07 T08 T09 T11 T12 T13 T14 TA TB" ;; # crud:false, T10/T15 do not apply
+    *)  EXPECTED_IDS="T01 T02 T03 T04 T05 T06 T07 T08 T09 T10 T11 T12 T13 T14 T15 TA TB" ;;
+  esac
+fi
 PROBLEMS=0
 for i in $(seq 1 "$RUNS"); do
   report="$RAW_ROOT/$APP/stability/r$i/playwright.json"
