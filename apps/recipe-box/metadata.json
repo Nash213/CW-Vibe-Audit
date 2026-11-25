@@ -1,0 +1,6 @@
+{
+  "name": "Recipe Box",
+  "description": "A personal recipe box web application where users save their own recipes by category and admins manage users.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
