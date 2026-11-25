@@ -107,12 +107,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 575,
+                  "duration": 168,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:28.599Z",
+                  "startTime": "2026-11-25T12:30:12.546Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -141,12 +141,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 620,
+                  "duration": 436,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:29.707Z",
+                  "startTime": "2026-11-25T12:30:12.804Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -175,12 +175,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 724,
+                  "duration": 484,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:30.345Z",
+                  "startTime": "2026-11-25T12:30:13.255Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -209,12 +209,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 870,
+                  "duration": 616,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:31.084Z",
+                  "startTime": "2026-11-25T12:30:13.754Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -243,12 +243,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 573,
+                  "duration": 624,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:31.973Z",
+                  "startTime": "2026-11-25T12:30:14.387Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -277,12 +277,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2769,
+                  "duration": 2758,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:32.566Z",
+                  "startTime": "2026-11-25T12:30:15.024Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -297,7 +297,7 @@
         },
         {
           "title": "T07 delete item and it disappears",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -310,85 +310,18 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30147,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/lib/suite.ts",
-                        "column": 50,
-                        "line": 79
-                      },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /delete|remove/i }).or(getByRole('link', { name: /delete|remove/i })).first()\u001b[22m\n\n\n  77 |         await page.goto(app.pages.list);\n  78 |         await openItem(page, appId, title);\n> 79 |         await clickable(page, app.ui.deleteItem).click();\n     |                                                  ^\n  80 |         await expect(page.getByText(title)).toHaveCount(0);\n  81 |       });\n  82 |     });\n    at /home/muhdf/vibe-audit/tests/lib/suite.ts:79:50\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/lib/suite.ts:74:7"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 841,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:43:35.348Z",
+                  "startTime": "2026-11-25T12:30:17.798Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears/error-context.md"
-                    }
-                  ]
-                },
-                {
-                  "workerIndex": 1,
-                  "parallelIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30144,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/lib/suite.ts",
-                        "column": 50,
-                        "line": 79
-                      },
-                      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /delete|remove/i }).or(getByRole('link', { name: /delete|remove/i })).first()\u001b[22m\n\n\n  77 |         await page.goto(app.pages.list);\n  78 |         await openItem(page, appId, title);\n> 79 |         await clickable(page, app.ui.deleteItem).click();\n     |                                                  ^\n  80 |         await expect(page.getByText(title)).toHaveCount(0);\n  81 |       });\n  82 |     });\n    at /home/muhdf/vibe-audit/tests/lib/suite.ts:79:50\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/lib/suite.ts:74:7"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-11-17T16:44:06.158Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears-retry1/test-failed-1.png"
-                    },
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears-retry1/error-context.md"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "976e6a8844741bff3b2f-32d876a59797a123aa75",
@@ -409,15 +342,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 674,
+                  "duration": 668,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:36.936Z",
+                  "startTime": "2026-11-25T12:30:18.653Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -443,15 +376,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 808,
+                  "duration": 834,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:37.704Z",
+                  "startTime": "2026-11-25T12:30:19.335Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -477,15 +410,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 461,
+                  "duration": 434,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:38.530Z",
+                  "startTime": "2026-11-25T12:30:20.183Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -511,15 +444,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1004,
+                  "duration": 1021,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:39.001Z",
+                  "startTime": "2026-11-25T12:30:20.627Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -545,15 +478,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 538,
+                  "duration": 751,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:40.029Z",
+                  "startTime": "2026-11-25T12:30:21.663Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -579,15 +512,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 191,
+                  "duration": 224,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:40.596Z",
+                  "startTime": "2026-11-25T12:30:22.430Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -613,15 +546,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 102,
+                  "duration": 121,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:40.799Z",
+                  "startTime": "2026-11-25T12:30:22.662Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -647,15 +580,15 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 567,
+                  "duration": 613,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:40.912Z",
+                  "startTime": "2026-11-25T12:30:22.795Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -681,34 +614,34 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 3,
+                  "duration": 2,
                   "error": {
                     "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:10:90",
+                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                       "column": 90,
-                      "line": 10
+                      "line": 11
                     },
-                    "snippet": " \u001b[90m  8 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m  9 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m  9 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                         "column": 90,
-                        "line": 10
+                        "line": 11
                       },
-                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   8 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n   9 | test('TA requested feature works', async () => {\n> 10 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  11 | });\n  12 |\n  13 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:10:90"
+                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   9 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n  10 | test('TA requested feature works', async () => {\n> 11 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  12 | });\n  13 |\n  14 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:41.495Z",
+                  "startTime": "2026-11-25T12:30:23.422Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -720,38 +653,38 @@
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                     "column": 90,
-                    "line": 10
+                    "line": 11
                   }
                 },
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 7,
+                  "duration": 9,
                   "error": {
                     "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:10:90",
+                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                       "column": 90,
-                      "line": 10
+                      "line": 11
                     },
-                    "snippet": " \u001b[90m  8 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m  9 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m  9 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                         "column": 90,
-                        "line": 10
+                        "line": 11
                       },
-                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   8 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n   9 | test('TA requested feature works', async () => {\n> 10 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  11 | });\n  12 |\n  13 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:10:90"
+                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   9 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n  10 | test('TA requested feature works', async () => {\n> 11 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  12 | });\n  13 |\n  14 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-17T16:44:41.966Z",
+                  "startTime": "2026-11-25T12:30:23.911Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -763,7 +696,7 @@
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
                     "column": 90,
-                    "line": 10
+                    "line": 11
                   }
                 }
               ],
@@ -772,12 +705,12 @@
           ],
           "id": "976e6a8844741bff3b2f-a8f78ecdf6ff78e71184",
           "file": "g4/feature.spec.ts",
-          "line": 9,
+          "line": 10,
           "column": 1
         },
         {
           "title": "TB seeded bug is gone",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -788,98 +721,25 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 11,
-                  "error": {
-                    "message": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:15:62",
-                    "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                      "column": 62,
-                      "line": 15
-                    },
-                    "snippet": " \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 14 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g4/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                        "column": 62,
-                        "line": 15
-                      },
-                      "message": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  13 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n  14 | test('TB seeded bug is gone', async () => {\n> 15 |   expect(false, 'placeholder: write TB from meta/g4/BUG.md').toBe(true);\n     |                                                              ^\n  16 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:15:62"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 2372,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T16:44:42.494Z",
+                  "startTime": "2026-11-25T12:30:24.397Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                    "column": 62,
-                    "line": 15
-                  }
-                },
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 11,
-                  "error": {
-                    "message": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:15:62",
-                    "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                      "column": 62,
-                      "line": 15
-                    },
-                    "snippet": " \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 14 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g4/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                        "column": 62,
-                        "line": 15
-                      },
-                      "message": "Error: placeholder: write TB from meta/g4/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  13 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n  14 | test('TB seeded bug is gone', async () => {\n> 15 |   expect(false, 'placeholder: write TB from meta/g4/BUG.md').toBe(true);\n     |                                                              ^\n  16 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:15:62"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 1,
-                  "startTime": "2026-11-17T16:44:42.996Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "error-context",
-                      "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
-                    }
-                  ],
-                  "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                    "column": 62,
-                    "line": 15
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "976e6a8844741bff3b2f-a2c0a31995af3f9a55fb",
           "file": "g4/feature.spec.ts",
-          "line": 14,
+          "line": 15,
           "column": 1
         }
       ]
@@ -887,11 +747,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-17T16:43:27.875Z",
-    "duration": 75199.09,
-    "expected": 14,
+    "startTime": "2026-11-25T12:30:11.991Z",
+    "duration": 14852.430999999999,
+    "expected": 16,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 1,
     "flaky": 0
   }
 }

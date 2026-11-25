@@ -107,12 +107,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 799,
+                  "duration": 392,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:10.603Z",
+                  "startTime": "2026-11-25T12:26:55.038Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -141,12 +141,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 839,
+                  "duration": 727,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:12.363Z",
+                  "startTime": "2026-11-25T12:26:55.564Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -175,12 +175,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 734,
+                  "duration": 707,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:13.227Z",
+                  "startTime": "2026-11-25T12:26:56.310Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -209,12 +209,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1241,
+                  "duration": 1024,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:13.974Z",
+                  "startTime": "2026-11-25T12:26:57.028Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -243,12 +243,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 901,
+                  "duration": 853,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:15.228Z",
+                  "startTime": "2026-11-25T12:26:58.065Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -277,12 +277,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3392,
+                  "duration": 3186,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:16.141Z",
+                  "startTime": "2026-11-25T12:26:58.928Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -311,12 +311,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1060,
+                  "duration": 847,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:19.554Z",
+                  "startTime": "2026-11-25T12:27:02.135Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -345,12 +345,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 811,
+                  "duration": 836,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:20.632Z",
+                  "startTime": "2026-11-25T12:27:02.996Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -379,12 +379,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1115,
+                  "duration": 1152,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:21.459Z",
+                  "startTime": "2026-11-25T12:27:03.843Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -413,12 +413,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 774,
+                  "duration": 668,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:22.585Z",
+                  "startTime": "2026-11-25T12:27:05.007Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -447,12 +447,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1448,
+                  "duration": 1274,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:23.368Z",
+                  "startTime": "2026-11-25T12:27:05.688Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -481,12 +481,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 923,
+                  "duration": 911,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:24.826Z",
+                  "startTime": "2026-11-25T12:27:06.978Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -515,12 +515,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 387,
+                  "duration": 425,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:25.762Z",
+                  "startTime": "2026-11-25T12:27:07.901Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -549,12 +549,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 198,
+                  "duration": 189,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:26.159Z",
+                  "startTime": "2026-11-25T12:27:08.336Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -583,12 +583,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1204,
+                  "duration": 914,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:26.363Z",
+                  "startTime": "2026-11-25T12:27:08.534Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -617,31 +617,31 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 3,
+                  "duration": 2,
                   "error": {
                     "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:10:91",
+                    "stack": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:12:91",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                       "column": 91,
-                      "line": 10
+                      "line": 12
                     },
-                    "snippet": " \u001b[90m  8 |\u001b[39m \u001b[90m// TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m  9 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m 10 |\u001b[39m \u001b[90m// TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                         "column": 91,
-                        "line": 10
+                        "line": 12
                       },
-                      "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   8 | // TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\n   9 | test('TA requested feature works', async () => {\n> 10 |   expect(false, 'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)').toBe(true);\n     |                                                                                           ^\n  11 | });\n  12 |\n  13 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:10:91"
+                      "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  10 | // TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\n  11 | test('TA requested feature works', async () => {\n> 12 |   expect(false, 'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)').toBe(true);\n     |                                                                                           ^\n  13 | });\n  14 |\n  15 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:12:91"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:27.575Z",
+                  "startTime": "2026-11-25T12:27:09.461Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -653,38 +653,38 @@
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                     "column": 91,
-                    "line": 10
+                    "line": 12
                   }
                 },
                 {
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 10,
+                  "duration": 11,
                   "error": {
                     "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:10:91",
+                    "stack": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:12:91",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                       "column": 91,
-                      "line": 10
+                      "line": 12
                     },
-                    "snippet": " \u001b[90m  8 |\u001b[39m \u001b[90m// TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m  9 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m 10 |\u001b[39m \u001b[90m// TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 11 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 12 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 13 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m\n \u001b[90m 15 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                         "column": 91,
-                        "line": 10
+                        "line": 12
                       },
-                      "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   8 | // TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\n   9 | test('TA requested feature works', async () => {\n> 10 |   expect(false, 'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)').toBe(true);\n     |                                                                                           ^\n  11 | });\n  12 |\n  13 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:10:91"
+                      "message": "Error: placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  10 | // TA: request A = attach a file to a note (prompts/g2/A.md). Must FAIL on baseline.\n  11 | test('TA requested feature works', async () => {\n> 12 |   expect(false, 'placeholder: write TA from meta/g2/A_SPEC.md (attach a file to a note)').toBe(true);\n     |                                                                                           ^\n  13 | });\n  14 |\n  15 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:12:91"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-24T17:17:28.066Z",
+                  "startTime": "2026-11-25T12:27:09.990Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -696,7 +696,7 @@
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
                     "column": 91,
-                    "line": 10
+                    "line": 12
                   }
                 }
               ],
@@ -705,7 +705,7 @@
           ],
           "id": "1adf6ac3fc6ebbe0311a-4e9c588d896954d657bf",
           "file": "g2/feature.spec.ts",
-          "line": 9,
+          "line": 11,
           "column": 1
         },
         {
@@ -724,31 +724,31 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 9,
+                  "duration": 1416,
                   "error": {
-                    "message": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:15:62",
+                    "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m",
+                    "stack": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:23:79\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:17:3",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                      "column": 62,
-                      "line": 15
+                      "column": 79,
+                      "line": 23
                     },
-                    "snippet": " \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 14 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g2/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m"
+                    "snippet": " \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m { notes } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(apps[\u001b[33mAPP\u001b[39m]\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mitems))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m (notes \u001b[36mas\u001b[39m { title\u001b[33m:\u001b[39m string }[])\u001b[33m.\u001b[39mmap((n) \u001b[33m=>\u001b[39m n\u001b[33m.\u001b[39mtitle)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     expect(titles\u001b[33m.\u001b[39mindexOf(second\u001b[33m.\u001b[39mtitle)\u001b[33m,\u001b[39m \u001b[32m'newer note should be listed first'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(titles\u001b[33m.\u001b[39mindexOf(first\u001b[33m.\u001b[39mtitle))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m })\u001b[33m;\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                        "column": 62,
-                        "line": 15
+                        "column": 79,
+                        "line": 23
                       },
-                      "message": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  13 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n  14 | test('TB seeded bug is gone', async () => {\n> 15 |   expect(false, 'placeholder: write TB from meta/g2/BUG.md').toBe(true);\n     |                                                              ^\n  16 | });\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:15:62"
+                      "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\n  21 |     const { notes } = await (await user.api.get(apps[APP].api.items)).json();\n  22 |     const titles = (notes as { title: string }[]).map((n) => n.title);\n> 23 |     expect(titles.indexOf(second.title), 'newer note should be listed first').toBeLessThan(titles.indexOf(first.title));\n     |                                                                               ^\n  24 |   });\n  25 | });\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:23:79\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:17:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-24T17:17:28.591Z",
+                  "startTime": "2026-11-25T12:27:10.575Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -759,39 +759,39 @@
                   ],
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                    "column": 62,
-                    "line": 15
+                    "column": 79,
+                    "line": 23
                   }
                 },
                 {
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 8,
+                  "duration": 1400,
                   "error": {
-                    "message": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:15:62",
+                    "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m",
+                    "stack": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:23:79\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:17:3",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                      "column": 62,
-                      "line": 15
+                      "column": 79,
+                      "line": 23
                     },
-                    "snippet": " \u001b[90m 13 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\u001b[39m\n \u001b[90m 14 |\u001b[39m test(\u001b[32m'TB seeded bug is gone'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TB from meta/g2/BUG.md'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m })\u001b[33m;\u001b[39m"
+                    "snippet": " \u001b[90m 21 |\u001b[39m     \u001b[36mconst\u001b[39m { notes } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(apps[\u001b[33mAPP\u001b[39m]\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mitems))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m (notes \u001b[36mas\u001b[39m { title\u001b[33m:\u001b[39m string }[])\u001b[33m.\u001b[39mmap((n) \u001b[33m=>\u001b[39m n\u001b[33m.\u001b[39mtitle)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 |\u001b[39m     expect(titles\u001b[33m.\u001b[39mindexOf(second\u001b[33m.\u001b[39mtitle)\u001b[33m,\u001b[39m \u001b[32m'newer note should be listed first'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(titles\u001b[33m.\u001b[39mindexOf(first\u001b[33m.\u001b[39mtitle))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 24 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 25 |\u001b[39m })\u001b[33m;\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                        "column": 62,
-                        "line": 15
+                        "column": 79,
+                        "line": 23
                       },
-                      "message": "Error: placeholder: write TB from meta/g2/BUG.md\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  13 | // TB: the seeded bug in meta/g2/BUG.md is gone. Must FAIL on baseline.\n  14 | test('TB seeded bug is gone', async () => {\n> 15 |   expect(false, 'placeholder: write TB from meta/g2/BUG.md').toBe(true);\n     |                                                              ^\n  16 | });\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:15:62"
+                      "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\n  21 |     const { notes } = await (await user.api.get(apps[APP].api.items)).json();\n  22 |     const titles = (notes as { title: string }[]).map((n) => n.title);\n> 23 |     expect(titles.indexOf(second.title), 'newer note should be listed first').toBeLessThan(titles.indexOf(first.title));\n     |                                                                               ^\n  24 |   });\n  25 | });\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:23:79\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts:17:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-24T17:17:29.106Z",
+                  "startTime": "2026-11-25T12:27:12.560Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -802,8 +802,8 @@
                   ],
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g2/feature.spec.ts",
-                    "column": 62,
-                    "line": 15
+                    "column": 79,
+                    "line": 23
                   }
                 }
               ],
@@ -812,7 +812,7 @@
           ],
           "id": "1adf6ac3fc6ebbe0311a-a722d66940d9f96141cb",
           "file": "g2/feature.spec.ts",
-          "line": 14,
+          "line": 16,
           "column": 1
         }
       ]
@@ -820,8 +820,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-24T17:17:09.739Z",
-    "duration": 19432.814000000002,
+    "startTime": "2026-11-25T12:26:54.349Z",
+    "duration": 19697.578,
     "expected": 15,
     "skipped": 0,
     "unexpected": 2,
