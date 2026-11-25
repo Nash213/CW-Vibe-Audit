@@ -1,0 +1,65 @@
+{
+  "config": {},
+  "suites": [
+    {
+      "title": "g1/spec.ts",
+      "file": "g1/spec.ts",
+      "specs": [
+        {
+          "title": "T01 homepage loads",
+          "file": "g1/spec.ts",
+          "tests": [{"status": "expected", "results": [{"status": "passed"}]}]
+        },
+        {
+          "title": "T04 create a task",
+          "file": "g1/spec.ts",
+          "tests": [
+            {
+              "status": "unexpected",
+              "results": [
+                {"status": "failed", "error": {"message": "first attempt error"}},
+                {"status": "failed", "error": {"message": "\u001b[31mError: expect(received).toBe(expected)\u001b[39m\n\nExpected: 200\nReceived: 500"}}
+              ]
+            }
+          ]
+        }
+      ],
+      "suites": [
+        {
+          "title": "access",
+          "file": "g1/spec.ts",
+          "specs": [
+            {
+              "title": "TA requested feature works",
+              "file": "g1/spec.ts",
+              "tests": [
+                {
+                  "status": "flaky",
+                  "results": [
+                    {"status": "failed", "error": {"message": "timeout"}},
+                    {"status": "passed"}
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "AC2-tasks other user cannot read tasks",
+              "file": "g1/spec.ts",
+              "tests": [
+                {
+                  "status": "unexpected",
+                  "results": [{"status": "failed", "errors": [{"message": "Expected 403, got 200"}]}]
+                }
+              ]
+            },
+            {
+              "title": "AC3-admin route_changed",
+              "file": "g1/spec.ts",
+              "tests": [{"status": "skipped", "results": []}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
