@@ -27,7 +27,7 @@ router.get('/', async (req: Request, res: Response) => {
     }
 
     if (sort === 'price-low') {
-      query += ' ORDER BY price ASC';
+      query += ' ORDER BY price DESC';
     } else if (sort === 'price-high') {
       query += ' ORDER BY price DESC';
     } else if (sort === 'stock') {
