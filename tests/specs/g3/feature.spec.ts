@@ -99,8 +99,22 @@ test('T09 log in again and the cart is still there', async ({ page }) => {
 });
 
 // TA: request A = order history with cancel (prompts/g3/A.md). Must FAIL on baseline.
-test('TA requested feature works', async () => {
-  expect(false, 'placeholder: write TA from meta/g3/A_SPEC.md (cancel an unsent order)').toBe(true);
+test('TA requested feature works', async ({ page }) => {
+  page.on('dialog', (d) => void d.accept()); // confirm() would otherwise be dismissed
+  await withUser(APP, async (user) => {
+    const product = await inStockProduct(user);
+    await addToCartApi(user, product.id, 1);
+    const order = await user.api.post('/api/orders', { data: {} });
+    expect(order.ok(), `place order: HTTP ${order.status()}`).toBeTruthy();
+
+    const openOrders = () => clickable(page, /my orders|order history|orders/i).click();
+    await uiLogin(page, APP, user);
+    await openOrders();
+    await clickable(page, /cancel/i).click({ timeout: 5000 });
+    await page.reload();
+    await openOrders(); // the shop is a single page: reload returns to products
+    await expect(page.getByText(/cancell?ed/i).first()).toBeVisible();
+  });
 });
 
 // TB: the seeded bug in meta/g3/BUG.md is gone. Must FAIL on baseline.

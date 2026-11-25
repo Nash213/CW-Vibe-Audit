@@ -107,12 +107,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 168,
+                  "duration": 187,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:12.546Z",
+                  "startTime": "2026-11-25T15:06:48.372Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -141,12 +141,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 436,
+                  "duration": 457,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:12.804Z",
+                  "startTime": "2026-11-25T15:06:48.662Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -175,12 +175,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 484,
+                  "duration": 488,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:13.255Z",
+                  "startTime": "2026-11-25T15:06:49.136Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -209,12 +209,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 616,
+                  "duration": 617,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:13.754Z",
+                  "startTime": "2026-11-25T15:06:49.637Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -243,12 +243,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 624,
+                  "duration": 497,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:14.387Z",
+                  "startTime": "2026-11-25T15:06:50.273Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -277,12 +277,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2758,
+                  "duration": 2721,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:15.024Z",
+                  "startTime": "2026-11-25T15:06:50.782Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -311,12 +311,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 841,
+                  "duration": 706,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:17.798Z",
+                  "startTime": "2026-11-25T15:06:53.512Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -345,12 +345,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 668,
+                  "duration": 540,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:18.653Z",
+                  "startTime": "2026-11-25T15:06:54.229Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -379,12 +379,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 834,
+                  "duration": 719,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:19.335Z",
+                  "startTime": "2026-11-25T15:06:54.783Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -413,12 +413,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 434,
+                  "duration": 406,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:20.183Z",
+                  "startTime": "2026-11-25T15:06:55.513Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -447,12 +447,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1021,
+                  "duration": 948,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:20.627Z",
+                  "startTime": "2026-11-25T15:06:55.928Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -481,12 +481,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 751,
+                  "duration": 567,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:21.663Z",
+                  "startTime": "2026-11-25T15:06:56.891Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -515,12 +515,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 224,
+                  "duration": 221,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:22.430Z",
+                  "startTime": "2026-11-25T15:06:57.471Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -549,12 +549,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 121,
+                  "duration": 93,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:22.662Z",
+                  "startTime": "2026-11-25T15:06:57.702Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -583,12 +583,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 613,
+                  "duration": 571,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:22.795Z",
+                  "startTime": "2026-11-25T15:06:57.805Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -617,33 +617,38 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 2,
+                  "duration": 5472,
                   "error": {
-                    "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90",
+                    "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                      "column": 90,
-                      "line": 11
+                      "column": 73,
+                      "line": 17
                     },
-                    "snippet": " \u001b[90m  9 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m uiLogin(page\u001b[33m,\u001b[39m \u001b[33mAPP\u001b[39m\u001b[33m,\u001b[39m user)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39m(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mcount())) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m       \u001b[36mawait\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/profile|account|settings|avatar|picture/i\u001b[39m)\u001b[33m.\u001b[39mclick({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     }\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39msetInputFiles({ name\u001b[33m:\u001b[39m \u001b[32m'avatar.png'\u001b[39m\u001b[33m,\u001b[39m mimeType\u001b[33m:\u001b[39m \u001b[32m'image/png'\u001b[39m\u001b[33m,\u001b[39m buffer\u001b[33m:\u001b[39m \u001b[33mPNG\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mconst\u001b[39m save \u001b[33m=\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/upload|save|update/i\u001b[39m)\u001b[33m;\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                        "column": 90,
-                        "line": 11
+                        "column": 73,
+                        "line": 17
                       },
-                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   9 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n  10 | test('TA requested feature works', async () => {\n> 11 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  12 | });\n  13 |\n  14 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90"
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:23.422Z",
+                  "startTime": "2026-11-25T15:06:58.388Z",
                   "annotations": [],
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
@@ -652,41 +657,46 @@
                   ],
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                    "column": 90,
-                    "line": 11
+                    "column": 73,
+                    "line": 17
                   }
                 },
                 {
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 9,
+                  "duration": 5643,
                   "error": {
-                    "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                    "stack": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90",
+                    "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3",
                     "location": {
                       "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                      "column": 90,
-                      "line": 11
+                      "column": 73,
+                      "line": 17
                     },
-                    "snippet": " \u001b[90m  9 |\u001b[39m \u001b[90m// TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\u001b[39m\n \u001b[90m 10 |\u001b[39m test(\u001b[32m'TA requested feature works'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m   expect(\u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)'\u001b[39m)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m \u001b[90m// TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\u001b[39m"
+                    "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m uiLogin(page\u001b[33m,\u001b[39m \u001b[33mAPP\u001b[39m\u001b[33m,\u001b[39m user)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39m(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mcount())) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m       \u001b[36mawait\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/profile|account|settings|avatar|picture/i\u001b[39m)\u001b[33m.\u001b[39mclick({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     }\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39msetInputFiles({ name\u001b[33m:\u001b[39m \u001b[32m'avatar.png'\u001b[39m\u001b[33m,\u001b[39m mimeType\u001b[33m:\u001b[39m \u001b[32m'image/png'\u001b[39m\u001b[33m,\u001b[39m buffer\u001b[33m:\u001b[39m \u001b[33mPNG\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mconst\u001b[39m save \u001b[33m=\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/upload|save|update/i\u001b[39m)\u001b[33m;\u001b[39m"
                   },
                   "errors": [
                     {
                       "location": {
                         "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                        "column": 90,
-                        "line": 11
+                        "column": 73,
+                        "line": 17
                       },
-                      "message": "Error: placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n   9 | // TA: request A = profile picture shown next to posts and comments (prompts/g4/A.md). Must FAIL on baseline.\n  10 | test('TA requested feature works', async () => {\n> 11 |   expect(false, 'placeholder: write TA from meta/g4/A_SPEC.md (profile picture upload)').toBe(true);\n     |                                                                                          ^\n  12 | });\n  13 |\n  14 | // TB: the seeded bug in meta/g4/BUG.md is gone. Must FAIL on baseline.\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:11:90"
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-25T12:30:23.911Z",
+                  "startTime": "2026-11-25T15:07:04.500Z",
                   "annotations": [],
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
@@ -695,8 +705,8 @@
                   ],
                   "errorLocation": {
                     "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
-                    "column": 90,
-                    "line": 11
+                    "column": 73,
+                    "line": 17
                   }
                 }
               ],
@@ -705,12 +715,12 @@
           ],
           "id": "976e6a8844741bff3b2f-a8f78ecdf6ff78e71184",
           "file": "g4/feature.spec.ts",
-          "line": 10,
+          "line": 13,
           "column": 1
         },
         {
           "title": "TB seeded bug is gone",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -723,23 +733,96 @@
                 {
                   "workerIndex": 2,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2372,
-                  "errors": [],
+                  "status": "failed",
+                  "duration": 2389,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "column": 59,
+                      "line": 43
+                    },
+                    "snippet": " \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m { comments } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(\u001b[32m`/api/posts/${id}`\u001b[39m))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     expect(comments\u001b[33m.\u001b[39mmap((c\u001b[33m:\u001b[39m { body\u001b[33m:\u001b[39m string }) \u001b[33m=>\u001b[39m c\u001b[33m.\u001b[39mbody))\u001b[33m.\u001b[39mtoEqual([\u001b[32m'first comment'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'second comment'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "column": 59,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T12:30:24.397Z",
+                  "startTime": "2026-11-25T15:07:10.881Z",
                   "annotations": [],
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "column": 59,
+                    "line": 43
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2407,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "column": 59,
+                      "line": 43
+                    },
+                    "snippet": " \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m { comments } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(\u001b[32m`/api/posts/${id}`\u001b[39m))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     expect(comments\u001b[33m.\u001b[39mmap((c\u001b[33m:\u001b[39m { body\u001b[33m:\u001b[39m string }) \u001b[33m=>\u001b[39m c\u001b[33m.\u001b[39mbody))\u001b[33m.\u001b[39mtoEqual([\u001b[32m'first comment'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'second comment'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "column": 59,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-25T15:07:13.876Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "column": 59,
+                    "line": 43
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
           "id": "976e6a8844741bff3b2f-a2c0a31995af3f9a55fb",
           "file": "g4/feature.spec.ts",
-          "line": 15,
+          "line": 33,
           "column": 1
         }
       ]
@@ -747,11 +830,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-25T12:30:11.991Z",
-    "duration": 14852.430999999999,
-    "expected": 16,
+    "startTime": "2026-11-25T15:06:47.724Z",
+    "duration": 28643.32,
+    "expected": 15,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 2,
     "flaky": 0
   }
 }
