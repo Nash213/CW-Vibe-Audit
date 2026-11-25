@@ -3,7 +3,7 @@
 // g1 and g4 checked against booting baselines; g2 and g3 written from the code
 // (they cannot boot yet) and must be re-checked once they do.
 
-export type AppId = 'g1' | 'g2' | 'g3' | 'g4';
+export type AppId = 'g0' | 'g1' | 'g2' | 'g3' | 'g4';
 
 // Throwaway credentials for generated test users. Not real.
 export const TEST_PASSWORD = 'Test-pass-12345!';
@@ -181,4 +181,46 @@ const g4: AppConfig = {
   },
 };
 
-export const apps: Record<AppId, AppConfig> = { g1, g2, g3, g4 };
+// g0: PILOT recipe box (apps/g0). Not study data: see meta/g0/README.md.
+// Values below are guesses from the build prompt. Replace every FILL with what
+// `tools/pilot/run_pilot.sh discover` shows, then run stability.
+const g0: AppConfig = {
+  id: 'g0',
+  crud: true,
+  api: {
+    register: '/api/auth/register', // FILL
+    login: '/api/auth/login', // FILL
+    items: '/api/recipes', // FILL
+    authStyle: 'cookie', // FILL: 'bearer' if login returns a token the pages send as Authorization
+    tokenField: 'token', // FILL (bearer only)
+    registerBody: (email, password) => ({ email, password }), // FILL: add name/confirm fields if required
+    loginBody,
+    itemBody: (title) => ({
+      title,
+      ingredients: 'created by test', // FILL: field names and types (string vs array)
+      steps: 'created by test',
+      category: 'main', // FILL: exact stored value ('main' vs 'Main')
+    }),
+  },
+  pages: { register: '/signup', login: '/login', list: '/' }, // FILL
+  ui: {
+    email: /e-?mail/i,
+    password: /^\s*password\b/i, // anchored so "Confirm Password" does not match
+    registerButton: /sign ?up|register|create account/i,
+    loginButton: /log ?in|sign ?in/i,
+    logout: /log ?out|sign ?out/i,
+    // extraRegisterFields: [{ label: /confirm/i, value: TEST_PASSWORD }], // FILL if the form has more fields
+    // addItem: /new recipe|add recipe/i, // FILL if the form is behind a button
+    itemTitle: /title|name/i,
+    extraItemFields: [
+      { label: /ingredient/i, value: 'created by test' }, // FILL: drop any that are optional
+      { label: /step|instruction|method/i, value: 'created by test' },
+    ],
+    saveItem: /add|save|create|submit/i,
+    editItem: /\bedit\b/i, // whole word: T06 titles start with "edited-"
+    deleteItem: /delete|remove/i,
+    // editReady: /save/i, // FILL if editing opens a dialog
+  },
+};
+
+export const apps: Record<AppId, AppConfig> = { g0, g1, g2, g3, g4 };
