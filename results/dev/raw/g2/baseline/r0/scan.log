@@ -1,0 +1,3 @@
+semgrep	exit=0	17.6s	results=75 errors=1
+gitleaks	exit=0	0.5s	findings=0
+npm-audit	exit=0	16.8s	folder=. lock=generated-legacy-peer-deps vulns=0
