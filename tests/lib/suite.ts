@@ -7,7 +7,7 @@ import { apps, TEST_PASSWORD, type AppId } from './apps';
 import { apiLoginStatus, apiRegisterStatus, createItem, uniqueEmail, uniqueTitle, withUser } from './auth';
 import {
   clickable, editScope, field, loggedInMarker, openItem, passwordField,
-  submitIn, uiCreateItem, uiLogin, uiLogout, uiRegister,
+  showList, submitIn, uiCreateItem, uiLogin, uiLogout, uiRegister,
 } from './ui';
 
 export function defineStandardTests(appId: AppId): void {
@@ -45,7 +45,7 @@ export function defineStandardTests(appId: AppId): void {
       await withUser(appId, async (user) => {
         const { title } = await createItem(appId, user);
         await uiLogin(page, appId, user);
-        await page.goto(app.pages.list);
+        await showList(page, appId);
         await expect(page.getByText(title).first()).toBeVisible();
       });
     });
@@ -55,7 +55,7 @@ export function defineStandardTests(appId: AppId): void {
         const { title } = await createItem(appId, user);
         const newTitle = uniqueTitle('edited');
         await uiLogin(page, appId, user);
-        await page.goto(app.pages.list);
+        await showList(page, appId);
         await openItem(page, appId, title);
         await clickable(page, app.ui.editItem).click();
         const scope = await editScope(page); // the edit dialog if there is one
@@ -74,9 +74,10 @@ export function defineStandardTests(appId: AppId): void {
       await withUser(appId, async (user) => {
         const { title } = await createItem(appId, user);
         await uiLogin(page, appId, user);
-        await page.goto(app.pages.list);
+        await showList(page, appId);
         await openItem(page, appId, title);
         await clickable(page, app.ui.deleteItem).click();
+        if (app.ui.confirmDelete) await clickable(page, app.ui.confirmDelete).click();
         await expect(page.getByText(title)).toHaveCount(0);
       });
     });
@@ -100,7 +101,7 @@ export function defineStandardTests(appId: AppId): void {
         await uiLogin(page, appId, user);
         await uiLogout(page, appId);
         await uiLogin(page, appId, user);
-        await page.goto(app.pages.list);
+        await showList(page, appId);
         await expect(page.getByText(title).first()).toBeVisible();
       });
     });
@@ -111,7 +112,7 @@ export function defineStandardTests(appId: AppId): void {
         const title = `${uniqueTitle('chars')} Ünïcødé & "quotes" it's 🙂`;
         await createItem(appId, user, title);
         await uiLogin(page, appId, user);
-        await page.goto(app.pages.list);
+        await showList(page, appId);
         await expect(page.getByText(title).first()).toBeVisible();
       });
     });
@@ -130,7 +131,7 @@ export function defineStandardTests(appId: AppId): void {
     });
     await withUser(appId, async (user) => {
       await uiLogin(page, appId, user);
-      await page.goto(app.pages.list);
+      await showList(page, appId);
       await page.waitForLoadState('networkidle');
     });
     expect(problems).toEqual([]);

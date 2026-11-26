@@ -47,7 +47,10 @@ export interface AppConfig {
     saveItem: RegExp;
     editItem: RegExp;
     deleteItem: RegExp;
+    confirmDelete?: RegExp; // second click when Delete asks "are you sure" in the page (not a browser confirm())
     editReady?: RegExp; // a button that exists ONLY while editing (wait for it)
+    listNav?: RegExp; // in-app link to the list, used instead of page.goto once logged in
+                      // (apps that keep the login only in memory log out on every full page load)
   };
 }
 
@@ -182,44 +185,41 @@ const g4: AppConfig = {
 };
 
 // g0: PILOT recipe box (apps/g0). Not study data: see meta/g0/README.md.
-// Values below are guesses from the build prompt. Replace every FILL with what
-// `tools/pilot/run_pilot.sh discover` shows, then run stability.
+// Filled from the generated code (src/server/routes.ts, src/components/*.tsx).
+// The login token lives only in memory (src/api/client.ts), so a full page load logs out:
+// listNav keeps the tests inside the page, and T12 fails by design (meta/g0/TESTNOTES.md).
 const g0: AppConfig = {
   id: 'g0',
   crud: true,
   api: {
-    register: '/api/auth/register', // FILL
-    login: '/api/auth/login', // FILL
-    items: '/api/recipes', // FILL
-    authStyle: 'cookie', // FILL: 'bearer' if login returns a token the pages send as Authorization
-    tokenField: 'token', // FILL (bearer only)
-    registerBody: (email, password) => ({ email, password }), // FILL: add name/confirm fields if required
+    register: '/api/auth/signup',
+    login: '/api/auth/login',
+    items: '/api/recipes',
+    authStyle: 'bearer', // { token, user } from signup and login; sent as Authorization: Bearer
+    tokenField: 'token',
+    registerBody: (email, password) => ({ email, password }),
     loginBody,
-    itemBody: (title) => ({
-      title,
-      ingredients: 'created by test', // FILL: field names and types (string vs array)
-      steps: 'created by test',
-      category: 'main', // FILL: exact stored value ('main' vs 'Main')
-    }),
+    itemBody: (title) => ({ title, ingredients: 'created by test', steps: 'created by test', category: 'main' }),
   },
-  pages: { register: '/signup', login: '/login', list: '/' }, // FILL
+  pages: { register: '/signup', login: '/login', list: '/recipes' },
   ui: {
-    email: /e-?mail/i,
-    password: /^\s*password\b/i, // anchored so "Confirm Password" does not match
-    registerButton: /sign ?up|register|create account/i,
-    loginButton: /log ?in|sign ?in/i,
-    logout: /log ?out|sign ?out/i,
-    // extraRegisterFields: [{ label: /confirm/i, value: TEST_PASSWORD }], // FILL if the form has more fields
-    // addItem: /new recipe|add recipe/i, // FILL if the form is behind a button
-    itemTitle: /title|name/i,
+    email: /^\s*email\b/i,
+    password: /^\s*password\b/i, // anchored so "Confirm password" does not match
+    registerButton: /^\s*sign up\s*$/i, // form submit; the header also has "Sign up" and "Get Started"
+    loginButton: /^\s*log in\s*$/i,
+    logout: /^\s*log out\s*$/i,
+    extraRegisterFields: [{ label: /confirm password/i, value: TEST_PASSWORD }],
+    addItem: /^\s*add recipe\s*$/i, // the form is its own view (/recipes/new)
+    itemTitle: /^\s*title\b/i,
     extraItemFields: [
-      { label: /ingredient/i, value: 'created by test' }, // FILL: drop any that are optional
-      { label: /step|instruction|method/i, value: 'created by test' },
-    ],
-    saveItem: /add|save|create|submit/i,
-    editItem: /\bedit\b/i, // whole word: T06 titles start with "edited-"
-    deleteItem: /delete|remove/i,
-    // editReady: /save/i, // FILL if editing opens a dialog
+      { label: /^\s*ingredients\b/i, value: 'created by test' },
+      { label: /^\s*steps\b/i, value: 'created by test' },
+    ], // category is a select that defaults to "main"
+    saveItem: /^\s*save (recipe|changes)\s*$/i,
+    editItem: /^edit\b/i, // list buttons are labelled "Edit <title>"
+    deleteItem: /^delete\b/i, // list buttons are labelled "Delete <title>"
+    confirmDelete: /^\s*confirm\s*$/i, // in-page "Confirm / Cancel", no browser confirm()
+    listNav: /^\s*my recipes\s*$/i, // header link, shown only when logged in
   },
 };
 

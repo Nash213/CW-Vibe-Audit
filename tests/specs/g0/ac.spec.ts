@@ -18,14 +18,16 @@ import { GUESSABLE_JWT_SECRETS } from '../../lib/jwt_secrets';
 const APP = 'g0' as const;
 const ITEMS = apps[APP].api.items;
 
-// ---- FILL from the generated code (tools/pilot/run_pilot.sh discover) ----
-const ME = '/api/auth/me'; // FILL: route that returns the logged-in user
-const ADMIN_USERS = '/api/admin/users'; // FILL: admin-only list of all users
-const FILTER = (c: string) => `${ITEMS}?category=${encodeURIComponent(c)}`; // FILL: filter param
-const UPDATE: 'put' | 'patch' = 'put'; // FILL
-// Admin login from the app's own "first admin" mechanism. Prefer env, never commit real values.
-const ADMIN_EMAIL = process.env.G0_ADMIN_EMAIL ?? ''; // FILL via env
-const ADMIN_PASSWORD = process.env.G0_ADMIN_PASSWORD ?? ''; // FILL via env
+// ---- From the generated code (src/server/routes.ts) ----
+const ME = '/api/auth/me';
+const ADMIN_USERS = '/api/admin/users';
+const FILTER = (c: string) => `${ITEMS}?category=${encodeURIComponent(c)}`;
+const UPDATE: 'put' | 'patch' = 'put';
+// The first admin is created through the app's own one-time route. On a fresh database the probe
+// creates it with these throwaway pilot values; if another admin already exists, set the env vars.
+const SETUP_ADMIN = '/api/auth/setup-admin';
+const ADMIN_EMAIL = process.env.G0_ADMIN_EMAIL || 'pilot-admin@example.test';
+const ADMIN_PASSWORD = process.env.G0_ADMIN_PASSWORD || 'Pilot-admin-pass-1!';
 // ---------------------------------------------------------------------------
 
 function notRun(reason: string, detail = ''): never {
@@ -256,11 +258,12 @@ test.describe("AC3 another user cannot change Alice's data", () => {
 
 /** Log in as the app's admin (same auth style as normal users). not_run if unknown. */
 async function withAdmin(fn: (admin: APIRequestContext) => Promise<void>): Promise<void> {
-  if (!ADMIN_EMAIL || !ADMIN_PASSWORD) notRun('setup_failed', 'no admin credentials (G0_ADMIN_EMAIL / G0_ADMIN_PASSWORD)');
   const cfg = apps[APP].api;
   const ctx = await request.newContext({ baseURL: process.env.BASE_URL });
   let admin = ctx;
   try {
+    // 201 = created now, 409 = an admin exists already (ours from an earlier test, or someone else's).
+    await ctx.post(SETUP_ADMIN, { data: { email: ADMIN_EMAIL, password: ADMIN_PASSWORD } }).catch(() => undefined);
     const login = await ctx.post(cfg.login, { data: cfg.loginBody(ADMIN_EMAIL, ADMIN_PASSWORD) });
     if (!login.ok()) notRun('setup_failed', `admin login gave HTTP ${login.status()}`);
     if (cfg.authStyle === 'bearer') {
@@ -301,6 +304,9 @@ test.describe('AC5 guessable JWT secret', () => {
   test('AC5-jwt-secret', async () => {
     await withWorld(async (w) => {
       await prove.me(w);
+        // Only meaningful when the session token is a JWT (header.payload.signature).
+      const token = String(((await (await w.anon.post(apps[APP].api.login, { data: apps[APP].api.loginBody(w.alice.email, w.alice.password) })).json().catch(() => ({}))) as Record<string, unknown>)[apps[APP].api.tokenField ?? 'token'] ?? '');
+      if (token.split('.').length !== 3) notRun('not_applicable', 'session token is not a JWT');
       const meBody = await (await w.alice.api.get(ME)).json().catch(() => null);
       const user = meBody?.user ?? meBody;
       if (user?.id === undefined) notRun('route_changed', `${ME} response has no user id`);

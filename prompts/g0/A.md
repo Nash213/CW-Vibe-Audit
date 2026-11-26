@@ -1,0 +1,1 @@
+Can I add a photo to a recipe? I want to upload a picture from my computer and see it on the recipe page.

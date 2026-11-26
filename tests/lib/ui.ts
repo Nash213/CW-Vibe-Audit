@@ -113,10 +113,23 @@ export async function uiLogout(page: Page, appId: AppId): Promise<void> {
   await expect(clickable(page, loggedInMarker(appId))).toBeHidden();
 }
 
+/**
+ * Show the item list. Once logged in, apps with `ui.listNav` are navigated inside the page,
+ * because a full page load drops a login kept only in memory (g0). Everyone else: page.goto.
+ */
+export async function showList(page: Page, appId: AppId): Promise<void> {
+  const { ui, pages } = apps[appId];
+  if (ui.listNav && (await clickable(page, loggedInMarker(appId)).isVisible())) {
+    await clickable(page, ui.listNav).click();
+  } else {
+    await page.goto(pages.list);
+  }
+}
+
 /** Create an item through the UI and wait until its title shows. */
 export async function uiCreateItem(page: Page, appId: AppId, title: string): Promise<void> {
-  const { ui, pages } = apps[appId];
-  await page.goto(pages.list);
+  const { ui } = apps[appId];
+  await showList(page, appId);
   if (ui.addItem) await clickable(page, ui.addItem).click();
   const titleInput = field(page, ui.itemTitle);
   await titleInput.fill(title);
