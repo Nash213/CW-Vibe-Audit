@@ -1,0 +1,21 @@
+app=g4 runs=1 stamp=20261117T164315Z source=/home/muhdf/vibe-audit/apps/community-board
+--- run 1: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	fail
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+T10 special characters are shown as typed	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T15 a normal 100-character title is still accepted	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+PROBLEM: run 1 T07 is fail (must pass every run)
+RESULT: 1 problem(s), see above

@@ -7,8 +7,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgrespassword
       POSTGRES_DB: shop_db
-    ports:
-      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -24,7 +22,7 @@ services:
     container_name: novastore-app
     restart: always
     ports:
-      - "3000:3000"
+      - "127.0.0.1:3003:3000"
     environment:
       PORT: 3000
       NODE_ENV: production
