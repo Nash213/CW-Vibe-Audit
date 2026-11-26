@@ -12,3 +12,7 @@ results/raw/**/*.log
 tests/test-results/
 tests/playwright-report/
 tests/stability/
+
+# Pilot app g0 (meta/g0/README.md): own repo, outputs never committed
+apps/g0/
+results/pilot/

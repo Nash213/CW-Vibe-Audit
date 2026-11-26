@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 import { defineStandardTests } from '../../lib/suite';
 import { createItem, uniqueTitle, withUser } from '../../lib/auth';
 import { apps } from '../../lib/apps';
-import { clickable, openItem, uiLogin } from '../../lib/ui';
+import { clickable, openItem, showList, uiLogin } from '../../lib/ui';
 
 const APP = 'g0' as const;
 const PNG = Buffer.from(
@@ -24,7 +24,7 @@ test('TA requested feature works', async ({ page }) => {
   await withUser(APP, async (user) => {
     const { title } = await createItem(APP, user);
     await uiLogin(page, APP, user);
-    await page.goto(apps[APP].pages.list);
+    await showList(page, APP);
     await page.getByText(title).first().click(); // the recipe page (or its edit view)
     const fileInput = page.locator('input[type="file"]');
     if (!(await fileInput.count())) {
@@ -32,11 +32,11 @@ test('TA requested feature works', async ({ page }) => {
       await clickable(page, apps[APP].ui.editItem).click({ timeout: 5000 });
     }
     await fileInput.first().setInputFiles({ name: 'photo.png', mimeType: 'image/png', buffer: PNG });
-    const save = clickable(page, /upload|save|update/i);
+    const save = clickable(page, /upload|save|update/i).first();
     if (await save.isVisible()) await save.click();
     await page.waitForLoadState('networkidle');
 
-    await page.goto(apps[APP].pages.list);
+    await showList(page, APP);
     await page.getByText(title).first().click();
     const img = page.locator('main img, [role="dialog"] img, body img').filter({ visible: true }).first();
     await expect(img).toBeVisible();
