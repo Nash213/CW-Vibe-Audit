@@ -1,0 +1,5 @@
+checkpoint_id,app,chain,round,test_id,prev_checkpoint_id,prev_adjacent,error_first_line,cause_guess
+g2/DCBA/r2,g2,DCBA,2,T04 delete task,g2/DCBA/r1,yes,Error: expected 200,
+g1/DCBA/r1,g1,DCBA,1,T02 login works,g1/baseline/r0,yes,Error: locator not found: getByRole('button'),
+g1/DCBA/r4,g1,DCBA,4,T05 edit task,g1/DCBA/r2,no,Error: timeout,
+g1/ABCD/r1,g1,ABCD,1,T01 signup works,g1/baseline/r0,yes,Error: expected 201,

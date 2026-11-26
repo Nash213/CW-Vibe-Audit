@@ -1,7 +1,9 @@
-app,key,tool,rule,severity,path,line,checkpoint,snippet
-g2,semgrep:sql-concat:src/db.js,semgrep,javascript.sql-injection,ERROR,src/db.js,12,DCBA-r2,"db.query('SELECT * FROM t WHERE id=' + id)"
-g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r0,JWT_SECRET: example-secret
-g1,semgrep:no-csrf:src/app.js,semgrep,express.no-csrf,INFO,src/app.js,9,DCBA-r0,app.use(cookieParser())
-g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r1,JWT_SECRET: example-secret
-g1,gitleaks:jwt-secret:docker-compose.yml,gitleaks,generic-api-key,WARNING,docker-compose.yml,28,DCBA-r1,JWT_SECRET: example-secret
-g2,semgrep:sql-concat:src/db.js,semgrep,javascript.sql-injection,ERROR,src/db.js,14,DCBA-r3,
+checkpoint_id,tool,rule,key,path,line,severity
+g2/DCBA/r10,semgrep,javascript.sql-injection,semgrep:javascript.sql-injection:aaaa1111aaaa1111,src/db.js,14,ERROR
+g2/DCBA/r2,semgrep,javascript.sql-injection,semgrep:javascript.sql-injection:aaaa1111aaaa1111,src/db.js,12,ERROR
+g1/baseline/r0,gitleaks,generic-api-key,gitleaks:generic-api-key:bbbb2222bbbb2222,docker-compose.yml,28,
+g1/baseline/r0,semgrep,express.no-csrf,semgrep:express.no-csrf:cccc3333cccc3333,src/app.js,9,INFO
+g1/DCBA/r1,gitleaks,generic-api-key,gitleaks:generic-api-key:bbbb2222bbbb2222,docker-compose.yml,28,
+g1/DCBA/r1,gitleaks,generic-api-key,gitleaks:generic-api-key:bbbb2222bbbb2222,docker-compose.yml,28,
+g1/baseline/r0,npm-audit,lodash,npm-audit:lodash:https://example.test/advisory,node_modules/lodash,,high
+g1/DCBA/r3,ac,ac:g1:AC2-tasks-read,ac:g1:AC2-tasks-read,,,
