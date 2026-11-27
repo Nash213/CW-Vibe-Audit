@@ -15,8 +15,11 @@ and date it when it is unblocked.
       `prompts/MANIFEST.sha256` by Wuth.)*
 - [x] **App ids.** *(27 Nov: `meta/apps.json` maps g1–g4 to their source folders; the
       repos are `apps/g1` … `apps/g4`.)*
-- [ ] **g1 stability run** with the new TA/TB and seeded filter bug
-      (`tools/stability.sh g1 apps/g1 3`). Needs the batch host (below). The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
+- [x] **g1 stability run** with the new TA/TB and seeded filter bug
+      (`tools/stability.sh g1 apps/g1 3`). Needs the batch host (below).
+      *(27 Nov: `RESULT: OK`, 3 of 3, `results/stability/g1-20261127T195845Z.txt`.
+      T01–T15 and all AC probes pass; TA fails with "no comment box found", TB fails
+      because `?status=done` returns only the open task.)* The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
       `novastore` and `community-board`; the plan expects `apps/g1` … `apps/g4`
       (or i1/i2). The dev scans assume g1 = task manager, g2 = notes,
       g3 = shop, g4 = community board. Please confirm or rename.
@@ -73,7 +76,7 @@ and date it when it is unblocked.
 
 ## 📌 Batch host (team decision, needed before Sat 21 Nov)
 
-- [ ] **Where the official batch runs.** On the Windows dev machine: no `make`, no
+- [x] **Where the official batch runs.** On the Windows dev machine: no `make`, no
       `jq` (`boot_and_test.sh` needs it), and Windows Application Control blocks
       unsigned binaries. Scanning works there (Docker only); boot and tests need a
       Linux shell, e.g. the WSL Ubuntu distribution with Docker Desktop integration.
@@ -81,6 +84,9 @@ and date it when it is unblocked.
       `jq`, `make` or Node; `tests/node_modules` is not installed on this machine.
       Needs `sudo apt install jq make nodejs npm`, then `npm ci` and
       `npx playwright install --with-deps chromium` in `tests/`.)*
+      *(27 Nov, later: done by Wuth. WSL Ubuntu 26.04 with `jq`, `make`, Node, Docker
+      Desktop WSL integration and Playwright Chromium. Boot, tests and scans run there;
+      chain generation can stay on Windows.)*
 
 ## Done by M3 alone (17 Nov)
 

@@ -205,9 +205,11 @@ unused, for its author to remove.
 A: comments on a task, the one non-upload feature among g1, g2, g4 (`meta/g1/A_SPEC.md`).
 TA and TB in `tests/specs/g1/feature.spec.ts` are filled in. Checked by hand on 27 Nov:
 `apps/g1` at `baseline` boots with Compose, home page 200, sign-up and login work, and
-`?status=done` lists only the task that is **not** done, so the bug shows. **Not yet run:**
-`tools/stability.sh g1` (needs `jq`, Node and Playwright on the batch host), so the
-T01–T15 pass / TA, TB fail rule is unconfirmed for the new TA/TB and the seeded filter.
+`?status=done` lists only the task that is **not** done, so the bug shows. Stability on the
+batch host (WSL): `RESULT: OK` in 3 of 3 runs (`results/stability/g1-20261127T195845Z.txt`):
+T01–T15 and the AC probes pass, TA fails with "no comment box found for the task", TB
+fails because the done filter returns the open task. **Not yet shown:** that TA passes
+once request A has added comments; check it on the first chain round that runs A.
 
 **Prompts frozen (g1–g4).** `prompts/<app>/A.md` and `B.md` are the texts marked frozen in
 `meta/<app>/A_SPEC.md` and `BUG.md`, copied word for word. `C.md` and `D.md` are
