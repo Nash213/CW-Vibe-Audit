@@ -13,6 +13,9 @@ tests/test-results/
 tests/playwright-report/
 tests/stability/
 
+# Study apps g1-g4: own repos built by tools/init_app_repos.py from the tracked source folders
+apps/g[1-9]/
+
 # Pilot app g0 (meta/g0/README.md): own repo, outputs never committed
 apps/g0/
 results/pilot/

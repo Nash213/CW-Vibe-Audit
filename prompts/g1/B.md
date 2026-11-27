@@ -1,0 +1,1 @@
+When I filter my tasks by status, the list shows every task except the ones with the status I picked.

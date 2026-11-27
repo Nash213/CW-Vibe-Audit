@@ -6,10 +6,17 @@ and date it when it is unblocked.
 
 ## 📌 Jarred (corpus and agent runner) — blocks the pilot, M3-4
 
-- [ ] **App repos with tags.** `apps/*` are plain folders, not git repositories, and
+- [x] **App repos with tags.** `apps/*` are plain folders, not git repositories, and
       have no `baseline` tag. `tools/assess.py` clones `apps/<app>` at `baseline` /
       `<chain>-r<k>` and stops without them.
-- [ ] **App ids.** The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
+      *(27 Nov: g1–g4 done by Wuth with `tools/init_app_repos.py`; g1 is the restored
+      `task-manager-corpus`, see DECISIONS.md, 2026-11-27.)*
+- [x] **Frozen prompts A–D** (Jarred-4). *(27 Nov: g1–g4 frozen in
+      `prompts/MANIFEST.sha256` by Wuth.)*
+- [x] **App ids.** *(27 Nov: `meta/apps.json` maps g1–g4 to their source folders; the
+      repos are `apps/g1` … `apps/g4`.)*
+- [ ] **g1 stability run** with the new TA/TB and seeded filter bug
+      (`tools/stability.sh g1 apps/g1 3`). Needs the batch host (below). The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
       `novastore` and `community-board`; the plan expects `apps/g1` … `apps/g4`
       (or i1/i2). The dev scans assume g1 = task manager, g2 = notes,
       g3 = shop, g4 = community board. Please confirm or rename.
@@ -28,9 +35,10 @@ and date it when it is unblocked.
 - [ ] **Pilot chain DCBA on g1** (Gate 3, was due Fri 13 Nov): tags `DCBA-r1` … `DCBA-r4`.
       Until it exists, there is nothing to assess, ingest or measure, and no timing
       to estimate the batch from.
-- [ ] **`agent.json` format.** `tools/ingest.py` reads `request`, `model`, `steps`,
+- [x] **`agent.json` format.** `tools/ingest.py` reads `request`, `model`, `steps`,
       `tokens_in`/`tokens_out` (or `tokens: {in, out}`). Confirm the field names
       when the runner exists.
+      *(27 Nov: `agent/agent_runner.py` and the stub write exactly these fields.)*
 
 ## 📌 Faris (boot and feature tests)
 
@@ -44,8 +52,10 @@ and date it when it is unblocked.
       *(Done 17 Nov by Faris: `tests/specs/g3/feature.spec.ts` and
       `tests/specs/g4/feature.spec.ts` on `origin/m2/playwright-project`; not merged
       into `main` yet.)*
-- [ ] **`tests_version`.** Nothing writes it yet; ingest reads a `tests_version` file in
+- [x] **`tests_version`.** Nothing writes it yet; ingest reads a `tests_version` file in
       each checkpoint folder. Agree who writes it (`boot_and_test.sh` or `assess.py`).
+      *(27 Nov: `assess.py` writes a content hash of the app's specs and the shared test
+      code; see DECISIONS.md.)*
 
 ## 📌 Nazrul (probe, review and validity)
 
@@ -67,6 +77,10 @@ and date it when it is unblocked.
       `jq` (`boot_and_test.sh` needs it), and Windows Application Control blocks
       unsigned binaries. Scanning works there (Docker only); boot and tests need a
       Linux shell, e.g. the WSL Ubuntu distribution with Docker Desktop integration.
+      *(27 Nov: WSL Ubuntu has Docker (Desktop integration), git and python3, but no
+      `jq`, `make` or Node; `tests/node_modules` is not installed on this machine.
+      Needs `sudo apt install jq make nodejs npm`, then `npm ci` and
+      `npx playwright install --with-deps chromium` in `tests/`.)*
 
 ## Done by M3 alone (17 Nov)
 

@@ -1,0 +1,1 @@
+Can I add comments to a task? I want to write a short comment on a task and see all of its comments when I open the task again later.

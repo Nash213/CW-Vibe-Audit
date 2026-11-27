@@ -1,0 +1,7 @@
+{
+  "_comment": "Study id -> source folder in this repo. tools/init_app_repos.py builds apps/<id>/ (its own git repo, git-ignored here) from the source and tags it baseline. g1 is task-manager-corpus, restored from ffb995c^ (docs/DECISIONS.md, 2026-11-27).",
+  "g1": "apps/task-manager-corpus",
+  "g2": "apps/notex---notes-&-workspace",
+  "g3": "apps/novastore",
+  "g4": "apps/community-board"
+}

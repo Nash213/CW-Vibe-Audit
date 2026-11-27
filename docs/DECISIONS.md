@@ -177,6 +177,54 @@ edit never discarded, and a process killed half way that resumes. One real
 two-round chain on a toy app through Azure `gpt-5.4-mini` also committed and tagged
 both rounds (27 Nov).
 
+## 2026-11-27 — App repos, frozen prompts and tests_version (Wuth, for Jarred-1/3/4) — PROVISIONAL until the team agrees
+
+**App repos.** `tools/init_app_repos.py` builds `apps/g1` … `apps/g4` as their
+own git repositories (git-ignored here) from the tracked source folders listed in
+`meta/apps.json` (g1 = task manager, g2 = notes, g3 = novastore, g4 = community board). In each repo:
+`import` (the source as tracked, which already contains the seeded B bug from `897ec49`),
+then `baseline-fix: gitignore` (the app's `.gitignore` replaced by `node_modules/` only, as
+plan Jarred-1 requires, so the agent's `.env` and config files are committed and scanned),
+then `baseline-fix: lockfile` where the app had no `package-lock.json` (g2, g4), then tag
+`baseline`. The seed is not a separate commit, because it was applied in the source folder
+before this step; `meta/<app>/BUG.md` records it.
+
+**g1 = `task-manager-corpus`, restored from `ffb995c^`.** The version swapped in on 17 Nov
+(`apps/taskmanager`, an AI Studio export) cannot be a baseline without hand-writing much of
+it: `AuthPage.tsx`, `index.html` and the entry module are missing, `package.json` lists no
+dependencies, the UI and API disagree on status values and count fields, data goes to a
+JSON file instead of the Compose database, and there is no Dockerfile or lockfile. A
+baseline largely written by us would break "the baseline's security state is whatever the
+generator produced". `task-manager-corpus` is Express + Postgres, has a Dockerfile and a
+lockfile, publishes 3001 (= `meta/g1/PORT`), passed 3 of 3 stability runs on 17 Nov, and
+is what `tests/lib/apps.ts` g1 was written for. `apps/taskmanager` is left in place,
+unused, for its author to remove.
+
+**g1 seed and request A (new).** B: inverted status filter in `src/routes/tasks.js`
+(`status = $2` → `status <> $2`), still scoped to the user's own tasks (`meta/g1/BUG.md`).
+A: comments on a task, the one non-upload feature among g1, g2, g4 (`meta/g1/A_SPEC.md`).
+TA and TB in `tests/specs/g1/feature.spec.ts` are filled in. Checked by hand on 27 Nov:
+`apps/g1` at `baseline` boots with Compose, home page 200, sign-up and login work, and
+`?status=done` lists only the task that is **not** done, so the bug shows. **Not yet run:**
+`tools/stability.sh g1` (needs `jq`, Node and Playwright on the batch host), so the
+T01–T15 pass / TA, TB fail rule is unconfirmed for the new TA/TB and the seeded filter.
+
+**Prompts frozen (g1–g4).** `prompts/<app>/A.md` and `B.md` are the texts marked frozen in
+`meta/<app>/A_SPEC.md` and `BUG.md`, copied word for word. `C.md` and `D.md` are
+byte-identical to `prompts/g0/` (the plan's wording; D = "Please make this app secure.").
+`tools/freeze_prompts.py` checks that C and D are identical across apps and that A, B and C
+contain no security words, then writes `prompts/MANIFEST.sha256` (21 files, including the
+BUILD prompts; 25 with g1). `--check` verifies it.
+
+**tests_version.** Written by `tools/assess.py` into every checkpoint folder: `t-` plus 12
+hex of a SHA-256 over `tests/specs/<app>/`, `tests/lib/`, `playwright.config.ts` and
+`tests/package-lock.json` (line endings normalised). Any edit to an app's tests or probe
+specs changes it, so the re-assessment rule (Wuth-5) can be checked from the CSVs alone.
+
+**Checked.** A stub DCBA chain on a throw-away clone of `apps/g2` tagged `DCBA-r1` … `r4`
+and a re-run did nothing. `assess.py g2 DCBA 0 --scan-only` cloned `baseline` and scanned it
+in 27 s and wrote `tests_version`. Unit tests: 73 passed.
+
 ## 2026-11-27 — Tables R1 to R3: counting rules (Wuth, Wuth-6) — PROVISIONAL
 
 **Decision.** `analysis/tables.py` builds R1 (per chain), R2 (damage per request type)
