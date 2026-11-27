@@ -1,14 +1,14 @@
 {
   "config": {
     "argv": [
-      "/home/muhdf/.nvm/versions/node/v26.13.0/bin/node",
-      "/home/muhdf/vibe-audit/tests/node_modules/.bin/playwright",
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
       "test",
       "specs/g4",
       "--reporter=json"
     ],
-    "configFile": "/home/muhdf/vibe-audit/tests/playwright.config.ts",
-    "rootDir": "/home/muhdf/vibe-audit/tests/specs",
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": false,
@@ -24,7 +24,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/home/muhdf/vibe-audit/tests/test-results",
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
@@ -32,7 +32,7 @@
         },
         "id": "",
         "name": "",
-        "testDir": "/home/muhdf/vibe-audit/tests/specs",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -44,15 +44,15 @@
       {
         "grep": {},
         "grepInvert": null,
-        "outputDir": "/home/muhdf/vibe-audit/tests/test-results",
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
         "repeatEach": 1,
         "retries": 1,
         "metadata": {
           "actualWorkers": 1
         },
         "name": "",
-        "testDir": "/home/muhdf/vibe-audit/tests/specs",
-        "snapshotDir": "/home/muhdf/vibe-audit/tests/specs",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
         "testIgnore": [],
         "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
         "timeout": 30000,
@@ -107,12 +107,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 187,
+                  "duration": 140,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:48.372Z",
+                  "startTime": "2026-11-27T20:47:34.124Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -141,12 +141,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 457,
+                  "duration": 298,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:48.662Z",
+                  "startTime": "2026-11-27T20:47:34.389Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -175,12 +175,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 488,
+                  "duration": 266,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:49.136Z",
+                  "startTime": "2026-11-27T20:47:34.707Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -209,12 +209,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 617,
+                  "duration": 391,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:49.637Z",
+                  "startTime": "2026-11-27T20:47:34.981Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -243,12 +243,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 497,
+                  "duration": 306,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:50.273Z",
+                  "startTime": "2026-11-27T20:47:35.382Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -277,12 +277,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2721,
+                  "duration": 2459,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:50.782Z",
+                  "startTime": "2026-11-27T20:47:35.697Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -311,12 +311,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 706,
+                  "duration": 387,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:53.512Z",
+                  "startTime": "2026-11-27T20:47:38.164Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -345,12 +345,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 540,
+                  "duration": 391,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:54.229Z",
+                  "startTime": "2026-11-27T20:47:38.565Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -360,7 +360,7 @@
           ],
           "id": "976e6a8844741bff3b2f-170b75e3f804d36e1bfa",
           "file": "../lib/suite.ts",
-          "line": 85,
+          "line": 86,
           "column": 3
         },
         {
@@ -379,12 +379,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 719,
+                  "duration": 442,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:54.783Z",
+                  "startTime": "2026-11-27T20:47:38.965Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -394,7 +394,7 @@
           ],
           "id": "976e6a8844741bff3b2f-096187fb1f4e062c95b1",
           "file": "../lib/suite.ts",
-          "line": 97,
+          "line": 98,
           "column": 5
         },
         {
@@ -413,12 +413,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 406,
+                  "duration": 271,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:55.513Z",
+                  "startTime": "2026-11-27T20:47:39.416Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -428,7 +428,7 @@
           ],
           "id": "976e6a8844741bff3b2f-7153a67d010e010ef064",
           "file": "../lib/suite.ts",
-          "line": 109,
+          "line": 110,
           "column": 5
         },
         {
@@ -447,12 +447,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 948,
+                  "duration": 741,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:55.928Z",
+                  "startTime": "2026-11-27T20:47:39.697Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -462,7 +462,7 @@
           ],
           "id": "976e6a8844741bff3b2f-6b2a11fe0fb4d86106f0",
           "file": "../lib/suite.ts",
-          "line": 121,
+          "line": 122,
           "column": 3
         },
         {
@@ -481,12 +481,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 567,
+                  "duration": 294,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:56.891Z",
+                  "startTime": "2026-11-27T20:47:40.446Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -496,7 +496,7 @@
           ],
           "id": "976e6a8844741bff3b2f-3ec26b721bb936a0ac80",
           "file": "../lib/suite.ts",
-          "line": 140,
+          "line": 141,
           "column": 3
         },
         {
@@ -515,12 +515,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 221,
+                  "duration": 113,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:57.471Z",
+                  "startTime": "2026-11-27T20:47:40.748Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -530,7 +530,7 @@
           ],
           "id": "976e6a8844741bff3b2f-6a7159fedbd9bbf51527",
           "file": "../lib/suite.ts",
-          "line": 149,
+          "line": 150,
           "column": 3
         },
         {
@@ -549,12 +549,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 93,
+                  "duration": 58,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:57.702Z",
+                  "startTime": "2026-11-27T20:47:40.868Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -564,7 +564,7 @@
           ],
           "id": "976e6a8844741bff3b2f-92e259a319d5f57bbda0",
           "file": "../lib/suite.ts",
-          "line": 156,
+          "line": 157,
           "column": 3
         },
         {
@@ -583,12 +583,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 571,
+                  "duration": 358,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:57.805Z",
+                  "startTime": "2026-11-27T20:47:40.932Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -598,7 +598,7 @@
           ],
           "id": "976e6a8844741bff3b2f-ea8d48af756f85e5f407",
           "file": "../lib/suite.ts",
-          "line": 164,
+          "line": 165,
           "column": 5
         },
         {
@@ -617,12 +617,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 5472,
+                  "duration": 5233,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
-                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
                     "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                       "column": 73,
                       "line": 17
                     },
@@ -631,32 +631,32 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                         "column": 73,
                         "line": 17
                       },
-                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3"
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:06:58.388Z",
+                  "startTime": "2026-11-27T20:47:41.297Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works/test-failed-1.png"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/test-failed-1.png"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works/error-context.md"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                     "column": 73,
                     "line": 17
                   }
@@ -665,12 +665,12 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 5643,
+                  "duration": 5304,
                   "error": {
                     "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
-                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
                     "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                       "column": 73,
                       "line": 17
                     },
@@ -679,32 +679,32 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                         "column": 73,
                         "line": 17
                       },
-                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:14:3"
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-25T15:07:04.500Z",
+                  "startTime": "2026-11-27T20:47:47.834Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/test-failed-1.png"
                     },
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/error-context.md"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                     "column": 73,
                     "line": 17
                   }
@@ -734,12 +734,12 @@
                   "workerIndex": 2,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 2389,
+                  "duration": 2314,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
                     "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                       "column": 59,
                       "line": 43
                     },
@@ -748,27 +748,27 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                         "column": 59,
                         "line": 43
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-25T15:07:10.881Z",
+                  "startTime": "2026-11-27T20:47:54.494Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                     "column": 59,
                     "line": 43
                   }
@@ -777,12 +777,12 @@
                   "workerIndex": 3,
                   "parallelIndex": 0,
                   "status": "failed",
-                  "duration": 2407,
+                  "duration": 2319,
                   "error": {
                     "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
                     "location": {
-                      "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                       "column": 59,
                       "line": 43
                     },
@@ -791,27 +791,27 @@
                   "errors": [
                     {
                       "location": {
-                        "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                         "column": 59,
                         "line": 43
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/home/muhdf/vibe-audit/tests/lib/auth.ts:70:12)\n    at /home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts:34:3"
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
                     }
                   ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 1,
-                  "startTime": "2026-11-25T15:07:13.876Z",
+                  "startTime": "2026-11-27T20:47:58.365Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "error-context",
                       "contentType": "text/markdown",
-                      "path": "/home/muhdf/vibe-audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
                     }
                   ],
                   "errorLocation": {
-                    "file": "/home/muhdf/vibe-audit/tests/specs/g4/feature.spec.ts",
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
                     "column": 59,
                     "line": 43
                   }
@@ -830,8 +830,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-25T15:06:47.724Z",
-    "duration": 28643.32,
+    "startTime": "2026-11-27T20:47:32.681Z",
+    "duration": 28106.212,
     "expected": 15,
     "skipped": 0,
     "unexpected": 2,

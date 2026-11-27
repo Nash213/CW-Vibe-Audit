@@ -19,7 +19,9 @@ and date it when it is unblocked.
       (`tools/stability.sh g1 apps/g1 3`). Needs the batch host (below).
       *(27 Nov: `RESULT: OK`, 3 of 3, `results/stability/g1-20261127T195845Z.txt`.
       T01–T15 and all AC probes pass; TA fails with "no comment box found", TB fails
-      because `?status=done` returns only the open task.)* The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
+      because `?status=done` returns only the open task.)*
+      *(27 Nov, later: g2, g3 and g4 baselines also `RESULT: OK` 3 of 3 on the batch host;
+      g2 first needed build tools in its Dockerfile, see DECISIONS.md, 2026-11-27.)* The folders are named `task-manager-corpus`, `notex---notes-&-workspace`,
       `novastore` and `community-board`; the plan expects `apps/g1` … `apps/g4`
       (or i1/i2). The dev scans assume g1 = task manager, g2 = notes,
       g3 = shop, g4 = community board. Please confirm or rename.

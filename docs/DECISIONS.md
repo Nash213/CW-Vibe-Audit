@@ -189,6 +189,19 @@ then `baseline-fix: lockfile` where the app had no `package-lock.json` (g2, g4),
 `baseline`. The seed is not a separate commit, because it was applied in the source folder
 before this step; `meta/<app>/BUG.md` records it.
 
+**g2 build tools (added 27 Nov, after the first g2 stability run).** On the batch host the
+g2 baseline did not boot (`results/stability/g2-20261127T204329Z.txt`, 3 of 3
+`boot=fail`): `better-sqlite3` 13.2.0 ships no prebuilt binary, so `npm install` compiles
+it with node-gyp, and `node:22-slim` has no Python, make or g++. Faris's passing run on
+25 Nov used the same Dockerfile and version, most likely with a cached build layer. Fix:
+the Dockerfile installs `python3 make g++` before `npm install`, committed as
+`baseline-fix: build tools for better-sqlite3` and `baseline` moved onto it (no g2
+chain existed). The same change is in the tracked source folder, so a rebuild with
+`init_app_repos.py` gives the same tree. It changes the build only, not the app's code.
+Stability on the batch host after the fix: `RESULT: OK` 3 of 3 for g2
+(`g2-20261127T205315Z.txt`), and for g3 and g4 unchanged
+(`g3-20261127T204404Z.txt`, `g4-20261127T204702Z.txt`).
+
 **g1 = `task-manager-corpus`, restored from `ffb995c^`.** The version swapped in on 17 Nov
 (`apps/taskmanager`, an AI Studio export) cannot be a baseline without hand-writing much of
 it: `AuthPage.tsx`, `index.html` and the entry module are missing, `package.json` lists no

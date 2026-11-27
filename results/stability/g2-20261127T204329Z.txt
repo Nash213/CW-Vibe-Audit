@@ -1,0 +1,11 @@
+app=g2 runs=3 stamp=20261127T204329Z source=/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/apps/g2
+--- run 1: boot=fail
+(no playwright report)
+--- run 2: boot=fail
+(no playwright report)
+--- run 3: boot=fail
+(no playwright report)
+PROBLEM: run 1 has no report
+PROBLEM: run 2 has no report
+PROBLEM: run 3 has no report
+RESULT: 3 problem(s), see above
