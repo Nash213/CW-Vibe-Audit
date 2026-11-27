@@ -19,9 +19,14 @@ setup:
 test:
 	$(PYTEST) -q tools/tests analysis/tests
 
-## generate: run the agent chains (Jarred, agent/)
+## generate: one chain through the agent: make generate APP=g1 CHAIN=DCBA [AGENT=stub] [SUFFIX=-rep]
+## (resumable: re-run the same command after a crash; see tools/run_chain.py)
+AGENT   ?= real
+SUFFIX  ?=
+AGENTPY ?= uv run --no-project --with-requirements agent/requirements.txt python
 generate:
-	@echo "generate: agent runner and chain driver not in the repo yet (agent/)" >&2; exit 1
+	@test -n "$(APP)" -a -n "$(CHAIN)" || { echo "usage: make generate APP=g1 CHAIN=DCBA [AGENT=stub] [SUFFIX=-rep]" >&2; exit 1; }
+	$(AGENTPY) tools/run_chain.py $(APP) $(CHAIN) --agent $(AGENT) $(if $(SUFFIX),--suffix $(SUFFIX))
 
 ## assess: official assessment batch over every checkpoint (Wuth)
 assess:

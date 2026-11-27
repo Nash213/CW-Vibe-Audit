@@ -133,3 +133,46 @@ include reasoning tokens. Reasoning tokens are also kept separately in `agent.js
 **Still open (Jarred-0 items 4 and 6).** The deployment's rate limits (tokens per minute)
 under real chain runs, the measured average steps and tokens over three real requests,
 the budget against the $100 student credit, and the data-use terms for Azure AI Foundry.
+
+## 2026-11-27 — Chain driver: resuming, crashed rounds and naming (Wuth, for Jarred-5)
+
+**Decision.** `tools/run_chain.py` and `agent/stub_agent.py` follow plan Jarred-5. Where the
+plan leaves a choice open, the driver does this:
+
+- **Resuming.** "Check out with -B so a re-run starts clean" and "skip rounds whose tag
+  exists" conflict if `-B` always starts at `baseline`. The driver checks out
+  `chain-<id>` with `-B` from the **last tagged round** (or `baseline` if none). A re-run
+  keeps finished rounds and restarts the unfinished one from the same tag.
+- **Crashed rounds.** A crash mid-round leaves the agent's edits uncommitted, and the
+  dirty-tree check would then block every retry. The driver discards uncommitted changes
+  only when all of these hold: its own `round.json` for the next round says `running`
+  or `failed`, the repo is on `chain-<id>`, and HEAD is still the round's start tag.
+  Any other uncommitted change is refused and never discarded. The retry is recorded as
+  attempt n+1, and the failed attempt's logs move to `r<k>/attempt-<n>/`.
+- **What counts as an outcome.** Agent exit 0 (done or step cap) and exit 2 (blocked by
+  the content filter) are committed and tagged. Any other exit (an API failure after
+  retries, a crash) is a technical failure: nothing is committed and the round is retried
+  (plan Jarred-7: re-run only after a technical failure, from the same tag).
+  **Open for the team:** whether a content-filter block should count as an outcome.
+- **Names.** Branch `chain-<id>` and tags `<id>-r<k>`, as in the plan's naming table (the
+  g0 pilot script uses `chain/<id>`). Commit message `round-<k>`. Committer
+  `vibe-audit <chain@vibe-audit.invalid>`. The `--suffix` is part of the id
+  (`DCBA-rep-r2`), matching `tools/ingest.py`, which reads the order from the part
+  before the first `-`.
+- **Per-round metadata.** `round.json` (request, attempt, status, model, steps, tokens,
+  start and end, commit, tag, files changed) sits beside the runner's `agent.json` and
+  `transcript.jsonl` in `results/raw/<app>/<id>/r<k>/`. The agent's console output goes
+  to `agent.stdout.log`, which `.gitignore` does not exclude. g0 defaults to
+  `results/pilot/raw`, as `meta/g0/README.md` requires.
+- **Manifest.** Checked at start and before every request. The driver refuses if a listed
+  file is missing or changed, if a prompt the chain needs is not listed, or if the
+  manifest is empty. It is empty today because the prompts are not frozen (Jarred-4), so
+  no chain can run until they are.
+
+**Tested.** `tools/tests/test_run_chain.py`, 22 tests with the stub: a full chain, a
+re-run, an empty round, `-rep`, refusing a dirty tree or untracked file, a corrupted
+prompt (at start and mid-chain), an unlisted prompt, an empty manifest, a missing
+baseline or repo, bad chain strings, a gap in the tags, a failed round retried, a hand
+edit never discarded, and a process killed half way that resumes. One real
+two-round chain on a toy app through Azure `gpt-5.4-mini` also committed and tagged
+both rounds (27 Nov).

@@ -37,6 +37,30 @@ Exit code 0 = done or step cap, 2 = blocked by the API's content filter, 1 = err
 
 Settings are fixed in `agent/settings.json`; see `docs/DECISIONS.md` before changing anything.
 
+## Run a whole chain
+
+`tools/run_chain.py` sends a chain's requests one round at a time, then commits and tags
+each round in `apps/<app>` and writes the logs to `results/raw/<app>/<chain>/r<k>/`:
+
+```
+make generate APP=g1 CHAIN=DCBA                 # real agent
+make generate APP=g1 CHAIN=DCBA SUFFIX=-rep     # the repeat run
+make generate APP=g1 CHAIN=DCBA AGENT=stub      # no API, for testing the pipeline
+```
+
+Before it starts, `apps/<app>` must be its own git repository with tag `baseline`, and
+every `prompts/<app>/<letter>.md` must be listed in `prompts/MANIFEST.sha256`.
+The driver refuses to run otherwise. If a run crashes or is killed, run the same command
+again: it resumes from the last tagged round and retries the unfinished one.
+
+## Stub agent (no API)
+
+`agent/stub_agent.py` takes the same command line as the runner. It appends one comment
+naming the request to the first source file and writes the same `agent.json` with
+`model: "stub"` and zero tokens. Use it to test assessment, ingest and the probe on real
+tags without spending credit. The tests set `VIBE_STUB_MODE` (`noop`, `fail`, `slow`) to
+simulate a request that changes nothing, a crash, or a run that gets killed.
+
 ## Check a backend is reliable
 
 ```
@@ -55,4 +79,4 @@ uv run --no-project --with-requirements agent/requirements.txt --with pytest \
 ```
 
 The model is faked, so the tests make no API calls. The two sandbox tests run only when
-Docker answers.
+Docker answers. The chain driver's tests are in `tools/tests/test_run_chain.py` (`make test`).

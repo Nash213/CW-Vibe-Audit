@@ -55,7 +55,7 @@ Commit links: `https://github.com/Nash213/CW-Vibe-Audit/commit/<hash>`.
 
 | Member | Hours | What | Links |
 |---|---|---|---|
-| Wuth | | Updated the M3 blockers list; merged PRs #5, #6 and #11. Agent runner for Jarred-0: tools, Docker sandbox, `agent.json` contract, Azure / Vertex / AI Studio backends, 25 tests, reliability check, model decision in DECISIONS.md (branch `m4/agent-runner`, not merged yet) | `ede4a1b`, `6eb60f4`, `93d1cff`, `838472c`, `4fbf3b3` |
+| Wuth | | Updated the M3 blockers list; merged PRs #5, #6 and #11. Agent runner for Jarred-0: tools, Docker sandbox, `agent.json` contract, Azure / Vertex / AI Studio backends, 25 tests, reliability check, model decision in DECISIONS.md (PR #12). Stub agent and chain driver for Jarred-5 (`agent/stub_agent.py`, `tools/run_chain.py`, 22 tests, `make generate`; branch `m4/run-chain`, not merged yet) | `ede4a1b`, `6eb60f4`, `93d1cff`, `838472c`, `4fbf3b3`, `696d004`, `40312d8` |
 | Faris | | Patched g2 and g3 package.json and Docker config so they boot; seeded B bugs for g2–g4 with BUG.md; TB for g2–g4; TA for g3 and g4, stability 3/3; A_SPEC and TESTNOTES for g2–g4; g0 for a preliminary test run; merged PRs #9 and #10 | `15201e9`, `897ec49`, `5ec3bbf`, `1fc308d`, `74e6eb3`, `1f0ad90`, `2aea92a`, `d87d041`, `657b30a` |
 | Nazrul | | Adapted the labelling-sheet generator to the real findings and triage CSVs | `b1e8761` |
 | Jarred | | No commits. Test-transition labels (due Fri 27 Nov) not delivered | |
@@ -67,7 +67,7 @@ approved and commented; add those here.
 
 | Member | PRs merged |
 |---|---|
-| Wuth | #4, #5, #6, #11 |
+| Wuth | #4, #5, #6, #11, #12 |
 | Faris | #1, #2, #9, #10 |
 | Nazrul | #3 |
 | Jarred | none |
@@ -82,7 +82,8 @@ this honestly (Section 13.3). So far:
 | Baseline apps g1–g4 | Faris (task manager, notes; committed by Faris), Wuth (novastore), Nazrul (community board) | `9fe6079`, `4b8cd0a`, `c777cfb` |
 | Making the apps boot (Dockerfiles, ports, compose) | Faris | `aa8554d`, `15201e9` |
 | Seeded B bugs, BUG.md, A_SPEC.md | Faris | `897ec49`, `74e6eb3` |
-| Agent runner (Jarred-0, guide B.5) | Wuth | branch `m4/agent-runner` |
-| Still open: stub agent, chain driver, frozen prompts, the 16 + 1 chain runs, test-transition labels | — | `docs/M3_BLOCKERS.md` |
+| Agent runner (Jarred-0, guide B.5) | Wuth | PR #12 (`696d004`) |
+| Stub agent and chain driver (Jarred-5) | Wuth | branch `m4/run-chain` |
+| Still open: frozen prompts, the 16 + 1 chain runs, test-transition labels | — | `docs/M3_BLOCKERS.md` |
 
 Jarred, or anyone else, can add a dissenting line below.
