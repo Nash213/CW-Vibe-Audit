@@ -37,6 +37,8 @@ change as advisories are published, so the official batch runs in one window.
 ## Host
 
 - Development machine: Windows 11 Pro, Docker 29.6.2 (Docker Desktop), Python via `uv`.
+- Figures: `matplotlib==3.11.2` (`analysis/requirements.txt`). Tables need only the
+  standard library.
 
 ## Runs
 

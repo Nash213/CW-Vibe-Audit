@@ -212,3 +212,32 @@ where it leaves room:
 boot, a linked key, false and unlabelled keys, a broken_test transition, an npm finding
 confirmed by construction, a repeat chain). A random 16-chain dataset gives the
 expected 8 and 4 applications per request type.
+
+## 2026-11-27 — Figures F1 to F3: what each one draws (Wuth, Wuth-6) — PROVISIONAL
+
+**Decision.** `analysis/figures.py` draws F1 to F3 from the same `tables.load` as R1 to R3,
+so a figure and its table cannot disagree. It writes a PDF (for the paper) and a PNG of
+each into `results/figures/`.
+
+- **F1 survival.** One panel per app, one line per chain that has a round after D
+  (BDAC, CADB, DCBA), at x = 0 to 3 rounds after D. No smoothing. A point is drawn only
+  where survival is defined, so a round that did not boot leaves a gap in the line.
+  A chain where D fixed nothing has no line. The n printed at each x is the number of
+  chains measured there: 12, 8 and 4 with full data, fewer when rounds did not boot.
+- **F2 damage.** Stacked bars per request type: reintroduced, other new findings
+  (new − reintroduced), regressions. D8 makes new include reintroduced, so stacking
+  reintroduced on top of new would count it twice. Bars are means over the rounds
+  where all three parts are defined (n printed above each bar, plus did-not-boot
+  rounds). The n can be smaller than R2's per-column n, which is counted per measure.
+  Two panels: every round after D, and the D9a first round after D.
+- **F3 grid.** One row per chain, one column per round. Each cell shows the request
+  letter, then new findings / regressions. Shading is the sum of the two, on one blue
+  scale. Did-not-boot cells are hatched grey and labelled `dnb`, and the D round is
+  outlined.
+- **Colours.** The first three slots of the dataviz reference palette, in fixed order
+  (blue, orange, aqua). They pass the validator all-pairs on white (worst CVD ΔE 9.2,
+  normal vision 24.0). Aqua is below 3:1 contrast, so every coloured series is also
+  labelled directly, F1's orders also differ by marker, and R1 to R3 are the table
+  view.
+- `--unlabelled` writes to `results/dev/figures/` with "UNLABELLED - not for
+  reporting" across every figure.

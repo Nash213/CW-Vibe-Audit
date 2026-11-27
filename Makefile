@@ -2,7 +2,8 @@
 # Targets whose scripts do not exist yet say so and fail, rather than doing nothing.
 
 PY      ?= uv run --no-project python
-PYTEST  ?= uv run --no-project --with pytest python -m pytest -p no:cacheprovider
+PYPLOT  ?= uv run --no-project --with-requirements analysis/requirements.txt python
+PYTEST  ?= uv run --no-project --with pytest --with-requirements analysis/requirements.txt python -m pytest -p no:cacheprovider
 RAW     ?= results/raw
 OUT     ?= results
 
@@ -42,9 +43,9 @@ ingest:
 tables:
 	$(PY) analysis/tables.py --results $(OUT) --out $(OUT)/tables
 
-## figures: F1 to F3 (analysis/figures.py, Wuth-6)
+## figures: F1 to F3 as PDF and PNG into results/figures/ (analysis/figures.py, Wuth-6)
 figures:
-	@echo "figures: analysis/figures.py not written yet (Wuth-6, from Mon 23 Nov)" >&2; exit 1
+	$(PYPLOT) analysis/figures.py --results $(OUT) --out $(OUT)/figures
 
 ## all: ingest + tables + figures from existing raw results and labels
 all: ingest tables figures
