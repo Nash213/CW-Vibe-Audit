@@ -2,7 +2,8 @@
 # Targets whose scripts do not exist yet say so and fail, rather than doing nothing.
 
 PY      ?= uv run --no-project python
-PYTEST  ?= uv run --no-project --with pytest python -m pytest -p no:cacheprovider
+PYPLOT  ?= uv run --no-project --with-requirements analysis/requirements.txt python
+PYTEST  ?= uv run --no-project --with pytest --with-requirements analysis/requirements.txt python -m pytest -p no:cacheprovider
 RAW     ?= results/raw
 OUT     ?= results
 
@@ -19,9 +20,14 @@ setup:
 test:
 	$(PYTEST) -q tools/tests analysis/tests
 
-## generate: run the agent chains (Jarred, agent/)
+## generate: one chain through the agent: make generate APP=g1 CHAIN=DCBA [AGENT=stub] [SUFFIX=-rep]
+## (resumable: re-run the same command after a crash; see tools/run_chain.py)
+AGENT   ?= real
+SUFFIX  ?=
+AGENTPY ?= uv run --no-project --with-requirements agent/requirements.txt python
 generate:
-	@echo "generate: agent runner and chain driver not in the repo yet (agent/)" >&2; exit 1
+	@test -n "$(APP)" -a -n "$(CHAIN)" || { echo "usage: make generate APP=g1 CHAIN=DCBA [AGENT=stub] [SUFFIX=-rep]" >&2; exit 1; }
+	$(AGENTPY) tools/run_chain.py $(APP) $(CHAIN) --agent $(AGENT) $(if $(SUFFIX),--suffix $(SUFFIX))
 
 ## assess: official assessment batch over every checkpoint (Wuth)
 assess:
@@ -32,13 +38,14 @@ ingest:
 	$(PY) tools/ingest.py --raw $(RAW) --out $(OUT)
 	$(PY) tools/transitions.py --results $(OUT)
 
-## tables: R1 to R5 (analysis/tables.py, Wuth-6; R4/R5 from Nazrul's scripts)
+## tables: R1 to R3 from the CSVs into results/tables/ (analysis/tables.py, Wuth-6)
+## R4/R5 come from Nazrul's scripts (not in the repo yet)
 tables:
-	@echo "tables: analysis/tables.py not written yet (Wuth-6, from Mon 23 Nov)" >&2; exit 1
+	$(PY) analysis/tables.py --results $(OUT) --out $(OUT)/tables
 
-## figures: F1 to F3 (analysis/figures.py, Wuth-6)
+## figures: F1 to F3 as PDF and PNG into results/figures/ (analysis/figures.py, Wuth-6)
 figures:
-	@echo "figures: analysis/figures.py not written yet (Wuth-6, from Mon 23 Nov)" >&2; exit 1
+	$(PYPLOT) analysis/figures.py --results $(OUT) --out $(OUT)/figures
 
 ## all: ingest + tables + figures from existing raw results and labels
 all: ingest tables figures

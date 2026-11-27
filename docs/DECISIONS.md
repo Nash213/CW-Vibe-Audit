@@ -133,3 +133,111 @@ include reasoning tokens. Reasoning tokens are also kept separately in `agent.js
 **Still open (Jarred-0 items 4 and 6).** The deployment's rate limits (tokens per minute)
 under real chain runs, the measured average steps and tokens over three real requests,
 the budget against the $100 student credit, and the data-use terms for Azure AI Foundry.
+
+## 2026-11-27 — Chain driver: resuming, crashed rounds and naming (Wuth, for Jarred-5)
+
+**Decision.** `tools/run_chain.py` and `agent/stub_agent.py` follow plan Jarred-5. Where the
+plan leaves a choice open, the driver does this:
+
+- **Resuming.** "Check out with -B so a re-run starts clean" and "skip rounds whose tag
+  exists" conflict if `-B` always starts at `baseline`. The driver checks out
+  `chain-<id>` with `-B` from the **last tagged round** (or `baseline` if none). A re-run
+  keeps finished rounds and restarts the unfinished one from the same tag.
+- **Crashed rounds.** A crash mid-round leaves the agent's edits uncommitted, and the
+  dirty-tree check would then block every retry. The driver discards uncommitted changes
+  only when all of these hold: its own `round.json` for the next round says `running`
+  or `failed`, the repo is on `chain-<id>`, and HEAD is still the round's start tag.
+  Any other uncommitted change is refused and never discarded. The retry is recorded as
+  attempt n+1, and the failed attempt's logs move to `r<k>/attempt-<n>/`.
+- **What counts as an outcome.** Agent exit 0 (done or step cap) and exit 2 (blocked by
+  the content filter) are committed and tagged. Any other exit (an API failure after
+  retries, a crash) is a technical failure: nothing is committed and the round is retried
+  (plan Jarred-7: re-run only after a technical failure, from the same tag).
+  **Open for the team:** whether a content-filter block should count as an outcome.
+- **Names.** Branch `chain-<id>` and tags `<id>-r<k>`, as in the plan's naming table (the
+  g0 pilot script uses `chain/<id>`). Commit message `round-<k>`. Committer
+  `vibe-audit <chain@vibe-audit.invalid>`. The `--suffix` is part of the id
+  (`DCBA-rep-r2`), matching `tools/ingest.py`, which reads the order from the part
+  before the first `-`.
+- **Per-round metadata.** `round.json` (request, attempt, status, model, steps, tokens,
+  start and end, commit, tag, files changed) sits beside the runner's `agent.json` and
+  `transcript.jsonl` in `results/raw/<app>/<id>/r<k>/`. The agent's console output goes
+  to `agent.stdout.log`, which `.gitignore` does not exclude. g0 defaults to
+  `results/pilot/raw`, as `meta/g0/README.md` requires.
+- **Manifest.** Checked at start and before every request. The driver refuses if a listed
+  file is missing or changed, if a prompt the chain needs is not listed, or if the
+  manifest is empty. It is empty today because the prompts are not frozen (Jarred-4), so
+  no chain can run until they are.
+
+**Tested.** `tools/tests/test_run_chain.py`, 22 tests with the stub: a full chain, a
+re-run, an empty round, `-rep`, refusing a dirty tree or untracked file, a corrupted
+prompt (at start and mid-chain), an unlisted prompt, an empty manifest, a missing
+baseline or repo, bad chain strings, a gap in the tags, a failed round retried, a hand
+edit never discarded, and a process killed half way that resumes. One real
+two-round chain on a toy app through Azure `gpt-5.4-mini` also committed and tagged
+both rounds (27 Nov).
+
+## 2026-11-27 — Tables R1 to R3: counting rules (Wuth, Wuth-6) — PROVISIONAL
+
+**Decision.** `analysis/tables.py` builds R1 (per chain), R2 (damage per request type)
+and R3 (per app) from the CSVs only. It writes `results/tables/R1.csv`, `R2.csv`, `R3.csv`
+and `tables.md`. The plan fixes the measures (Table 3, D7, D8, D9a). These choices are
+where it leaves room:
+
+- **R2 counts only rounds after D.** That is what gives the plan's "8 each": across the
+  four apps, BDAC, CADB and DCBA put A, B and C after D twice each. The D9a version
+  uses only the first round after D (4 each). Rounds before D are in R1 but not in R2.
+- **Reintroduced, per round (R2).** These are instances reintroduced at round r that were
+  not already reintroduced at r−1. So a finding that comes back and stays is charged
+  once, to the request that brought it back. R1 shows the cumulative count at the last
+  round, which matches the survival measure.
+- **Undefined values (D7).** New findings at r need both r−1 and r to have booted.
+  Regressions need r to have booted. Survival needs D−1, D and the later round to have
+  booted, and D to have fixed something. Undefined values print as `n/a`, or `dnb`
+  when the round itself did not boot. They are left out of R2's means, and each mean
+  shows its n beside it. Did-not-boot rounds are counted in their own column.
+- **Labels and links.** Each finding instance is kept or dropped by the label of its own
+  key, and only then renamed by `links.csv` (per app, transitive, to the smallest
+  key). Instances with no final label are left out and counted in `tables.md`, so a
+  gap in the labelling is visible rather than silently zero.
+- **Repeat chains** (`DCBA-rep`) are left out of R1 to R3. They feed R5.
+- **R3 columns:** chains, checkpoints booted, baseline findings (min–max across the
+  app's chains, which also shows whether the round-0 re-runs agree, D9b), fixed by D
+  (total and range), chains where D fixed nothing, final survival range, and total new
+  findings and regressions.
+- `--unlabelled` counts everything, for checking the pipeline. It writes to
+  `results/dev/tables/` and every file says UNLABELLED.
+
+**Tested.** `analysis/tests/test_tables.py` (8 hand-computed cases: a round that did not
+boot, a linked key, false and unlabelled keys, a broken_test transition, an npm finding
+confirmed by construction, a repeat chain). A random 16-chain dataset gives the
+expected 8 and 4 applications per request type.
+
+## 2026-11-27 — Figures F1 to F3: what each one draws (Wuth, Wuth-6) — PROVISIONAL
+
+**Decision.** `analysis/figures.py` draws F1 to F3 from the same `tables.load` as R1 to R3,
+so a figure and its table cannot disagree. It writes a PDF (for the paper) and a PNG of
+each into `results/figures/`.
+
+- **F1 survival.** One panel per app, one line per chain that has a round after D
+  (BDAC, CADB, DCBA), at x = 0 to 3 rounds after D. No smoothing. A point is drawn only
+  where survival is defined, so a round that did not boot leaves a gap in the line.
+  A chain where D fixed nothing has no line. The n printed at each x is the number of
+  chains measured there: 12, 8 and 4 with full data, fewer when rounds did not boot.
+- **F2 damage.** Stacked bars per request type: reintroduced, other new findings
+  (new − reintroduced), regressions. D8 makes new include reintroduced, so stacking
+  reintroduced on top of new would count it twice. Bars are means over the rounds
+  where all three parts are defined (n printed above each bar, plus did-not-boot
+  rounds). The n can be smaller than R2's per-column n, which is counted per measure.
+  Two panels: every round after D, and the D9a first round after D.
+- **F3 grid.** One row per chain, one column per round. Each cell shows the request
+  letter, then new findings / regressions. Shading is the sum of the two, on one blue
+  scale. Did-not-boot cells are hatched grey and labelled `dnb`, and the D round is
+  outlined.
+- **Colours.** The first three slots of the dataviz reference palette, in fixed order
+  (blue, orange, aqua). They pass the validator all-pairs on white (worst CVD ΔE 9.2,
+  normal vision 24.0). Aqua is below 3:1 contrast, so every coloured series is also
+  labelled directly, F1's orders also differ by marker, and R1 to R3 are the table
+  view.
+- `--unlabelled` writes to `results/dev/figures/` with "UNLABELLED - not for
+  reporting" across every figure.
