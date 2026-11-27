@@ -55,7 +55,7 @@ Commit links: `https://github.com/Nash213/CW-Vibe-Audit/commit/<hash>`.
 
 | Member | Hours | What | Links |
 |---|---|---|---|
-| Wuth | | Updated the M3 blockers list; merged PRs #5, #6 and #11. Agent runner for Jarred-0: tools, Docker sandbox, `agent.json` contract, Azure / Vertex / AI Studio backends, 25 tests, reliability check, model decision in DECISIONS.md (PR #12). Stub agent and chain driver for Jarred-5 (`agent/stub_agent.py`, `tools/run_chain.py`, 22 tests, `make generate`; branch `m4/run-chain`, not merged yet) | `ede4a1b`, `6eb60f4`, `93d1cff`, `838472c`, `4fbf3b3`, `696d004`, `40312d8` |
+| Wuth | | Updated the M3 blockers list; merged PRs #5, #6 and #11. Agent runner for Jarred-0: tools, Docker sandbox, `agent.json` contract, Azure / Vertex / AI Studio backends, 25 tests, reliability check, model decision in DECISIONS.md (PR #12). Stub agent and chain driver for Jarred-5 (`agent/stub_agent.py`, `tools/run_chain.py`, 22 tests, `make generate`; branch `m4/run-chain`, not merged yet). Wuth-6: Tables R1–R3 (`analysis/tables.py`, 8 tests, `make tables`) | `ede4a1b`, `6eb60f4`, `93d1cff`, `838472c`, `4fbf3b3`, `696d004`, `40312d8` |
 | Faris | | Patched g2 and g3 package.json and Docker config so they boot; seeded B bugs for g2–g4 with BUG.md; TB for g2–g4; TA for g3 and g4, stability 3/3; A_SPEC and TESTNOTES for g2–g4; g0 for a preliminary test run; merged PRs #9 and #10 | `15201e9`, `897ec49`, `5ec3bbf`, `1fc308d`, `74e6eb3`, `1f0ad90`, `2aea92a`, `d87d041`, `657b30a` |
 | Nazrul | | Adapted the labelling-sheet generator to the real findings and triage CSVs | `b1e8761` |
 | Jarred | | No commits. Test-transition labels (due Fri 27 Nov) not delivered | |

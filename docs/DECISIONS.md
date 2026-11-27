@@ -176,3 +176,39 @@ baseline or repo, bad chain strings, a gap in the tags, a failed round retried, 
 edit never discarded, and a process killed half way that resumes. One real
 two-round chain on a toy app through Azure `gpt-5.4-mini` also committed and tagged
 both rounds (27 Nov).
+
+## 2026-11-27 — Tables R1 to R3: counting rules (Wuth, Wuth-6) — PROVISIONAL
+
+**Decision.** `analysis/tables.py` builds R1 (per chain), R2 (damage per request type)
+and R3 (per app) from the CSVs only. It writes `results/tables/R1.csv`, `R2.csv`, `R3.csv`
+and `tables.md`. The plan fixes the measures (Table 3, D7, D8, D9a). These choices are
+where it leaves room:
+
+- **R2 counts only rounds after D.** That is what gives the plan's "8 each": across the
+  four apps, BDAC, CADB and DCBA put A, B and C after D twice each. The D9a version
+  uses only the first round after D (4 each). Rounds before D are in R1 but not in R2.
+- **Reintroduced, per round (R2).** These are instances reintroduced at round r that were
+  not already reintroduced at r−1. So a finding that comes back and stays is charged
+  once, to the request that brought it back. R1 shows the cumulative count at the last
+  round, which matches the survival measure.
+- **Undefined values (D7).** New findings at r need both r−1 and r to have booted.
+  Regressions need r to have booted. Survival needs D−1, D and the later round to have
+  booted, and D to have fixed something. Undefined values print as `n/a`, or `dnb`
+  when the round itself did not boot. They are left out of R2's means, and each mean
+  shows its n beside it. Did-not-boot rounds are counted in their own column.
+- **Labels and links.** Each finding instance is kept or dropped by the label of its own
+  key, and only then renamed by `links.csv` (per app, transitive, to the smallest
+  key). Instances with no final label are left out and counted in `tables.md`, so a
+  gap in the labelling is visible rather than silently zero.
+- **Repeat chains** (`DCBA-rep`) are left out of R1 to R3. They feed R5.
+- **R3 columns:** chains, checkpoints booted, baseline findings (min–max across the
+  app's chains, which also shows whether the round-0 re-runs agree, D9b), fixed by D
+  (total and range), chains where D fixed nothing, final survival range, and total new
+  findings and regressions.
+- `--unlabelled` counts everything, for checking the pipeline. It writes to
+  `results/dev/tables/` and every file says UNLABELLED.
+
+**Tested.** `analysis/tests/test_tables.py` (8 hand-computed cases: a round that did not
+boot, a linked key, false and unlabelled keys, a broken_test transition, an npm finding
+confirmed by construction, a repeat chain). A random 16-chain dataset gives the
+expected 8 and 4 applications per request type.

@@ -37,9 +37,10 @@ ingest:
 	$(PY) tools/ingest.py --raw $(RAW) --out $(OUT)
 	$(PY) tools/transitions.py --results $(OUT)
 
-## tables: R1 to R5 (analysis/tables.py, Wuth-6; R4/R5 from Nazrul's scripts)
+## tables: R1 to R3 from the CSVs into results/tables/ (analysis/tables.py, Wuth-6)
+## R4/R5 come from Nazrul's scripts (not in the repo yet)
 tables:
-	@echo "tables: analysis/tables.py not written yet (Wuth-6, from Mon 23 Nov)" >&2; exit 1
+	$(PY) analysis/tables.py --results $(OUT) --out $(OUT)/tables
 
 ## figures: F1 to F3 (analysis/figures.py, Wuth-6)
 figures:
