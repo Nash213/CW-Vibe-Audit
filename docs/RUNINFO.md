@@ -47,4 +47,11 @@ change as advisories are published, so the official batch runs in one window.
 
 ## Model
 
-- Agent model: to be filled by Jarred (plan: gemini-3.8-flash).
+- Agent model: `gpt-5.4-mini` (served as `gpt-5.4-mini-2026-03-17`) on Azure AI Foundry,
+  deployment `gpt-5.4-mini`, GlobalStandard, resource `comp3226-vibe-audit-ai`
+  (Germany West Central). Changed from the plan's `gemini-3.8-flash`, see
+  `docs/DECISIONS.md`, 2026-11-27.
+- SDK: `openai==3.60.0` against the OpenAI-compatible v1 API (`agent/requirements.txt`).
+- Settings: deployment defaults for temperature and reasoning effort, seed 3226, step cap 30
+  (provisional, see `docs/DECISIONS.md`, 2026-11-27).
+- Sandbox image for the agent's shell tool: `node:20.20.2-alpine`.
