@@ -19,3 +19,6 @@ apps/g[1-9]/
 # Pilot app g0 (meta/g0/README.md): own repo, outputs never committed
 apps/g0/
 results/pilot/
+
+# Python bytecode (agent/, tools/, analysis/)
+__pycache__/

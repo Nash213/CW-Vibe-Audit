@@ -35,9 +35,19 @@ and date it when it is unblocked.
       g1's compose file still publishes `3000:3000`, so every g1 baseline would be
       noted `port_changed`. g2 … g4 compose files publish `127.0.0.1:3002/3003/3004`
       but have no PORT file.)*
-- [ ] **Pilot chain DCBA on g1** (Gate 3, was due Fri 13 Nov): tags `DCBA-r1` … `DCBA-r4`.
+- [x] **Pilot chain DCBA on g1** (Gate 3, was due Fri 13 Nov): tags `DCBA-r1` … `DCBA-r4`.
       Until it exists, there is nothing to assess, ingest or measure, and no timing
       to estimate the batch from.
+      *(27 Nov: run by Wuth as the throwaway `DCBA-pilot` (tags `DCBA-pilot-r1` … `-r4`),
+      outputs in `results/pilot/raw/g1/DCBA-pilot/`, not study data. Real agent
+      gpt-5.4-mini: all 4 rounds `done` on attempt 1, 8–12 steps, 24–48 s each, about
+      725k tokens in and 29k out for the chain. All 5 checkpoints boot; assessment about
+      1 min each. TB passes from r2 and TA passes at r4, so both feature tests can pass.
+      Findings for the team: (1) the C (restyle) round rewrote `src/routes/tasks.js` and
+      fixed the seeded filter bug as a side effect, so the later B round changed only
+      `test/mockDb.js`; in orders where C comes before B, the TB transition belongs to C.
+      (2) D deleted most of `test/app.test.js` (427 lines removed). Semgrep results
+      12 → 12 → 18 → 18 → 22; Gitleaks and npm audit 0 throughout.)*
 - [x] **`agent.json` format.** `tools/ingest.py` reads `request`, `model`, `steps`,
       `tokens_in`/`tokens_out` (or `tokens: {in, out}`). Confirm the field names
       when the runner exists.
