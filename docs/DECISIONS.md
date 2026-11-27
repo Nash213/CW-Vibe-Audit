@@ -77,3 +77,59 @@ across a non-booting round, rather than losing it.
 
 **Status.** Nazrul has not confirmed it yet. If the team picks a different rule,
 only `list_transitions` and its `test_previous_round_did_not_boot` case change.
+
+## 2026-11-27 — Agent runs on Azure AI Foundry (gpt-5.4-mini), not Gemini (Wuth, for Jarred-0)
+
+**Decision.** `agent/agent_runner.py` calls `gpt-5.4-mini` (served as
+`gpt-5.4-mini-2026-03-17`) through the OpenAI-compatible v1 API of an Azure AI Foundry
+resource (`comp3226-vibe-audit-ai`, resource group `comp3226-vibe-audit`, Azure for
+Students, Germany West Central, deployment `gpt-5.4-mini`, GlobalStandard). The endpoint,
+key and deployment name live in the git-ignored `.env`. Gemini stays in the runner as two
+fallback backends, `vertex` and `apikey`, with the same tools, sandbox and `agent.json`.
+
+**This changes the plan's model** (`gemini-3.8-flash`). The team has to agree, and the
+report's method section must name the model actually used.
+
+**Why not Gemini.** Jarred-0 (due 4 Nov) was not delivered. All three Gemini routes were
+tried on 27 Nov 2026:
+- *Vertex AI* on a new project `comp3226-vibe-audit`: calls failed intermittently with 403
+  "Access requires an eligible paid billing account in a supported region". The Cloud
+  free-trial billing account is not eligible.
+- *AI Studio key with billing linked*: "Prepay required" (a $5 minimum).
+- *AI Studio free tier* (billing unlinked): `gemini-3.8-flash` and `gemini-3.6-flash`
+  returned 503 "high demand" on most calls. That is not usable for batch runs.
+
+Azure for Students gives $100 credit with no card, and the deployment needed no prepay.
+
+**Reliability check** (`agent/reliability_check.py --backend azure`, 27 Nov 2026 18:24 UTC):
+- 20/20 single-call pings with no retries, median latency 0.5 s, p90 0.6 s.
+- 5/5 toy agent runs passed, 3 steps each, 0 retries, about 1.7 s per run.
+- A request to write `../outside.txt` was refused by the file tool and nothing was written.
+- `node hello.js` ran in the Docker sandbox and its output was saved.
+
+Results are in `work/agent-reliability/azure-20261127T182409Z/` (git-ignored). The test
+is small: about 1,300 input tokens per toy run. Real chain runs will be far larger.
+
+**Secrets.** The key is read from `.env` on the host only. The sandbox container's
+environment has every `AZURE_`, `OPENAI_`, `GEMINI_`, `GOOGLE_`, `CLOUDSDK_` and `VERTEX`
+variable removed, and only the app repo is mounted.
+
+## 2026-11-27 — Agent generation settings (Wuth) — PROVISIONAL until the team agrees
+
+**Decision.** In `agent/settings.json` (`azure` block): temperature and reasoning effort
+are left unset, so the deployment's defaults apply. Seed 3226, step cap 30, no
+max-completion-token limit. Never changed after G1.
+
+**Why.** A non-expert user would not change the defaults. In the reliability check the
+default reasoning effort produced 0 reasoning tokens, so the model is not "thinking" before
+answering. If the team wants reasoning on, set `reasoning_effort` before G1 and rerun the
+check. The seed is set and recorded, but runs are not expected to replay exactly.
+
+**Counting.** A step is one model call. `tokens_in` sums `prompt_tokens` over all calls
+(each call re-sends the conversation). `tokens_out` sums `completion_tokens`, which already
+include reasoning tokens. Reasoning tokens are also kept separately in `agent.json`
+(`tokens_thoughts`).
+
+**Still open (Jarred-0 items 4 and 6).** The deployment's rate limits (tokens per minute)
+under real chain runs, the measured average steps and tokens over three real requests,
+the budget against the $100 student credit, and the data-use terms for Azure AI Foundry.
