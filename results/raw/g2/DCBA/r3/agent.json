@@ -1,0 +1,32 @@
+{
+  "request": "B",
+  "request_file": "prompts/g2/B.md",
+  "request_sha256": "33d02dfcdb6f73d1be0fb27812e1b1aa5ec7222cb56afac9519c634b2bf19ce2",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:24:37+00:00",
+  "steps": 5,
+  "tool_calls": 8,
+  "tool_errors": 0,
+  "retries": 3,
+  "tokens_in": 42899,
+  "tokens_out": 3603,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Fixed the notes ordering so recently edited notes appear at the top.\n\nWhat I changed:\n- Updated the notes query ordering in `server/db.ts` from `updated_at ASC` to `updated_at DESC`\n- Kept pinned notes first, then sorted by most recently updated\n- Added an index on `updated_at` to support the new ordering more efficiently\n\nIf you want, I can also make the frontend explicitly sort notes as a fallback.",
+  "ended_at": "2026-11-27T21:24:59+00:00"
+}

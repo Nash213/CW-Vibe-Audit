@@ -30,8 +30,10 @@ generate:
 	$(AGENTPY) tools/run_chain.py $(APP) $(CHAIN) --agent $(AGENT) $(if $(SUFFIX),--suffix=$(SUFFIX))
 
 ## assess: official assessment batch over every checkpoint (Wuth)
+## (every round tag of g1-g4 plus r0 per chain; resumable; on WSL: make assess PY=python3)
+## one checkpoint: $(PY) tools/assess.py <app> <chain> <round>
 assess:
-	@echo "assess: batch driver not written yet; one checkpoint: $(PY) tools/assess.py <app> <chain> <round>" >&2; exit 1
+	$(PY) tools/assess_batch.py --raw $(RAW) $(if $(APPS),--apps $(APPS)) $(if $(CHAINS),--chains $(CHAINS))
 
 ## ingest: raw results -> checkpoints.csv, findings.csv, tests.csv, then triage.csv
 ingest:

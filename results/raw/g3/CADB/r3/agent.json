@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g3/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:32:51+00:00",
+  "steps": 8,
+  "tool_calls": 22,
+  "tool_errors": 0,
+  "retries": 3,
+  "tokens_in": 145903,
+  "tokens_out": 8824,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app’s auth and HTTP handling.\n\nWhat I changed:\n- Removed the hardcoded JWT fallback and now require `JWT_SECRET` to be set.\n- Switched auth to rely on secure, httpOnly cookies instead of storing tokens in `localStorage`.\n- Added secure cookie options and proper cookie clearing.\n- Disabled `X-Powered-By` and added basic security headers.\n- Limited request body size to reduce abuse risk.\n- Restricted demo-data seeding to admins only.\n- Increased password minimum length for account creation.\n- Updated the frontend auth/cart flows to use `credentials: 'include'` and stop reading/writing tokens from `localStorage`.\n\nFiles updated:\n- `server/auth.ts`\n- `server.ts`\n- `server/routes/auth.ts`\n- `server/routes/orders.ts`\n- `src/context/AuthContext.tsx`\n- `src/context/CartContext.tsx`\n\nNote:\n- I also tried to run type checks, but the container doesn’t have `tsc` installed, so I couldn’t verify compilation here.",
+  "ended_at": "2026-11-27T21:33:26+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g1/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:11:56+00:00",
+  "steps": 14,
+  "tool_calls": 25,
+  "tool_errors": 0,
+  "retries": 1,
+  "tokens_in": 256233,
+  "tokens_out": 6672,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Made the app significantly more secure by hardening both server and auth handling.\n\nWhat I changed:\n- Added security headers and disabled `x-powered-by`\n- Added request body size limits to reduce abuse\n- Strengthened JWT secret handling so weak/missing secrets fail fast\n- Tightened cookie handling for auth tokens\n- Increased password minimum length and hashing cost\n- Improved production-safe DB SSL handling and pool settings\n- Reduced error leakage from the global error handler\n- Updated env example to reflect safer defaults\n- Simplified/updated tests to match the new auth requirements\n\nValidation:\n- Ran the test suite successfully\n\nIf you want, I can also add rate limiting, CSRF protection, and input sanitization for an additional security layer.",
+  "ended_at": "2026-11-27T21:12:29+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g1/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:11:07+00:00",
+  "steps": 11,
+  "tool_calls": 24,
+  "tool_errors": 0,
+  "retries": 0,
+  "tokens_in": 186211,
+  "tokens_out": 5087,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Made the app more secure by hardening auth, HTTP settings, and payload handling.\n\nWhat I changed:\n- Removed the hardcoded JWT fallback secret; now `JWT_SECRET` is required.\n- Tightened auth cookie handling with `httpOnly`, `sameSite`, `secure` in production, and proper clearing.\n- Removed JWT token exposure from auth API responses.\n- Added security headers and disabled `x-powered-by`.\n- Added request body size limits to reduce abuse risk.\n- Strengthened signup/login validation and increased password policy from 6 to 10 characters.\n- Added a `comments` JSONB column in the DB schema for safer structured storage.\n- Updated tests and mock DB to match the secure auth flow.\n- Verified everything with the test suite.\n\nIf you want, I can also add rate limiting, CSRF protection, and a stricter Content Security Policy next.",
+  "ended_at": "2026-11-27T21:11:33+00:00"
+}

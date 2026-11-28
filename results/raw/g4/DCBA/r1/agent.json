@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g4/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:42:03+00:00",
+  "steps": 12,
+  "tool_calls": 25,
+  "tool_errors": 1,
+  "retries": 0,
+  "tokens_in": 166643,
+  "tokens_out": 4688,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app with several security improvements:\n\n- Added security headers: CSP, HSTS in production, X-Frame-Options, nosniff, Referrer-Policy, Permissions-Policy, and COOP/CORP\n- Disabled `x-powered-by` and enabled trusted proxy handling\n- Made session cookies more secure in production\n- Enforced `DATABASE_URL` in production and tightened Postgres pool settings\n- Required credentialed fetches from the frontend\n- Increased password minimum length from 6 to 8 characters\n- Updated the README to document the security changes\n\nI also verified the main server and client files parse cleanly.",
+  "ended_at": "2026-11-27T21:42:23+00:00"
+}

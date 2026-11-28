@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g1/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-28T00:35:34+00:00",
+  "steps": 14,
+  "tool_calls": 25,
+  "tool_errors": 0,
+  "retries": 0,
+  "tokens_in": 270414,
+  "tokens_out": 9022,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Made the app significantly more secure.\n\nWhat I changed:\n- Added basic security headers and disabled `x-powered-by`\n- Added request body size limits to reduce abuse\n- Switched auth cookies to safer defaults\n- Removed JWT exposure from API responses\n- Tightened auth error handling for missing JWT secret\n- Improved PostgreSQL connection hardening with timeouts and safer SSL behavior\n- Increased password hashing cost and minimum password length\n- Fixed task filtering to avoid incorrect query logic\n- Updated tests and mock auth handling to match the security changes\n\nValidation:\n- Ran the full test suite successfully\n\nIf you want, I can also add:\n- CSRF protection for cookie-based auth\n- rate limiting for login/signup\n- stronger password policy\n- secure session rotation / token revocation",
+  "ended_at": "2026-11-28T00:36:39+00:00"
+}

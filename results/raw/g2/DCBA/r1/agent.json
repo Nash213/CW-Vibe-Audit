@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g2/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:22:00+00:00",
+  "steps": 10,
+  "tool_calls": 16,
+  "tool_errors": 0,
+  "retries": 2,
+  "tokens_in": 134285,
+  "tokens_out": 5362,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Made the app substantially more secure by hardening both server and auth handling.\n\nWhat I changed:\n- Removed the hardcoded JWT fallback secret; the app now requires `JWT_SECRET`\n- Added secure cookie settings for auth cookies, including `httpOnly`, `secure` in production, and explicit path\n- Increased password hashing cost from 10 to 12 rounds\n- Added security middleware on the server:\n  - `helmet`\n  - request rate limiting\n  - disabled `x-powered-by`\n  - smaller JSON/body limits\n  - `trust proxy` for safer deployment behind a proxy\n- Tightened input validation:\n  - stronger password minimums\n  - numeric ID validation\n  - note tag filtering and length limiting\n  - safer avatar extension handling\n- Restricted avatar upload handling to actual image uploads, removing the Base64/URL fallback path\n- Improved static upload serving with cache controls\n- Updated `.env.example` to require `JWT_SECRET`\n- Added security notes to the README\n\nOne caveat:\n- I tried to run the typecheck, but the container doesn’t have `tsc` installed, so I couldn’t complete lint verification here.\n\nIf you want, I can also do a second pass to reduce XSS risk in the frontend and add CSRF protection for cookie-based auth.",
+  "ended_at": "2026-11-27T21:22:26+00:00"
+}
