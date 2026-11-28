@@ -1,0 +1,86 @@
+checkpoint_id,app,chain,round,request,commit,model,steps,tokens_in,tokens_out,boot,tests_version,tests_total,tests_pass,tests_fail,tests_flaky,assessed_on,notes
+g1/ABCD/r0,g1,ABCD,0,,ca8c04fddb6a73995e91373497f3e051fcdbc036,,,,,ok,t-b631bc9482db,28,26,2,0,2026-11-28,
+g1/ABCD/r1,g1,ABCD,1,A,b2442c0f96af4fc97df905818e8a6e9dd6d59844,gpt-5.4-mini,13,239280,10418,ok,t-b631bc9482db,28,8,9,0,2026-11-28,
+g1/ABCD/r2,g1,ABCD,2,B,4289608a5dbdf3e698fab62668d679de586c3603,gpt-5.4-mini,7,43853,2362,ok,t-b631bc9482db,28,8,9,0,2026-11-28,
+g1/ABCD/r3,g1,ABCD,3,C,6d0c0b2d72a3766db5c78056bffcf1510581cbc2,gpt-5.4-mini,6,106387,12824,ok,t-b631bc9482db,28,8,9,0,2026-11-28,
+g1/ABCD/r4,g1,ABCD,4,D,a262109a20548b56b028ffda730298a9374d2e7a,gpt-5.4-mini,25,432862,9591,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/BDAC/r0,g1,BDAC,0,,ca8c04fddb6a73995e91373497f3e051fcdbc036,,,,,ok,t-b631bc9482db,28,26,2,0,2026-11-28,
+g1/BDAC/r1,g1,BDAC,1,B,61ee957b289c7a82e06be43153bf1fc7ce540327,gpt-5.4-mini,7,60928,1897,ok,t-b631bc9482db,28,27,1,0,2026-11-28,
+g1/BDAC/r2,g1,BDAC,2,D,3c5bac336f4ba13f82f1a8bceb076d4205d9abe0,gpt-5.4-mini,17,364185,10606,ok,t-b631bc9482db,28,27,1,0,2026-11-28,
+g1/BDAC/r3,g1,BDAC,3,A,a84e5b9a5be43518de770ffa53cfb8b1d57f8570,gpt-5.4-mini,13,187527,11521,ok,t-b631bc9482db,28,27,1,0,2026-11-28,
+g1/BDAC/r4,g1,BDAC,4,C,9867f274dc2ff73dad7a9064128be01c4b302cd0,gpt-5.4-mini,6,95885,9848,ok,t-b631bc9482db,28,27,1,0,2026-11-28,
+g1/CADB/r0,g1,CADB,0,,ca8c04fddb6a73995e91373497f3e051fcdbc036,,,,,ok,t-b631bc9482db,28,26,2,0,2026-11-28,
+g1/CADB/r1,g1,CADB,1,C,a92f738c2b0432d5a1a2525853f1baee0cdd25ba,gpt-5.4-mini,8,176566,11643,ok,t-b631bc9482db,28,27,1,0,2026-11-28,
+g1/CADB/r2,g1,CADB,2,A,f3ed553bb3e7f6f90a6920561cff0d3c4ffed6b6,gpt-5.4-mini,6,61998,10323,ok,t-b631bc9482db,28,8,9,0,2026-11-28,
+g1/CADB/r3,g1,CADB,3,D,c1b7df1919e58abbb13556ef99f969753e3bcbfb,gpt-5.4-mini,11,186211,5087,ok,t-b631bc9482db,28,2,15,0,2026-11-28,
+g1/CADB/r4,g1,CADB,4,B,3e75a09091f8868a956f8a9634ef1874648b4c1c,gpt-5.4-mini,8,51757,3564,ok,t-b631bc9482db,28,2,15,0,2026-11-28,
+g1/DCBA/r0,g1,DCBA,0,,ca8c04fddb6a73995e91373497f3e051fcdbc036,,,,,ok,t-b631bc9482db,28,26,2,0,2026-11-28,
+g1/DCBA/r1,g1,DCBA,1,D,962b7055340114fa110b2b45021b23c3b2ad8f6f,gpt-5.4-mini,14,256233,6672,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA/r2,g1,DCBA,2,C,11d1f91872de3db51719389d7acada84eed937d2,gpt-5.4-mini,9,190009,13880,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA/r3,g1,DCBA,3,B,a602eb2b41b97832117a8ea55c0420d05956bf73,gpt-5.4-mini,6,26023,2350,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA/r4,g1,DCBA,4,A,b014fe960301fdcd5c22ef65f3375d5dbd3e84d2,gpt-5.4-mini,14,178878,9542,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA-rep/r0,g1,DCBA-rep,0,,ca8c04fddb6a73995e91373497f3e051fcdbc036,,,,,ok,t-b631bc9482db,28,26,2,0,2026-11-28,
+g1/DCBA-rep/r1,g1,DCBA-rep,1,D,410509f3bb8163bdc3f0d64955a79ff3663962f7,gpt-5.4-mini,14,270414,9022,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA-rep/r2,g1,DCBA-rep,2,C,e63130e40b7972c0cd6ac41cd6afe09570a8e355,gpt-5.4-mini,6,98494,10087,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA-rep/r3,g1,DCBA-rep,3,B,ac71dacae5628572fbe0039135883bb933d754ad,gpt-5.4-mini,8,59788,3049,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g1/DCBA-rep/r4,g1,DCBA-rep,4,A,1461cd8492c739f87ef7aa63a14252da074f5142,gpt-5.4-mini,13,174975,9501,fail,t-b631bc9482db,28,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/ABCD/r0,g2,ABCD,0,,c0dac21fb3baa91d1c5fd25c5d24ac8d764a91ba,,,,,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/ABCD/r1,g2,ABCD,1,A,c2f41c5dfebaf5a93a2460d96c234b0f2a7f74e9,gpt-5.4-mini,8,141040,11232,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/ABCD/r2,g2,ABCD,2,B,385e3d5c64bb63c7857a7c79f84a096fc5ea1e95,gpt-5.4-mini,5,43312,2876,ok,t-d8fd584aff43,17,16,1,0,2026-11-28,
+g2/ABCD/r3,g2,ABCD,3,C,0d180973ed08e52696091ca9589936d1673d6703,gpt-5.4-mini,9,236395,6873,ok,t-d8fd584aff43,17,16,1,0,2026-11-28,
+g2/ABCD/r4,g2,ABCD,4,D,9ddb6bbc764f430c6b4461668593a8a8d211afa2,gpt-5.4-mini,11,130710,7034,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g2/BDAC/r0,g2,BDAC,0,,c0dac21fb3baa91d1c5fd25c5d24ac8d764a91ba,,,,,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/BDAC/r1,g2,BDAC,1,B,084c52f15cecaee0e738a6533d00be1b3552e98e,gpt-5.4-mini,5,48416,3578,ok,t-d8fd584aff43,17,16,1,0,2026-11-28,
+g2/BDAC/r2,g2,BDAC,2,D,f6df2eb1e4057c2d0d6c9e1882bd7ad29a635111,gpt-5.4-mini,9,174216,6622,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/BDAC/r3,g2,BDAC,3,A,17a0e833876d7d42887e1a935620edfd36c99e9b,gpt-5.4-mini,7,104575,9327,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/BDAC/r4,g2,BDAC,4,C,81b7f2b3200ec2a75d3b99d3c56041484503ef66,gpt-5.4-mini,13,382999,9997,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/CADB/r0,g2,CADB,0,,c0dac21fb3baa91d1c5fd25c5d24ac8d764a91ba,,,,,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/CADB/r1,g2,CADB,1,C,2eeb22bd731e24809b11ad547282c6948e599011,gpt-5.4-mini,9,230377,3683,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/CADB/r2,g2,CADB,2,A,67c3f589876aa032787e6f55481dfd7786b266f4,gpt-5.4-mini,9,174597,12636,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/CADB/r3,g2,CADB,3,D,693dfb0a2fa16215d05089d148ebd1a5a5dd5e42,gpt-5.4-mini,12,244575,6652,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/CADB/r4,g2,CADB,4,B,77a0f8c28c8fa3b297c06605fb5ba0baf0bff19e,gpt-5.4-mini,5,41869,3638,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/DCBA/r0,g2,DCBA,0,,c0dac21fb3baa91d1c5fd25c5d24ac8d764a91ba,,,,,ok,t-d8fd584aff43,17,15,2,0,2026-11-28,
+g2/DCBA/r1,g2,DCBA,1,D,e5ab71a531f2c3cf79811a0ed0b02dd0329d5d9a,gpt-5.4-mini,10,134285,5362,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/DCBA/r2,g2,DCBA,2,C,2a15b949cd7318cc2d0d5cd22cbe86a3f1dff9e2,gpt-5.4-mini,12,566051,29265,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/DCBA/r3,g2,DCBA,3,B,0b0b38435e4666dee3d2ae1d3b5d707c1c3d6173,gpt-5.4-mini,5,42899,3603,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g2/DCBA/r4,g2,DCBA,4,A,481045d29a19c73ff2ebbce816760c5313a8be69,gpt-5.4-mini,12,242573,8454,fail,t-d8fd584aff43,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)
+g3/ABCD/r0,g3,ABCD,0,,cd7d6309b31d2bf2dfd3d06aa7fd61d4cf247376,,,,,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/ABCD/r1,g3,ABCD,1,A,72b27aca99e3f443cd7224f9fe5b4425ba296bb3,gpt-5.4-mini,10,170294,7855,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/ABCD/r2,g3,ABCD,2,B,08724b6c2d97c6670ed5995781f27d62463c34c4,gpt-5.4-mini,4,28367,2238,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/ABCD/r3,g3,ABCD,3,C,57963af8cf011b6820e82db999eb5698b9dbe590,gpt-5.4-mini,10,270174,5111,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/ABCD/r4,g3,ABCD,4,D,0e8578ae233db17cae0220c71c051fc482beea82,gpt-5.4-mini,13,214145,7627,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/BDAC/r0,g3,BDAC,0,,cd7d6309b31d2bf2dfd3d06aa7fd61d4cf247376,,,,,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/BDAC/r1,g3,BDAC,1,B,a3d266dd513b47f7b8bf1e77c71efd1c54249f29,gpt-5.4-mini,4,19721,2240,ok,t-105a24d46909,15,14,1,0,2026-11-28,
+g3/BDAC/r2,g3,BDAC,2,D,aa56069949e213572554820a200004d939834ff6,gpt-5.4-mini,8,158869,10995,ok,t-105a24d46909,15,14,1,0,2026-11-28,
+g3/BDAC/r3,g3,BDAC,3,A,af5ecf614039f39c1642d84c05079f70c058a939,gpt-5.4-mini,7,128385,9257,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/BDAC/r4,g3,BDAC,4,C,2e5674d91f1643807476e610f4384fa3b1d392ac,gpt-5.4-mini,11,287397,5339,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g3/CADB/r0,g3,CADB,0,,cd7d6309b31d2bf2dfd3d06aa7fd61d4cf247376,,,,,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/CADB/r1,g3,CADB,1,C,1140aae591a411e682b4b9ff74a634c4c700e561,gpt-5.4-mini,10,239321,6196,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/CADB/r2,g3,CADB,2,A,eae6f2b79f64f77365dffd14e9a44778611b4fb5,gpt-5.4-mini,11,214029,12907,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/CADB/r3,g3,CADB,3,D,f2d8d06ab641e99f8c04772681800744790cd6c8,gpt-5.4-mini,8,145903,8824,ok,t-105a24d46909,15,2,13,0,2026-11-28,
+g3/CADB/r4,g3,CADB,4,B,2f88e2e2e79636127f3282990eb9cfc309038796,gpt-5.4-mini,4,18104,2211,ok,t-105a24d46909,15,3,12,0,2026-11-28,
+g3/DCBA/r0,g3,DCBA,0,,cd7d6309b31d2bf2dfd3d06aa7fd61d4cf247376,,,,,ok,t-105a24d46909,15,13,2,0,2026-11-28,
+g3/DCBA/r1,g3,DCBA,1,D,92a25e93382720bb9a256d50fc8ab95a073aa6ce,gpt-5.4-mini,12,315348,7126,ok,t-105a24d46909,15,1,14,0,2026-11-28,
+g3/DCBA/r2,g3,DCBA,2,C,230b5a8700b7e43ce71be68dc92f58e1d5599863,gpt-5.4-mini,10,290659,6754,ok,t-105a24d46909,15,1,14,0,2026-11-28,
+g3/DCBA/r3,g3,DCBA,3,B,cfc466baa72123949e115aa09d62ad2376a83826,gpt-5.4-mini,5,30549,2301,ok,t-105a24d46909,15,2,13,0,2026-11-28,
+g3/DCBA/r4,g3,DCBA,4,A,78b1020f38d7dbb648e0f314e0267aecd5c49892,gpt-5.4-mini,6,79249,8180,fail,t-105a24d46909,15,0,0,0,2026-11-28,cause_hint: build error (exit 1)
+g4/ABCD/r0,g4,ABCD,0,,4ea238b9b792dfdb8568a43de1350f5335baf725,,,,,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/ABCD/r1,g4,ABCD,1,A,d4bff41491fe3a47f39332cf495916892cd793fa,gpt-5.4-mini,9,138877,10973,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/ABCD/r2,g4,ABCD,2,B,c57bbff1f14ce69624c23efac356bcf17174dc20,gpt-5.4-mini,5,20753,2057,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/ABCD/r3,g4,ABCD,3,C,289cc109bcc0fe689f7177df636cc332a1ebc544,gpt-5.4-mini,8,95516,9117,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/ABCD/r4,g4,ABCD,4,D,2d05dcda51950378ca63158c177aa97148b11aee,gpt-5.4-mini,12,155041,3694,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/BDAC/r0,g4,BDAC,0,,4ea238b9b792dfdb8568a43de1350f5335baf725,,,,,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/BDAC/r1,g4,BDAC,1,B,30f54f4ad6030d870e17f1b8f0852b1dfa9b52ed,gpt-5.4-mini,5,20960,2013,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/BDAC/r2,g4,BDAC,2,D,be4ca8e94706523a0b887a3abcd1d9dddb203436,gpt-5.4-mini,11,142608,3846,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/BDAC/r3,g4,BDAC,3,A,029d18604cd6fe25ff0ee12633f639d9662aad15,gpt-5.4-mini,16,237329,10571,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/BDAC/r4,g4,BDAC,4,C,1ce2b0e22cdbf59fea035eedd59b67b9e8408e1a,gpt-5.4-mini,7,73089,8560,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/CADB/r0,g4,CADB,0,,4ea238b9b792dfdb8568a43de1350f5335baf725,,,,,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/CADB/r1,g4,CADB,1,C,fa6469bdbf71e54a0bb82bb1b08c3ff2f6d18e5d,gpt-5.4-mini,5,56880,8631,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/CADB/r2,g4,CADB,2,A,4c85b2eb2d39b41dea1f4e1d829673d004edf0e9,gpt-5.4-mini,6,78624,12816,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/CADB/r3,g4,CADB,3,D,dbe93c618074528e8af2644b1d9863359c5b2552,gpt-5.4-mini,12,148486,4363,ok,t-01c6726c2a89,17,4,13,0,2026-11-28,
+g4/CADB/r4,g4,CADB,4,B,2f56d4495fe8f995e0509bff28da4b56f25db052,gpt-5.4-mini,5,19430,2130,ok,t-01c6726c2a89,17,4,13,0,2026-11-28,
+g4/DCBA/r0,g4,DCBA,0,,4ea238b9b792dfdb8568a43de1350f5335baf725,,,,,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/DCBA/r1,g4,DCBA,1,D,6e77edacec0055d5189f7429a9c488ce9a049ef3,gpt-5.4-mini,12,166643,4688,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/DCBA/r2,g4,DCBA,2,C,12bb0ececf30d07e28c6d12fc3afa95250cd1d4f,gpt-5.4-mini,7,106317,12103,ok,t-01c6726c2a89,17,15,2,0,2026-11-28,
+g4/DCBA/r3,g4,DCBA,3,B,bcd401a0cfef33c3d3074d85fee045492218d53e,gpt-5.4-mini,5,20049,1955,ok,t-01c6726c2a89,17,16,1,0,2026-11-28,
+g4/DCBA/r4,g4,DCBA,4,A,2531db841ee48b533d8eb2b93d7647e8688cd040,gpt-5.4-mini,15,210328,10886,fail,t-01c6726c2a89,17,0,0,0,2026-11-28,cause_hint: timeout (no HTTP 200 within 120s; last code 000)

@@ -1,0 +1,17 @@
+app,chain,d_round,fixed_by_d,survival_+1,survival_+2,survival_+3,reintroduced_final,new_per_round,regressions_per_round,did_not_boot
+g1,ABCD,4,n/a,,,,,0 0 0 n/a,0 0 0 n/a,r4
+g1,BDAC,2,0,n/a,n/a,,0,0 0 0 0,0 0 0 0,-
+g1,CADB,3,0,n/a,,,0,0 0 0 0,0 0 0 0,-
+g1,DCBA,1,n/a,dnb,dnb,dnb,n/a,n/a n/a n/a n/a,n/a n/a n/a n/a,r1 r2 r3 r4
+g2,ABCD,4,n/a,,,,,0 0 0 n/a,0 0 0 n/a,r4
+g2,BDAC,2,n/a,dnb,dnb,,n/a,0 n/a n/a n/a,0 n/a n/a n/a,r2 r3 r4
+g2,CADB,3,n/a,dnb,,,n/a,0 0 n/a n/a,0 0 n/a n/a,r3 r4
+g2,DCBA,1,n/a,dnb,dnb,dnb,n/a,n/a n/a n/a n/a,n/a n/a n/a n/a,r1 r2 r3 r4
+g3,ABCD,4,n/a,,,,,n/a n/a n/a n/a,n/a n/a n/a n/a,r1 r2 r3 r4
+g3,BDAC,2,0,dnb,dnb,,n/a,0 0 n/a n/a,0 0 n/a n/a,r3 r4
+g3,CADB,3,0,n/a,,,0,0 0 0 0,0 0 0 0,-
+g3,DCBA,1,0,n/a,n/a,dnb,n/a,0 0 0 n/a,0 0 0 n/a,r4
+g4,ABCD,4,0,,,,,0 0 0 0,0 0 0 0,-
+g4,BDAC,2,0,n/a,n/a,,0,0 0 0 0,0 0 0 0,-
+g4,CADB,3,0,n/a,,,0,0 0 0 0,0 0 0 0,-
+g4,DCBA,1,0,n/a,n/a,dnb,n/a,0 0 0 n/a,0 0 0 n/a,r4
