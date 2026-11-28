@@ -100,16 +100,31 @@ and date it when it is unblocked.
       Desktop WSL integration and Playwright Chromium. Boot, tests and scans run there;
       chain generation can stay on Windows.)*
 
-## Official batch status (28 Nov, early morning)
+## Official batch status (28 Nov)
 
 - [x] **Generation.** All 17 chains (g1–g4 × ABCD, BDAC, CADB, DCBA, plus `g1/DCBA-rep`),
       68 rounds, every one `done` on attempt 1 with gpt-5.4-mini. Agent logs in
       `results/raw/<app>/<chain>/r<k>/`. `files=0` on `g1/CADB r4 B` and `g1/DCBA r3 B`:
       the earlier C round had already fixed the seeded bug, as in the pilot.
-- [ ] **Assessment.** `tools/assess_batch.py` (`make assess`) is written and dry-run
-      (85 checkpoints = 17 chains × r0–r4); not run yet. Next: in WSL,
-      `python3 tools/assess_batch.py` (about 1.5 h, resumable).
-- [ ] Then `make ingest`, `make tables`, `make figures`, and compare with the pilot.
+- [x] **Assessment.** All 85 checkpoints `done` (`results/raw/assess_batch.log`).
+      34 did not boot; the causes checked so far are real agent breakage (e.g. D turned
+      on SSL for a Postgres that has none; A broke `npm run build` in g3). Each assess.py
+      now runs with `cwd` set to the repo: a stale `/mnt/c` cwd after a Docker boot
+      broke every clone after the first.
+- [x] **Ingest.** checkpoints (85), findings (3,372), tests (1,680), triage (55 pass→fail).
+- [x] **Provisional tables R1–R3 and figures F1–F3.** Counts read 0 until labels exist;
+      boot status is real.
+- [x] **Label sheets** in `results/sheets/` (`make sheets`): findings, 388 Semgrep keys
+      (under the 400 cut, so all severities; no Gitleaks keys); transitions, 55 rows.
+- [ ] **Labelling.** Nazrul: findings. Jarred: transitions. Faris: causes for the 34
+      non-booted checkpoints and `cause_guess` in `triage.csv`.
+- [ ] **Second rating (N-8).** Seeded 20% sample (seed in DECISIONS.md), then
+      `make_label_sheets.py second --keys sample.csv`. Faris: findings; Wuth: transitions.
+- [ ] **Import and resolve.** `make labels` (`tools/import_labels.py`) writes
+      `results/labels.csv` and prints percent agreement and kappa. Settled disagreements
+      and resolved `unsure` go in `results/resolutions.csv`
+      (app, kind, key_or_test, checkpoint_id, final, note).
+- [ ] Then `make tables`, `make figures`, and compare with the pilot.
 
 ## Done by M3 alone (17 Nov)
 

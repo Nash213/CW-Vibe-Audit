@@ -3,11 +3,12 @@
 
 PY      ?= uv run --no-project python
 PYPLOT  ?= uv run --no-project --with-requirements analysis/requirements.txt python
-PYTEST  ?= uv run --no-project --with pytest --with-requirements analysis/requirements.txt python -m pytest -p no:cacheprovider
+PYSHEET ?= uv run --no-project --with-requirements tools/requirements.txt python
+PYTEST  ?= uv run --no-project --with pytest --with-requirements analysis/requirements.txt --with-requirements tools/requirements.txt python -m pytest -p no:cacheprovider
 RAW     ?= results/raw
 OUT     ?= results
 
-.PHONY: setup test generate assess ingest tables figures all demo
+.PHONY: setup test generate assess ingest sheets labels tables figures all demo
 
 ## setup: pull the pinned scanner images (versions in docs/RUNINFO.md)
 setup:
@@ -39,6 +40,17 @@ assess:
 ingest:
 	$(PY) tools/ingest.py --raw $(RAW) --out $(OUT)
 	$(PY) tools/transitions.py --results $(OUT)
+
+## sheets: blank labelling sheets into results/sheets/ (tools/make_label_sheets.py)
+sheets:
+	$(PYSHEET) tools/make_label_sheets.py findings --findings $(OUT)/findings.csv --raw $(RAW) --out $(OUT)/sheets/findings.xlsx
+	$(PYSHEET) tools/make_label_sheets.py transitions --triage $(OUT)/triage.csv --out $(OUT)/sheets/transitions.xlsx
+
+## labels: completed sheets -> results/labels.csv (tools/import_labels.py)
+## second-rater sheets: make labels FSECOND=<sheet>.xlsx TSECOND=<sheet>.xlsx
+## settled disagreements and resolved unsures go in results/resolutions.csv
+labels:
+	$(PYSHEET) tools/import_labels.py --findings $(OUT)/sheets/findings.xlsx --transitions $(OUT)/sheets/transitions.xlsx $(if $(FSECOND),--findings-second $(FSECOND)) $(if $(TSECOND),--transitions-second $(TSECOND)) --resolutions $(OUT)/resolutions.csv --out $(OUT)/labels.csv
 
 ## tables: R1 to R3 from the CSVs into results/tables/ (analysis/tables.py, Wuth-6)
 ## R4/R5 come from Nazrul's scripts (not in the repo yet)
