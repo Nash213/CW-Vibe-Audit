@@ -14,7 +14,7 @@
 #
 # Writes to $RAW_ROOT/<app>/<chain>/r<round>/ :
 #   stage  boot_status  port_used  notes  commit  timings.log
-#   lint.log  build.log  boot.log  compose-ps.json  teardown.log
+#   lint.log  build.log  boot.log  compose-ps.json  compose-ps-after.json  restarts.txt  teardown.log
 #   playwright.json  playwright.exit  playwright.stdout.log  playwright.stderr.log
 #
 # Deliberately NOT "set -e": a failed step must never skip teardown.
@@ -55,6 +55,19 @@ stage()  { printf '%s\n' "$1" > "$OUT/stage"; printf '%s %s (t=%ss)\n' "$(date -
 note()   { printf '%s\n' "$1" >> "$OUT/notes"; }
 finish() { printf '%s\n' "$1" > "$OUT/boot_status"; }
 save_logs() { ( cd "$WORK" && docker compose -p "$PROJECT" logs --no-color --tail=300 ) > "$OUT/boot.log" 2>&1; }
+
+# First error line of a log into notes, because the .log files themselves are git-ignored.
+# Usage: error_line <log file> <label>. Database containers' lines are skipped,
+# secret-looking values are masked, and the line is cut to 200 characters.
+error_line() {
+  local line
+  line="$(grep -v -iE '^[^|]*(db|postgres|mysql|redis|mongo)[^|]*\|' "$1" 2>/dev/null \
+    | grep -m1 -iE 'error|exception|fatal|cannot|unhandled|ERR_|throw' \
+    | sed -E 's/^[^|]*\| ?//; s/((secret|password|passwd|token|key|api[_-]?key)[^=:]{0,20}[=:] *)[^ ,;"]+/\1***/Ig' \
+    | cut -c1-200)"
+  [ -n "$line" ] && note "$2: $line"
+  return 0
+}
 
 COMPLETE=0      # becomes 1 only when the checkpoint reached a real outcome
 TORN_DOWN=0
@@ -111,7 +124,7 @@ rc=$?
 if [ $rc -ne 0 ]; then
   finish fail
   if [ $rc -eq 124 ]; then note "cause_hint: timeout (build over ${BUILD_TIMEOUT}s)"; else note "cause_hint: build error (exit $rc)"; fi
-  save_logs; end_checkpoint
+  error_line "$OUT/build.log" build_line; save_logs; end_checkpoint
 fi
 
 # --- which port did the app really publish? --------------------------------
@@ -147,13 +160,19 @@ while [ "$SECONDS" -lt "$deadline" ]; do
 done
 if [ "$code" != "200" ]; then
   finish fail
-  ( cd "$WORK" && docker compose -p "$PROJECT" ps -a --format json ) > "$OUT/compose-ps-after.json" 2>/dev/null
-  if grep -qi '"State":"exited"' "$OUT/compose-ps-after.json" 2>/dev/null; then
+  # Restart counts per container: a restart policy hides a crash loop as a "running" container.
+  ( cd "$WORK" && docker compose -p "$PROJECT" ps -aq | xargs -r docker inspect \
+      --format '{{index .Config.Labels "com.docker.compose.service"}} {{.RestartCount}} {{.State.Status}} {{.State.ExitCode}}' ) \
+    > "$OUT/restarts.txt" 2>/dev/null
+  looping="$(awk '$2 > 0 || $3 == "restarting" {printf "%s%s(restarts=%s)", sep, $1, $2; sep=" "}' "$OUT/restarts.txt" 2>/dev/null)"
+  if [ -n "$looping" ]; then
+    note "cause_hint: runtime crash (restart loop: $looping; last HTTP code $code)"
+  elif grep -qi '"State":"exited"' "$OUT/compose-ps-after.json" 2>/dev/null; then
     note "cause_hint: runtime crash (a container exited; last HTTP code $code)"
   else
     note "cause_hint: timeout (no HTTP 200 within ${HEALTH_TIMEOUT}s; last code $code)"
   fi
-  save_logs; end_checkpoint
+  save_logs; error_line "$OUT/boot.log" crash_line; end_checkpoint
 fi
 finish ok
 
