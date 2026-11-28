@@ -1,0 +1,1748 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g3",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3003",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g3/feature.spec.ts",
+      "file": "g3/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 165,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:09:47.634Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e4cdb13b6a0df499bce5",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4399,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:27:74",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                      "column": 74,
+                      "line": 27
+                    },
+                    "snippet": " \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m uiRegister(page\u001b[33m,\u001b[39m appId\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[90m// Judge success through the API, so it does not depend on what the UI does after sign-up.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m apiLoginStatus(appId\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m \u001b[33mTEST_PASSWORD\u001b[39m))\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m300\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   test(\u001b[32m'T03 log in via UI'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                        "column": 74,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  25 |     await uiRegister(page, appId, email);\n  26 |     // Judge success through the API, so it does not depend on what the UI does after sign-up.\n> 27 |     await expect.poll(() => apiLoginStatus(appId, email, TEST_PASSWORD)).toBeLessThan(300);\n     |                                                                          ^\n  28 |   });\n  29 |\n  30 |   test('T03 log in via UI', async ({ page }) => {\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:27:74"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:09:47.904Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T02-register-new-user-via-UI/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T02-register-new-user-via-UI/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                    "column": 74,
+                    "line": 27
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4427,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:27:74",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                      "column": 74,
+                      "line": 27
+                    },
+                    "snippet": " \u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m uiRegister(page\u001b[33m,\u001b[39m appId\u001b[33m,\u001b[39m email)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[90m// Judge success through the API, so it does not depend on what the UI does after sign-up.\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect\u001b[33m.\u001b[39mpoll(() \u001b[33m=>\u001b[39m apiLoginStatus(appId\u001b[33m,\u001b[39m email\u001b[33m,\u001b[39m \u001b[33mTEST_PASSWORD\u001b[39m))\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m300\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   test(\u001b[32m'T03 log in via UI'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                        "column": 74,
+                        "line": 27
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m300\u001b[39m\nReceived:   \u001b[31m403\u001b[39m\n\nCall Log:\n- Timeout 5000ms exceeded while waiting on the predicate\n\n  25 |     await uiRegister(page, appId, email);\n  26 |     // Judge success through the API, so it does not depend on what the UI does after sign-up.\n> 27 |     await expect.poll(() => apiLoginStatus(appId, email, TEST_PASSWORD)).toBeLessThan(300);\n     |                                                                          ^\n  28 |   });\n  29 |\n  30 |   test('T03 log in via UI', async ({ page }) => {\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:27:74"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:09:53.631Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T02-register-new-user-via-UI-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T02-register-new-user-via-UI-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts",
+                    "column": 74,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-68ec4a44c35ec3fbf98a",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 95,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:09:59.475Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 107,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:01.042Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-93109ba52d2d7e65cac8",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 105,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:02.577Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 109,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:04.070Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-1745d462616ac545f239",
+          "file": "../lib/suite.ts",
+          "line": 86,
+          "column": 3
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 119,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:05.594Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 117,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:07.114Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-3d57a627953f8cd19213",
+          "file": "../lib/suite.ts",
+          "line": 122,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 112,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:08.658Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 117,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:10.237Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-c6559c37daaddc9f2ed5",
+          "file": "../lib/suite.ts",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:11.758Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T13-wrong-passw-f7e2b-d-the-right-one-still-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:13.159Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T13-wrong-passw-f7e2b-d-the-right-one-still-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e3e7b663001cd5eebb3e",
+          "file": "../lib/suite.ts",
+          "line": 150,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:14.506Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T14-the-same-e-mail-cannot-register-twice/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 24,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:15.869Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T14-the-same-e-mail-cannot-register-twice-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7ebc59929fd06e81f3a4",
+          "file": "../lib/suite.ts",
+          "line": 157,
+          "column": 3
+        },
+        {
+          "title": "T04 add a product to the cart via UI",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 110,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:17.247Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 107,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:18.783Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-319777deb0afc6e2732d",
+          "file": "g3/feature.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "T05 cart lists the item",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 102,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:20.299Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 101,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:21.841Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-dd4a93eac89825758bd4",
+          "file": "g3/feature.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "T06 change the quantity and it is saved",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 111,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:23.343Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 108,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:24.886Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7cc8876053a9f82b28bb",
+          "file": "g3/feature.spec.ts",
+          "line": 67,
+          "column": 1
+        },
+        {
+          "title": "T07 remove from the cart and it disappears",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 110,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:26.368Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 112,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:27.912Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-62afa2876ecaf3bd7c84",
+          "file": "g3/feature.spec.ts",
+          "line": 78,
+          "column": 1
+        },
+        {
+          "title": "T09 log in again and the cart is still there",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 116,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:29.432Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 127,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:31.003Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-afd7fa0091e71b4f3288",
+          "file": "g3/feature.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 116,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:32.531Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 107,
+                  "error": {
+                    "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}",
+                    "stack": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 403 {\"error\":\"Invalid CSRF token\"}\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:34.069Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-0e8935969121eae16ef2",
+          "file": "g3/feature.spec.ts",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 26,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 47,
+                  "error": {
+                    "message": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:125:56",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                      "column": 56,
+                      "line": 125
+                    },
+                    "snippet": " \u001b[90m 123 |\u001b[39m   expect(res\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m   \u001b[36mconst\u001b[39m prices \u001b[33m=\u001b[39m ((\u001b[36mawait\u001b[39m res\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mproducts \u001b[36mas\u001b[39m { price\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m number }[])\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m \u001b[33mNumber\u001b[39m(p\u001b[33m.\u001b[39mprice))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m   expect(prices\u001b[33m,\u001b[39m \u001b[32m'price-low should be cheapest first'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[33m...\u001b[39mprices]\u001b[33m.\u001b[39msort((a\u001b[33m,\u001b[39m b) \u001b[33m=>\u001b[39m a \u001b[33m-\u001b[39m b))\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                        "column": 56,
+                        "line": 125
+                      },
+                      "message": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  123 |   expect(res.ok()).toBeTruthy();\n  124 |   const prices = ((await res.json()).products as { price: string | number }[]).map((p) => Number(p.price));\n> 125 |   expect(prices, 'price-low should be cheapest first').toEqual([...prices].sort((a, b) => a - b));\n      |                                                        ^\n  126 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:125:56"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:10:35.559Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                    "column": 56,
+                    "line": 125
+                  }
+                },
+                {
+                  "workerIndex": 27,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 40,
+                  "error": {
+                    "message": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:125:56",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                      "column": 56,
+                      "line": 125
+                    },
+                    "snippet": " \u001b[90m 123 |\u001b[39m   expect(res\u001b[33m.\u001b[39mok())\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m   \u001b[36mconst\u001b[39m prices \u001b[33m=\u001b[39m ((\u001b[36mawait\u001b[39m res\u001b[33m.\u001b[39mjson())\u001b[33m.\u001b[39mproducts \u001b[36mas\u001b[39m { price\u001b[33m:\u001b[39m string \u001b[33m|\u001b[39m number }[])\u001b[33m.\u001b[39mmap((p) \u001b[33m=>\u001b[39m \u001b[33mNumber\u001b[39m(p\u001b[33m.\u001b[39mprice))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m   expect(prices\u001b[33m,\u001b[39m \u001b[32m'price-low should be cheapest first'\u001b[39m)\u001b[33m.\u001b[39mtoEqual([\u001b[33m...\u001b[39mprices]\u001b[33m.\u001b[39msort((a\u001b[33m,\u001b[39m b) \u001b[33m=>\u001b[39m a \u001b[33m-\u001b[39m b))\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                        "column": 56,
+                        "line": 125
+                      },
+                      "message": "Error: price-low should be cheapest first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 7\u001b[39m\n\u001b[31m+ Received  + 7\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   34,\u001b[39m\n\u001b[32m-   64.99,\u001b[39m\n\u001b[32m-   79.99,\u001b[39m\n\u001b[32m-   119,\u001b[39m\n\u001b[32m-   139.5,\u001b[39m\n\u001b[32m-   159,\u001b[39m\n\u001b[32m-   199.99,\u001b[39m\n\u001b[2m    499,\u001b[22m\n\u001b[31m+   199.99,\u001b[39m\n\u001b[31m+   159,\u001b[39m\n\u001b[31m+   139.5,\u001b[39m\n\u001b[31m+   119,\u001b[39m\n\u001b[31m+   79.99,\u001b[39m\n\u001b[31m+   64.99,\u001b[39m\n\u001b[31m+   34,\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  123 |   expect(res.ok()).toBeTruthy();\n  124 |   const prices = ((await res.json()).products as { price: string | number }[]).map((p) => Number(p.price));\n> 125 |   expect(prices, 'price-low should be cheapest first').toEqual([...prices].sort((a, b) => a - b));\n      |                                                        ^\n  126 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:125:56"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:10:36.953Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts",
+                    "column": 56,
+                    "line": 125
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-862ce33bf1601cd9f467",
+          "file": "g3/feature.spec.ts",
+          "line": 121,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-28T11:09:46.311Z",
+    "duration": 50796.481,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 14,
+    "flaky": 0
+  }
+}

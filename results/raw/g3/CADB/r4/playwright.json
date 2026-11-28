@@ -1,0 +1,1592 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g3",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3003",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g3/feature.spec.ts",
+      "file": "g3/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:12.780Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e4cdb13b6a0df499bce5",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 956,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:13.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-68ec4a44c35ec3fbf98a",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 500,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:14.165Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 548,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:31:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:16.009Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T03-log-in-via-UI-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-93109ba52d2d7e65cac8",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 543,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:17.993Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 526,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:19.967Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-1745d462616ac545f239",
+          "file": "../lib/suite.ts",
+          "line": 86,
+          "column": 3
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 536,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:21.948Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 534,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:23.894Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T11-no-script-e-5db04--assets-while-using-the-app-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-3d57a627953f8cd19213",
+          "file": "../lib/suite.ts",
+          "line": 122,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 530,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:25.833Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 535,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:27.768Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T12-still-logged-in-after-a-page-reload-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-c6559c37daaddc9f2ed5",
+          "file": "../lib/suite.ts",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 461,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:29.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T13-wrong-passw-f7e2b-d-the-right-one-still-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 466,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:31.532Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T13-wrong-passw-f7e2b-d-the-right-one-still-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-e3e7b663001cd5eebb3e",
+          "file": "../lib/suite.ts",
+          "line": 150,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 482,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:33.334Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T14-the-same-e-mail-cannot-register-twice/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 508,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:35.246Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T14-the-same-e-mail-cannot-register-twice-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7ebc59929fd06e81f3a4",
+          "file": "../lib/suite.ts",
+          "line": 157,
+          "column": 3
+        },
+        {
+          "title": "T04 add a product to the cart via UI",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 530,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:37.161Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 532,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:42:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:39.112Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T04-add-a-product-to-the-cart-via-UI-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-319777deb0afc6e2732d",
+          "file": "g3/feature.spec.ts",
+          "line": 41,
+          "column": 1
+        },
+        {
+          "title": "T05 cart lists the item",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 537,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:41.051Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 544,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:58:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:43.005Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T05-cart-lists-the-item-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-dd4a93eac89825758bd4",
+          "file": "g3/feature.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "T06 change the quantity and it is saved",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 565,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:44.961Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 525,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:68:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:47.027Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T06-change-the-quantity-and-it-is-saved-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-7cc8876053a9f82b28bb",
+          "file": "g3/feature.spec.ts",
+          "line": 67,
+          "column": 1
+        },
+        {
+          "title": "T07 remove from the cart and it disappears",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 558,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:48.969Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 544,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:79:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:50.913Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T07-remove-from-the-cart-and-it-disappears-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-62afa2876ecaf3bd7c84",
+          "file": "g3/feature.spec.ts",
+          "line": 78,
+          "column": 1
+        },
+        {
+          "title": "T09 log in again and the cart is still there",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 581,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:52.860Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 539,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:90:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:54.834Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-T09-log-in-again-and-the-cart-is-still-there-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-afd7fa0091e71b4f3288",
+          "file": "g3/feature.spec.ts",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 543,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:07:57.009Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                },
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 546,
+                  "error": {
+                    "message": "Error: login response has no token field",
+                    "stack": "Error: login response has no token field\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 42,
+                      "line": 53
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:53\n\n \u001b[90m 51 |\u001b[39m\n \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m token \u001b[33m=\u001b[39m (\u001b[36mawait\u001b[39m login\u001b[33m.\u001b[39mjson())[cfg\u001b[33m.\u001b[39mtokenField \u001b[33m??\u001b[39m \u001b[32m'token'\u001b[39m]\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 53 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mtypeof\u001b[39m token \u001b[33m!==\u001b[39m \u001b[32m'string'\u001b[39m) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'login response has no token field'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 54 |\u001b[39m     \u001b[36mconst\u001b[39m authed \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mnewContext({\n \u001b[90m 55 |\u001b[39m       baseURL\u001b[33m:\u001b[39m baseURL()\u001b[33m,\u001b[39m\n \u001b[90m 56 |\u001b[39m       extraHTTPHeaders\u001b[33m:\u001b[39m { \u001b[33mAuthorization\u001b[39m\u001b[33m:\u001b[39m \u001b[32m`Bearer ${token}`\u001b[39m }\u001b[33m,\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 42,
+                        "line": 53
+                      },
+                      "message": "Error: login response has no token field\n\n   at ../lib/auth.ts:53\n\n  51 |\n  52 |     const token = (await login.json())[cfg.tokenField ?? 'token'];\n> 53 |     if (typeof token !== 'string') throw new Error('login response has no token field');\n     |                                          ^\n  54 |     const authed = await request.newContext({\n  55 |       baseURL: baseURL(),\n  56 |       extraHTTPHeaders: { Authorization: `Bearer ${token}` },\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:53:42)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g3/feature.spec.ts:104:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:07:59.213Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g3-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 42,
+                    "line": 53
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1567bc873395578d05da-0e8935969121eae16ef2",
+          "file": "g3/feature.spec.ts",
+          "line": 102,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 44,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:08:01.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1567bc873395578d05da-862ce33bf1601cd9f467",
+          "file": "g3/feature.spec.ts",
+          "line": 121,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-28T11:07:11.282Z",
+    "duration": 50177.67,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 12,
+    "flaky": 0
+  }
+}

@@ -95,7 +95,8 @@ def main(argv: list[str] | None = None) -> int:
         out = args.raw / app / chain / f"r{k}"
         t0 = time.monotonic()
         rc = subprocess.run([sys.executable, str(ROOT / "tools" / "assess.py"), app, chain,
-                             str(k), "--raw", str(args.raw)], check=False).returncode
+                             str(k), "--raw", str(args.raw.resolve())],
+                            cwd=str(ROOT), check=False).returncode
         stage = read(out / "stage")
         line = (f"{dt.datetime.now(dt.timezone.utc):%Y-%m-%dT%H:%M:%SZ}\t{app}\t{chain}\tr{k}\t"
                 f"stage={stage}\tboot={read(out / 'boot_status')}\t"

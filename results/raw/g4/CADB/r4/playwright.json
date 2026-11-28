@@ -1,0 +1,1733 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g4",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3004",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g4/feature.spec.ts",
+      "file": "g4/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 183,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:18.814Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a4e330225e5a0f42e551",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:19.112Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-3216547f123d558cb717",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 332,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:19.493Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-1330d29df9f2cb76088f",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T04 create item via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 449,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:19.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-2ae38df9cfa8aa4df055",
+          "file": "../lib/suite.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "T05 item appears in the list",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5238,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\u001b[22m\n\n    at uiLogin (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/ui.ts:105:56)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:47:9\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:45:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/ui.ts",
+                      "column": 56,
+                      "line": 105
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/ui.ts:105\n\n \u001b[90m 103 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m uiLogin(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m appId\u001b[33m:\u001b[39m \u001b[33mAppId\u001b[39m\u001b[33m,\u001b[39m user\u001b[33m:\u001b[39m { email\u001b[33m:\u001b[39m string\u001b[33m;\u001b[39m password\u001b[33m:\u001b[39m string })\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 104 |\u001b[39m   \u001b[36mawait\u001b[39m fillAuthForm(page\u001b[33m,\u001b[39m appId\u001b[33m,\u001b[39m \u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m user\u001b[33m.\u001b[39memail\u001b[33m,\u001b[39m user\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 105 |\u001b[39m   \u001b[36mawait\u001b[39m expect(clickable(page\u001b[33m,\u001b[39m loggedInMarker(appId)))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 106 |\u001b[39m }\n \u001b[90m 107 |\u001b[39m\n \u001b[90m 108 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m uiLogout(page\u001b[33m:\u001b[39m \u001b[33mPage\u001b[39m\u001b[33m,\u001b[39m appId\u001b[33m:\u001b[39m \u001b[33mAppId\u001b[39m)\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/ui.ts",
+                        "column": 56,
+                        "line": 105
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first() with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /log ?out|sign ?out/i }).or(getByRole('link', { name: /log ?out|sign ?out/i })).first()\u001b[22m\n\n\n   at ../lib/ui.ts:105\n\n  103 | export async function uiLogin(page: Page, appId: AppId, user: { email: string; password: string }): Promise<void> {\n  104 |   await fillAuthForm(page, appId, 'login', user.email, user.password);\n> 105 |   await expect(clickable(page, loggedInMarker(appId))).toBeVisible();\n      |                                                        ^\n  106 | }\n  107 |\n  108 | export async function uiLogout(page: Page, appId: AppId): Promise<void> {\n    at uiLogin (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/ui.ts:105:56)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:47:9\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:45:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:20.293Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T05-item-appears-in-the-list/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T05-item-appears-in-the-list/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/ui.ts",
+                    "column": 56,
+                    "line": 105
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 117,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:45:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:45:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:26.820Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T05-item-appears-in-the-list-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T05-item-appears-in-the-list-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-f9316116f72a2a2efa90",
+          "file": "../lib/suite.ts",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "T06 edit item and the change shows",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 108,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:54:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:54:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:28.371Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T06-edit-item-and-the-change-shows/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T06-edit-item-and-the-change-shows/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 112,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:54:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:54:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:29.917Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T06-edit-item-and-the-change-shows-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T06-edit-item-and-the-change-shows-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-04650fae833a05448392",
+          "file": "../lib/suite.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "T07 delete item and it disappears",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 119,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:74:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:74:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:31.440Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 104,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:74:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:74:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:32.976Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T07-delete-item-and-it-disappears-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-32d876a59797a123aa75",
+          "file": "../lib/suite.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 119,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:34.456Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T08-log-out-and-the-protected-view-is-unreachable/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T08-log-out-and-the-protected-view-is-unreachable/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 115,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:87:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:35.995Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T08-log-out-and-the-protected-view-is-unreachable-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-170b75e3f804d36e1bfa",
+          "file": "../lib/suite.ts",
+          "line": 86,
+          "column": 3
+        },
+        {
+          "title": "T09 log in again and earlier data is still there",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 111,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:99:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:99:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:37.534Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T09-log-in-again-and-earlier-data-is-still-there/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T09-log-in-again-and-earlier-data-is-still-there/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 113,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:99:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:99:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:39.065Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T09-log-in-again-and-earlier-data-is-still-there-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T09-log-in-again-and-earlier-data-is-still-there-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-096187fb1f4e062c95b1",
+          "file": "../lib/suite.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "T10 special characters are shown as typed",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 104,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:111:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:111:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:40.566Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T10-special-characters-are-shown-as-typed/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T10-special-characters-are-shown-as-typed/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 109,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:111:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:111:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:42.089Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T10-special-characters-are-shown-as-typed-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T10-special-characters-are-shown-as-typed-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-7153a67d010e010ef064",
+          "file": "../lib/suite.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 107,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:43.639Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T11-no-script-e-f3671--assets-while-using-the-app/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T11-no-script-e-f3671--assets-while-using-the-app/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 118,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:132:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:45.150Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T11-no-script-e-f3671--assets-while-using-the-app-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T11-no-script-e-f3671--assets-while-using-the-app-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-6b2a11fe0fb4d86106f0",
+          "file": "../lib/suite.ts",
+          "line": 122,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 115,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:46.666Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T12-still-logged-in-after-a-page-reload/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T12-still-logged-in-after-a-page-reload/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 15,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 105,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:142:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:48.211Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T12-still-logged-in-after-a-page-reload-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T12-still-logged-in-after-a-page-reload-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-3ec26b721bb936a0ac80",
+          "file": "../lib/suite.ts",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 16,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 24,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:49.717Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T13-wrong-passw-ee2af-d-the-right-one-still-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 17,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:151:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:51.069Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T13-wrong-passw-ee2af-d-the-right-one-still-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-6a7159fedbd9bbf51527",
+          "file": "../lib/suite.ts",
+          "line": 150,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 18,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 27,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:52.450Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T14-the-same-e-mail-cannot-register-twice/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 19,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:158:5"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:53.802Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T14-the-same-e-mail-cannot-register-twice-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-92e259a319d5f57bbda0",
+          "file": "../lib/suite.ts",
+          "line": 157,
+          "column": 3
+        },
+        {
+          "title": "T15 a normal 100-character title is still accepted",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 20,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 111,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:166:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:166:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:55.149Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T15-a-normal-10-9c249-ter-title-is-still-accepted/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T15-a-normal-10-9c249-ter-title-is-still-accepted/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 21,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 104,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:166:7",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/suite.ts:166:7"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:56.684Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T15-a-normal-10-9c249-ter-title-is-still-accepted-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-T15-a-normal-10-9c249-ter-title-is-still-accepted-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-ea8d48af756f85e5f407",
+          "file": "../lib/suite.ts",
+          "line": 165,
+          "column": 5
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 22,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 103,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:31:58.206Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 23,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 105,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:31:59.758Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a8f78ecdf6ff78e71184",
+          "file": "g4/feature.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 24,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 24,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:01.258Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                },
+                {
+                  "workerIndex": 25,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 25,
+                  "error": {
+                    "message": "Error: register failed: HTTP 429 Too many requests, please try again later.",
+                    "stack": "Error: register failed: HTTP 429 Too many requests, please try again later.\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                      "column": 26,
+                      "line": 45
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../lib/auth.ts:45\n\n \u001b[90m 43 |\u001b[39m   \u001b[36mtry\u001b[39m {\n \u001b[90m 44 |\u001b[39m     \u001b[36mconst\u001b[39m reg \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mregister\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mregisterBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mreg\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'register'\u001b[39m\u001b[33m,\u001b[39m reg))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m login \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ctx\u001b[33m.\u001b[39mpost(cfg\u001b[33m.\u001b[39mlogin\u001b[33m,\u001b[39m { data\u001b[33m:\u001b[39m cfg\u001b[33m.\u001b[39mloginBody(email\u001b[33m,\u001b[39m password) })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mlogin\u001b[33m.\u001b[39mok()) \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[36mawait\u001b[39m failure(\u001b[32m'login'\u001b[39m\u001b[33m,\u001b[39m login))\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                        "column": 26,
+                        "line": 45
+                      },
+                      "message": "Error: register failed: HTTP 429 Too many requests, please try again later.\n\n   at ../lib/auth.ts:45\n\n  43 |   try {\n  44 |     const reg = await ctx.post(cfg.register, { data: cfg.registerBody(email, password) });\n> 45 |     if (!reg.ok()) throw new Error(await failure('register', reg));\n     |                          ^\n  46 |\n  47 |     const login = await ctx.post(cfg.login, { data: cfg.loginBody(email, password) });\n  48 |     if (!login.ok()) throw new Error(await failure('login', login));\n    at createUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:45:26)\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:68:16)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:32:02.622Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts",
+                    "column": 26,
+                    "line": 45
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a2c0a31995af3f9a55fb",
+          "file": "g4/feature.spec.ts",
+          "line": 33,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-28T11:31:17.450Z",
+    "duration": 45312.453,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 13,
+    "flaky": 0
+  }
+}

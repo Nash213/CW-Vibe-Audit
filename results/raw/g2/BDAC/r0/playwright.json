@@ -1,0 +1,824 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g2",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3002",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g2/feature.spec.ts",
+      "file": "g2/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1296,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:41.339Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-2c18002dc55d9dd71a43",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 402,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:42.763Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-e682b98a8524033524a4",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 414,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:43.185Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-0359e1eaeaeac6800d70",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T04 create item via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 573,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:43.607Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-5f5a7ff12e1dc1da26a2",
+          "file": "../lib/suite.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "T05 item appears in the list",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 458,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:44.189Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-213410f25199a9991733",
+          "file": "../lib/suite.ts",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "T06 edit item and the change shows",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2593,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:44.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-0055cdcaa54d13bba4ea",
+          "file": "../lib/suite.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "T07 delete item and it disappears",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 521,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:47.260Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-eb0d817aee19098e87e1",
+          "file": "../lib/suite.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 541,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:47.790Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-c7ef33231dee89563313",
+          "file": "../lib/suite.ts",
+          "line": 86,
+          "column": 3
+        },
+        {
+          "title": "T09 log in again and earlier data is still there",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 673,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:48.340Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-f453fc8e84041bf563c9",
+          "file": "../lib/suite.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "T10 special characters are shown as typed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 458,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:49.023Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-486797637e21bfd8602b",
+          "file": "../lib/suite.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1997,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:49.489Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-4da2a2a09c4984731276",
+          "file": "../lib/suite.ts",
+          "line": 122,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 497,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:51.498Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-8d23c886d0ff55532019",
+          "file": "../lib/suite.ts",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 238,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:52.005Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-9f83960827ac433d3a8f",
+          "file": "../lib/suite.ts",
+          "line": 150,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 116,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:52.250Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-f4402bfb666ec6b6932f",
+          "file": "../lib/suite.ts",
+          "line": 157,
+          "column": 3
+        },
+        {
+          "title": "T15 a normal 100-character title is still accepted",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 574,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:52.373Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-3eeef3b5a306e398838e",
+          "file": "../lib/suite.ts",
+          "line": 165,
+          "column": 5
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30084,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                        "column": 5,
+                        "line": 27
+                      },
+                      "message": "Error: locator.setInputFiles: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"file\"]:not([accept^=\"image\"])').first()\u001b[22m\n\n\n  25 |       scope = await editScope(page);\n  26 |     }\n> 27 |     await fileInput(scope).first().setInputFiles({ name, mimeType: 'text/plain', buffer: Buffer.from(content) });\n     |     ^\n  28 |     const save = clickable(scope, /upload|attach|save|update note/i);\n  29 |     if (await save.isVisible()) await save.click();\n  30 |\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:27:5\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:22:52.955Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ]
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30078,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                        "column": 5,
+                        "line": 27
+                      },
+                      "message": "Error: locator.setInputFiles: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('input[type=\"file\"]:not([accept^=\"image\"])').first()\u001b[22m\n\n\n  25 |       scope = await editScope(page);\n  26 |     }\n> 27 |     await fileInput(scope).first().setInputFiles({ name, mimeType: 'text/plain', buffer: Buffer.from(content) });\n     |     ^\n  28 |     const save = clickable(scope, /upload|attach|save|update note/i);\n  29 |     if (await save.isVisible()) await save.click();\n  30 |\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:27:5\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T10:23:24.383Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-4e9c588d896954d657bf",
+          "file": "g2/feature.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1257,
+                  "error": {
+                    "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m",
+                    "stack": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:54:79\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:48:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                      "column": 79,
+                      "line": 54
+                    },
+                    "snippet": " \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m { notes } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(apps[\u001b[33mAPP\u001b[39m]\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mitems))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m (notes \u001b[36mas\u001b[39m { title\u001b[33m:\u001b[39m string }[])\u001b[33m.\u001b[39mmap((n) \u001b[33m=>\u001b[39m n\u001b[33m.\u001b[39mtitle)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m     expect(titles\u001b[33m.\u001b[39mindexOf(second\u001b[33m.\u001b[39mtitle)\u001b[33m,\u001b[39m \u001b[32m'newer note should be listed first'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(titles\u001b[33m.\u001b[39mindexOf(first\u001b[33m.\u001b[39mtitle))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                        "column": 79,
+                        "line": 54
+                      },
+                      "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\n  52 |     const { notes } = await (await user.api.get(apps[APP].api.items)).json();\n  53 |     const titles = (notes as { title: string }[]).map((n) => n.title);\n> 54 |     expect(titles.indexOf(second.title), 'newer note should be listed first').toBeLessThan(titles.indexOf(first.title));\n     |                                                                               ^\n  55 |   });\n  56 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:54:79\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:48:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T10:23:55.885Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                    "column": 79,
+                    "line": 54
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1276,
+                  "error": {
+                    "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m",
+                    "stack": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:54:79\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:48:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                      "column": 79,
+                      "line": 54
+                    },
+                    "snippet": " \u001b[90m 52 |\u001b[39m     \u001b[36mconst\u001b[39m { notes } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(apps[\u001b[33mAPP\u001b[39m]\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mitems))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m     \u001b[36mconst\u001b[39m titles \u001b[33m=\u001b[39m (notes \u001b[36mas\u001b[39m { title\u001b[33m:\u001b[39m string }[])\u001b[33m.\u001b[39mmap((n) \u001b[33m=>\u001b[39m n\u001b[33m.\u001b[39mtitle)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m     expect(titles\u001b[33m.\u001b[39mindexOf(second\u001b[33m.\u001b[39mtitle)\u001b[33m,\u001b[39m \u001b[32m'newer note should be listed first'\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThan(titles\u001b[33m.\u001b[39mindexOf(first\u001b[33m.\u001b[39mtitle))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                        "column": 79,
+                        "line": 54
+                      },
+                      "message": "Error: newer note should be listed first\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m0\u001b[39m\nReceived:   \u001b[31m1\u001b[39m\n\n  52 |     const { notes } = await (await user.api.get(apps[APP].api.items)).json();\n  53 |     const titles = (notes as { title: string }[]).map((n) => n.title);\n> 54 |     expect(titles.indexOf(second.title), 'newer note should be listed first').toBeLessThan(titles.indexOf(first.title));\n     |                                                                               ^\n  55 |   });\n  56 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:54:79\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts:48:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T10:23:58.504Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g2-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g2/feature.spec.ts",
+                    "column": 79,
+                    "line": 54
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1adf6ac3fc6ebbe0311a-a722d66940d9f96141cb",
+          "file": "g2/feature.spec.ts",
+          "line": 47,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-28T10:22:40.000Z",
+    "duration": 79888.562,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

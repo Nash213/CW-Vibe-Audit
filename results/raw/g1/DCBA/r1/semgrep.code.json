@@ -1,0 +1,14 @@
+[
+ "FROM node:20-alpine",
+ "CMD [\"node\", \"src/server.js\"]",
+ "      taskCard.innerHTML = `\n        <div class=\"task-top\">\n          <h3 class=\"task-title\">${safeTitle}</h3>\n          <span class=\"badge ${badgeClass}\">${task.status}</span>\n        </div>\n        ${safeDescription ? `<p class=\"task-desc\">${safeDescription}</p>` : ''}\n        <div class=\"task-footer\">\n          <span>Created on ${dateText}</span>\n          <div class=\"task-actions\">\n            <button class=\"btn btn-secondary btn-sm edit-task-btn\" data-id=\"${task.id}\">\n              \u270f\ufe0f Edit\n            </button>\n            <button class=\"btn btn-danger btn-sm delete-task-btn\" data-id=\"${task.id}\">\n              \ud83d\uddd1\ufe0f Delete\n            </button>\n          </div>\n        </div>\n      `;",
+ "      taskCard.innerHTML = `\n        <div class=\"task-top\">\n          <h3 class=\"task-title\">${safeTitle}</h3>\n          <span class=\"badge ${badgeClass}\">${task.status}</span>\n        </div>\n        ${safeDescription ? `<p class=\"task-desc\">${safeDescription}</p>` : ''}\n        <div class=\"task-footer\">\n          <span>Created on ${dateText}</span>\n          <div class=\"task-actions\">\n            <button class=\"btn btn-secondary btn-sm edit-task-btn\" data-id=\"${task.id}\">\n              \u270f\ufe0f Edit\n            </button>\n            <button class=\"btn btn-danger btn-sm delete-task-btn\" data-id=\"${task.id}\">\n              \ud83d\uddd1\ufe0f Delete\n            </button>\n          </div>\n        </div>\n      `;",
+ "        ${safeDescription ? `<p class=\"task-desc\">${safeDescription}</p>` : ''}",
+ "        if (confirm(`Are you sure you want to delete ${taskTitle}?`)) {",
+ "        alert('Title cannot be empty.');",
+ "        alert(err.message || 'Failed to update task.');",
+ "const app = express();",
+ "  return pool.query(text, params);",
+ "const { query } = require('../config/db');\nconst { authenticate, getJwtSecret } = require('../middleware/auth');",
+ "const { query } = require('../config/db');\nconst { authenticate } = require('../middleware/auth');"
+]

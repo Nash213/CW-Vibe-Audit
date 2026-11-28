@@ -1,0 +1,840 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/node_modules/.bin/playwright",
+      "test",
+      "specs/g4",
+      "--reporter=json"
+    ],
+    "configFile": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "snapshotDir": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 30000,
+        "use": {
+          "baseURL": "http://127.0.0.1:3004",
+          "screenshot": "only-on-failure",
+          "trace": "off"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "g4/feature.spec.ts",
+      "file": "g4/feature.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "T01 home page loads",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 145,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:48.087Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a4e330225e5a0f42e551",
+          "file": "../lib/suite.ts",
+          "line": 17,
+          "column": 3
+        },
+        {
+          "title": "T02 register new user via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 299,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:48.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-3216547f123d558cb717",
+          "file": "../lib/suite.ts",
+          "line": 23,
+          "column": 3
+        },
+        {
+          "title": "T03 log in via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:48.667Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-1330d29df9f2cb76088f",
+          "file": "../lib/suite.ts",
+          "line": 30,
+          "column": 3
+        },
+        {
+          "title": "T04 create item via UI",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 386,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:48.926Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-2ae38df9cfa8aa4df055",
+          "file": "../lib/suite.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "T05 item appears in the list",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:49.326Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-f9316116f72a2a2efa90",
+          "file": "../lib/suite.ts",
+          "line": 44,
+          "column": 5
+        },
+        {
+          "title": "T06 edit item and the change shows",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2425,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:49.643Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-04650fae833a05448392",
+          "file": "../lib/suite.ts",
+          "line": 53,
+          "column": 5
+        },
+        {
+          "title": "T07 delete item and it disappears",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 390,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:52.077Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-32d876a59797a123aa75",
+          "file": "../lib/suite.ts",
+          "line": 71,
+          "column": 5
+        },
+        {
+          "title": "T08 log out and the protected view is unreachable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 392,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:52.476Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-170b75e3f804d36e1bfa",
+          "file": "../lib/suite.ts",
+          "line": 86,
+          "column": 3
+        },
+        {
+          "title": "T09 log in again and earlier data is still there",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 439,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:52.877Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-096187fb1f4e062c95b1",
+          "file": "../lib/suite.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "T10 special characters are shown as typed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 274,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:53.328Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-7153a67d010e010ef064",
+          "file": "../lib/suite.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "T11 no script errors and no broken assets while using the app",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:53.610Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-6b2a11fe0fb4d86106f0",
+          "file": "../lib/suite.ts",
+          "line": 122,
+          "column": 3
+        },
+        {
+          "title": "T12 still logged in after a page reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 305,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:54.414Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-3ec26b721bb936a0ac80",
+          "file": "../lib/suite.ts",
+          "line": 141,
+          "column": 3
+        },
+        {
+          "title": "T13 wrong password is rejected and the right one still works",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 130,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:54.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-6a7159fedbd9bbf51527",
+          "file": "../lib/suite.ts",
+          "line": 150,
+          "column": 3
+        },
+        {
+          "title": "T14 the same e-mail cannot register twice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 61,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:54.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-92e259a319d5f57bbda0",
+          "file": "../lib/suite.ts",
+          "line": 157,
+          "column": 3
+        },
+        {
+          "title": "T15 a normal 100-character title is still accepted",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:54.930Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-ea8d48af756f85e5f407",
+          "file": "../lib/suite.ts",
+          "line": 165,
+          "column": 5
+        },
+        {
+          "title": "TA requested feature works",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5252,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                      "column": 73,
+                      "line": 17
+                    },
+                    "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m uiLogin(page\u001b[33m,\u001b[39m \u001b[33mAPP\u001b[39m\u001b[33m,\u001b[39m user)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39m(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mcount())) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m       \u001b[36mawait\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/profile|account|settings|avatar|picture/i\u001b[39m)\u001b[33m.\u001b[39mclick({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     }\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39msetInputFiles({ name\u001b[33m:\u001b[39m \u001b[32m'avatar.png'\u001b[39m\u001b[33m,\u001b[39m mimeType\u001b[33m:\u001b[39m \u001b[32m'image/png'\u001b[39m\u001b[33m,\u001b[39m buffer\u001b[33m:\u001b[39m \u001b[33mPNG\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mconst\u001b[39m save \u001b[33m=\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/upload|save|update/i\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                        "column": 73,
+                        "line": 17
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:32:55.327Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                    "column": 73,
+                    "line": 17
+                  }
+                },
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5330,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                      "column": 73,
+                      "line": 17
+                    },
+                    "snippet": " \u001b[90m 15 |\u001b[39m     \u001b[36mawait\u001b[39m uiLogin(page\u001b[33m,\u001b[39m \u001b[33mAPP\u001b[39m\u001b[33m,\u001b[39m user)\u001b[33m;\u001b[39m\n \u001b[90m 16 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39m(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mcount())) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m       \u001b[36mawait\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/profile|account|settings|avatar|picture/i\u001b[39m)\u001b[33m.\u001b[39mclick({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m     }\n \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'input[type=\"file\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39msetInputFiles({ name\u001b[33m:\u001b[39m \u001b[32m'avatar.png'\u001b[39m\u001b[33m,\u001b[39m mimeType\u001b[33m:\u001b[39m \u001b[32m'image/png'\u001b[39m\u001b[33m,\u001b[39m buffer\u001b[33m:\u001b[39m \u001b[33mPNG\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     \u001b[36mconst\u001b[39m save \u001b[33m=\u001b[39m clickable(page\u001b[33m,\u001b[39m \u001b[35m/upload|save|update/i\u001b[39m)\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                        "column": 73,
+                        "line": 17
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /profile|account|settings|avatar|picture/i }).or(getByRole('link', { name: /profile|account|settings|avatar|picture/i })).first()\u001b[22m\n\n\n  15 |     await uiLogin(page, APP, user);\n  16 |     if (!(await page.locator('input[type=\"file\"]').count())) {\n> 17 |       await clickable(page, /profile|account|settings|avatar|picture/i).click({ timeout: 5000 });\n     |                                                                         ^\n  18 |     }\n  19 |     await page.locator('input[type=\"file\"]').first().setInputFiles({ name: 'avatar.png', mimeType: 'image/png', buffer: PNG });\n  20 |     const save = clickable(page, /upload|save|update/i);\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:17:73\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:33:01.872Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TA-requested-feature-works-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                    "column": 73,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a8f78ecdf6ff78e71184",
+          "file": "g4/feature.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "TB seeded bug is gone",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2320,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                      "column": 59,
+                      "line": 43
+                    },
+                    "snippet": " \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m { comments } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(\u001b[32m`/api/posts/${id}`\u001b[39m))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     expect(comments\u001b[33m.\u001b[39mmap((c\u001b[33m:\u001b[39m { body\u001b[33m:\u001b[39m string }) \u001b[33m=>\u001b[39m c\u001b[33m.\u001b[39mbody))\u001b[33m.\u001b[39mtoEqual([\u001b[32m'first comment'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'second comment'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                        "column": 59,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-28T11:33:08.638Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                    "column": 59,
+                    "line": 43
+                  }
+                },
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 2317,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3",
+                    "location": {
+                      "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                      "column": 59,
+                      "line": 43
+                    },
+                    "snippet": " \u001b[90m 41 |\u001b[39m     }\n \u001b[90m 42 |\u001b[39m     \u001b[36mconst\u001b[39m { comments } \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m (\u001b[36mawait\u001b[39m user\u001b[33m.\u001b[39mapi\u001b[33m.\u001b[39mget(\u001b[32m`/api/posts/${id}`\u001b[39m))\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     expect(comments\u001b[33m.\u001b[39mmap((c\u001b[33m:\u001b[39m { body\u001b[33m:\u001b[39m string }) \u001b[33m=>\u001b[39m c\u001b[33m.\u001b[39mbody))\u001b[33m.\u001b[39mtoEqual([\u001b[32m'first comment'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'second comment'\u001b[39m])\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m })\u001b[33m;\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                        "column": 59,
+                        "line": 43
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 1\u001b[39m\n\n\u001b[2m  Array [\u001b[22m\n\u001b[32m-   \"first comment\",\u001b[39m\n\u001b[2m    \"second comment\",\u001b[22m\n\u001b[31m+   \"first comment\",\u001b[39m\n\u001b[2m  ]\u001b[22m\n\n  41 |     }\n  42 |     const { comments } = await (await user.api.get(`/api/posts/${id}`)).json();\n> 43 |     expect(comments.map((c: { body: string }) => c.body)).toEqual(['first comment', 'second comment']);\n     |                                                           ^\n  44 |   });\n  45 | });\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:43:59\n    at withUser (/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/lib/auth.ts:70:12)\n    at /mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts:34:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-11-28T11:33:12.289Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/test-results/g4-feature-TB-seeded-bug-is-gone-retry1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/tests/specs/g4/feature.spec.ts",
+                    "column": 59,
+                    "line": 43
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "976e6a8844741bff3b2f-a2c0a31995af3f9a55fb",
+          "file": "g4/feature.spec.ts",
+          "line": 33,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-28T11:32:46.717Z",
+    "duration": 28001.375,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}
