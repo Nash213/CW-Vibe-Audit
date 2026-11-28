@@ -53,6 +53,9 @@ change as advisories are published, so the official batch runs in one window.
   deployment `gpt-5.4-mini`, GlobalStandard, resource `comp3226-vibe-audit-ai`
   (Germany West Central). Changed from the plan's `gemini-3.8-flash`, see
   `docs/DECISIONS.md`, 2026-11-27.
+  Served version confirmed again by `agent/reliability_check.py` on 2026-11-27 20:07 UTC,
+  just before the pilot chain (`work/agent-reliability/azure-20261127T200706Z/`; 5/5 pings,
+  toy, escape and shell runs passed). Check that it is unchanged before each batch run.
 - SDK: `openai==3.60.0` against the OpenAI-compatible v1 API (`agent/requirements.txt`).
 - Settings: deployment defaults for temperature and reasoning effort, seed 3226, step cap 30
   (provisional, see `docs/DECISIONS.md`, 2026-11-27).

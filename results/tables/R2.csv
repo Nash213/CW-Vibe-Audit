@@ -1,0 +1,7 @@
+scope,request,times_applied,did_not_boot,reintroduced_mean,reintroduced_n,new_mean,new_n,regressions_mean,regressions_n,damage_mean,damage_n
+after D,A,8,6,0.00,2,0.00,2,0.00,2,0.00,2
+after D,B,8,3,0.00,5,0.00,5,0.00,5,0.00,5
+after D,C,8,4,0.00,4,0.00,4,0.00,4,0.00,4
+first after D,A,4,2,0.00,2,0.00,2,0.00,2,0.00,2
+first after D,B,4,1,0.00,3,0.00,3,0.00,3,0.00,3
+first after D,C,4,2,0.00,2,0.00,2,0.00,2,0.00,2

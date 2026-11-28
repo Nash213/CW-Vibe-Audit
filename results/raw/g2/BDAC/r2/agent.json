@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g2/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:16:36+00:00",
+  "steps": 9,
+  "tool_calls": 18,
+  "tool_errors": 0,
+  "retries": 3,
+  "tokens_in": 174216,
+  "tokens_out": 6622,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app in a few key places:\n\n- Removed the insecure JWT fallback secret and now require a strong `JWT_SECRET`\n- Strengthened password hashing and password-change minimum length\n- Made auth cookies more secure (`httpOnly`, `sameSite`, `secure` in production)\n- Added safer request handling:\n  - stricter avatar MIME/type checks\n  - smaller upload/body size limits\n  - ID validation for note/user routes\n  - safer note/tag sanitization\n- Added basic security headers on the server\n- Disabled `x-powered-by` and enabled `trust proxy`\n- Made the frontend send requests with `credentials: 'include'`\n- Kept token handling intact for now so the app still works with the current client flow\n\nOne note: the project’s lint command couldn’t run in this container because `tsc` isn’t installed in the environment.",
+  "ended_at": "2026-11-27T21:17:06+00:00"
+}

@@ -1,0 +1,1 @@
+Can you give the app a fresher, more modern look, and tidy up the code by splitting it into smaller files? Don't change what the app does.

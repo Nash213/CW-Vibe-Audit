@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g1/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:05:49+00:00",
+  "steps": 25,
+  "tool_calls": 35,
+  "tool_errors": 0,
+  "retries": 0,
+  "tokens_in": 432862,
+  "tokens_out": 9591,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Made the app substantially more secure:\n\n- Added security headers and disabled `X-Powered-By`\n- Restricted JSON/urlencoded body sizes\n- Added rate limiting on auth routes\n- Hardened JWT handling and removed the hardcoded secret fallback from normal runtime behavior\n- Kept auth cookies `httpOnly`, `sameSite`, and `secure` in production\n- Tightened input validation:\n  - password minimum increased to 8 chars\n  - comment length capped\n  - request type checks improved\n- Added DB connection timeouts and safer production SSL handling\n- Switched task comments storage to `JSONB` with a default empty array\n- Updated env example to reflect safer config\n- Adjusted tests/mocks and verified the suite passes\n\nI also ran the test suite successfully after the changes.",
+  "ended_at": "2026-11-27T21:06:55+00:00"
+}

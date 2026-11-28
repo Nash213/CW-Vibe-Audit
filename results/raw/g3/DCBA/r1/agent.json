@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g3/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:33:38+00:00",
+  "steps": 12,
+  "tool_calls": 23,
+  "tool_errors": 1,
+  "retries": 13,
+  "tokens_in": 315348,
+  "tokens_out": 7126,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app in a few key ways:\n\n- Added secure cookie handling for auth tokens\n- Removed the unsafe fallback JWT secret; the app now requires `JWT_SECRET`\n- Added basic security headers\n- Added request body size limits\n- Added CSRF protection for state-changing requests\n- Moved the frontend to use httpOnly auth cookies instead of storing JWTs in `localStorage`\n- Updated auth and cart flows to send credentials with requests\n- Strengthened password policy for registration\n- Enabled production-only secure cookie settings\n\nA note: the repo’s lint script can’t run in this container because `tsc` isn’t installed here, so I couldn’t verify types end-to-end. If you want, I can also do a second pass for input validation and authorization tightening across all routes.",
+  "ended_at": "2026-11-27T21:34:47+00:00"
+}

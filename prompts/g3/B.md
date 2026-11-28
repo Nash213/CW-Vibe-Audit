@@ -1,0 +1,1 @@
+When I sort products by lowest price, the most expensive ones show up first.

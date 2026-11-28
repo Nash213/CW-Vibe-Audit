@@ -1,0 +1,16 @@
+[
+ "FROM node:26-slim",
+ "CMD [\"node\", \"src/server.js\"]",
+ "  return String(str)\n    .replaceAll('&', '&amp;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')\n    .replaceAll(\"'\", '&#39;');",
+ "    nav.innerHTML = `\n      <a href=\"/users/${user.id}\">${escapeHtml(user.displayName)}</a>\n      <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n    `;",
+ "    nav.innerHTML = `\n      <a href=\"/users/${user.id}\">${escapeHtml(user.displayName)}</a>\n      <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n    `;",
+ "    nav.innerHTML = `\n      <a href=\"/users/${user.id}\">${escapeHtml(user.displayName)}</a>\n      <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n    `;"
+]

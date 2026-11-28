@@ -1,0 +1,1 @@
+Comments on a post are in reverse order: the newest comment is at the top instead of the bottom.

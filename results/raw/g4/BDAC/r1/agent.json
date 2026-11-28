@@ -1,0 +1,32 @@
+{
+  "request": "B",
+  "request_file": "prompts/g4/B.md",
+  "request_sha256": "fd1ce9d29867b0af38dc821a03f7deddf6517ea7d9db828836ecc5191f6b7439",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:38:23+00:00",
+  "steps": 5,
+  "tool_calls": 7,
+  "tool_errors": 0,
+  "retries": 0,
+  "tokens_in": 20960,
+  "tokens_out": 2013,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Fixed comment ordering on post pages so comments now load oldest-to-newest instead of newest-first.\n\nChanged:\n- Updated `src/routes/posts.js` to query comments with `ORDER BY c.created_at ASC` instead of descending order.\n\nNo other behavior was changed.",
+  "ended_at": "2026-11-27T21:38:32+00:00"
+}

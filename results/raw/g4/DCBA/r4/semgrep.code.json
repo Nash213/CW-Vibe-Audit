@@ -1,0 +1,18 @@
+[
+ "FROM node:26-slim",
+ "CMD [\"node\", \"src/server.js\"]",
+ "  return String(str)\n    .replaceAll('&', '&amp;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')",
+ "  return String(str)\n    .replaceAll('&', '&amp;')\n    .replaceAll('<', '&lt;')\n    .replaceAll('>', '&gt;')\n    .replaceAll('\"', '&quot;')\n    .replaceAll(\"'\", '&#39;');",
+ "    return `<img class=\"avatar\" src=\"${escapeHtml(user.avatarUrl)}\" alt=\"${escapeHtml(label)}'s profile picture\" width=\"${size}\" height=\"${size}\">`;",
+ "  return `<div class=\"avatar avatar-fallback\" aria-hidden=\"true\" style=\"width:${size}px;height:${size}px;line-height:${size}px;\">${initials}</div>`;",
+ "      nav.innerHTML = `\n        <a class=\"nav-user\" href=\"/users/${user.id}\">${avatarMarkup(user, 28)}<span>${escapeHtml(user.displayName)}</span></a>\n        <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n      `;",
+ "      nav.innerHTML = `\n        <a class=\"nav-user\" href=\"/users/${user.id}\">${avatarMarkup(user, 28)}<span>${escapeHtml(user.displayName)}</span></a>\n        <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n      `;",
+ "      nav.innerHTML = `\n        <a class=\"nav-user\" href=\"/users/${user.id}\">${avatarMarkup(user, 28)}<span>${escapeHtml(user.displayName)}</span></a>\n        <button type=\"button\" id=\"logout-btn\" class=\"btn btn-sm\">Log out</button>\n      `;"
+]

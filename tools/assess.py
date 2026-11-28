@@ -18,6 +18,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import os
 import shutil
 import stat
@@ -62,6 +63,25 @@ def prepare(app: str, chain: str, rnd: int, work: Path, src: Path | None) -> str
                           capture_output=True, text=True).stdout.strip()
 
 
+TESTS_INPUTS = ("lib", "playwright.config.ts", "package-lock.json")
+
+
+def tests_version(app: str, tests_dir: Path = ROOT / "tests") -> str:
+    """Content hash of everything that decides the app's test results: its specs (feature
+    tests and access probes), the shared helpers, the Playwright config and the pinned
+    Playwright version. Any edit gives a new value, so checkpoints assessed with
+    different tests can never be mixed silently (plan Wuth-5, re-assessment rule)."""
+    files: list[Path] = []
+    for rel in (f"specs/{app}", *TESTS_INPUTS):
+        p = tests_dir / rel
+        files += sorted(q for q in p.rglob("*") if q.is_file()) if p.is_dir() else [p] if p.is_file() else []
+    h = hashlib.sha256()
+    for f in files:
+        h.update(f.relative_to(tests_dir).as_posix().encode() + b"\0")
+        h.update(f.read_bytes().replace(b"\r\n", b"\n") + b"\0")
+    return "t-" + h.hexdigest()[:12]
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("app")
@@ -84,6 +104,7 @@ def main(argv: list[str] | None = None) -> int:
         out.mkdir(parents=True, exist_ok=True)
         if commit:
             (out / "commit").write_text(commit + "\n", encoding="utf-8")
+        (out / "tests_version").write_text(tests_version(args.app) + "\n", encoding="utf-8")
         scan(work, out)
         t_scan = time.monotonic() - t0
         if not args.scan_only:

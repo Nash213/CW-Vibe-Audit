@@ -1,0 +1,1 @@
+Can I attach a file to a note? I want to upload a file from my computer and download it again later from the note.

@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g3/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:28:50+00:00",
+  "steps": 8,
+  "tool_calls": 25,
+  "tool_errors": 1,
+  "retries": 0,
+  "tokens_in": 158869,
+  "tokens_out": 10995,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app’s security in a few key areas:\n\n- Removed the hardcoded JWT secret fallback and made `JWT_SECRET` required.\n- Tightened JWT verification with issuer/audience checks.\n- Switched auth flow to rely on `httpOnly` cookies with `credentials: 'include'` instead of storing tokens in `localStorage`.\n- Added secure cookie settings and better auth token handling.\n- Added basic security headers and disabled `x-powered-by`.\n- Limited request body size to reduce abuse risk.\n- Improved input validation and sanitization for auth and product endpoints.\n- Increased password minimum length from 6 to 8 characters.\n- Added a bootstrap token check for creating the first admin if `FIRST_ADMIN_TOKEN` is set.\n\nOne note: the repo’s TypeScript lint/build tooling couldn’t be run cleanly in this container because `tsc` wasn’t available via the installed environment.",
+  "ended_at": "2026-11-27T21:29:27+00:00"
+}

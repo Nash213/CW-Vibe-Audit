@@ -1,0 +1,32 @@
+{
+  "request": "D",
+  "request_file": "prompts/g3/D.md",
+  "request_sha256": "13870c1c53d0cf4c1063077b6135bfdb25d423259e0fad1e20af892faaa5423c",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:27:50+00:00",
+  "steps": 13,
+  "tool_calls": 21,
+  "tool_errors": 0,
+  "retries": 10,
+  "tokens_in": 214145,
+  "tokens_out": 7627,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "I hardened the app by tightening auth, cookies, and server protections.\n\nWhat I changed:\n- Removed the insecure fallback JWT secret and now require `JWT_SECRET`\n- Switched auth flow to use secure httpOnly cookies instead of storing tokens in `localStorage`\n- Added cookie security flags and consistent cookie clearing\n- Added basic security headers:\n  - `X-Content-Type-Options`\n  - `X-Frame-Options`\n  - `Referrer-Policy`\n  - `Permissions-Policy`\n- Disabled `x-powered-by`\n- Added request body size limits\n- Added simple origin allowlisting via `CORS_ORIGINS`\n- Removed the fallback embedded DB mode and demo seeding behavior to reduce attack surface\n- Increased password minimum length to 12 characters\n- Updated frontend auth/cart contexts to use `credentials: 'include'`\n\nNotes:\n- I wasn’t able to fully lint because `tsc` isn’t installed in the container environment.\n- One important follow-up: the client still posts a `token` field in some responses, but it’s no longer needed for auth; cookies are now the source of truth.\n\nIf you want, I can also do a second pass for:\n- CSRF protection\n- rate limiting\n- input validation with a schema library\n- stricter role/permission checks\n- sanitizing product HTML/image URLs",
+  "ended_at": "2026-11-27T21:28:38+00:00"
+}

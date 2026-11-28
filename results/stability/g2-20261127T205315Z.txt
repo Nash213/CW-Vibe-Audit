@@ -1,0 +1,56 @@
+app=g2 runs=3 stamp=20261127T205315Z source=/mnt/c/Users/nadth/Documents/Comp-Sci-yr3-2627/COMP3226 Web and Cloud based Security/work/group-project/CW-Vibe-Audit/apps/g2
+--- run 1: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+T10 special characters are shown as typed	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T15 a normal 100-character title is still accepted	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 2: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+T10 special characters are shown as typed	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T15 a normal 100-character title is still accepted	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+--- run 3: boot=ok
+T01 home page loads	pass
+T02 register new user via UI	pass
+T03 log in via UI	pass
+T04 create item via UI	pass
+T05 item appears in the list	pass
+T06 edit item and the change shows	pass
+T07 delete item and it disappears	pass
+T08 log out and the protected view is unreachable	pass
+T09 log in again and earlier data is still there	pass
+T10 special characters are shown as typed	pass
+T11 no script errors and no broken assets while using the app	pass
+T12 still logged in after a page reload	pass
+T13 wrong password is rejected and the right one still works	pass
+T14 the same e-mail cannot register twice	pass
+T15 a normal 100-character title is still accepted	pass
+TA requested feature works	fail
+TB seeded bug is gone	fail
+RESULT: OK, rule holds in all 3 runs

@@ -1,0 +1,32 @@
+{
+  "request": "B",
+  "request_file": "prompts/g1/B.md",
+  "request_sha256": "651d040bb0cba25309c9e6f60796029d1e53cdeb85b7760d01dc82bbab27ce64",
+  "model": "gpt-5.4-mini",
+  "model_served": "gpt-5.4-mini-2026-03-17",
+  "backend": "azure",
+  "settings": {
+    "temperature": null,
+    "seed": 3226,
+    "reasoning_effort": null,
+    "max_completion_tokens": null,
+    "max_steps": 30
+  },
+  "sdk": {
+    "google-genai": "3.6.1",
+    "openai": "3.60.0"
+  },
+  "started_at": "2026-11-27T21:06:57+00:00",
+  "steps": 7,
+  "tool_calls": 9,
+  "tool_errors": 1,
+  "retries": 0,
+  "tokens_in": 60928,
+  "tokens_out": 1897,
+  "tokens_thoughts": 0,
+  "ended_by": "done",
+  "finish_reason": "stop",
+  "error": null,
+  "final_text": "Fixed the task status filter so it now returns only tasks matching the selected status instead of excluding them.\n\nWhat I changed:\n- Updated `src/routes/tasks.js`\n  - Changed the filtered SQL query from `status <> $2` to `status = $2`.\n\nValidation:\n- Ran the test suite successfully; all tests pass.",
+  "ended_at": "2026-11-27T21:07:12+00:00"
+}

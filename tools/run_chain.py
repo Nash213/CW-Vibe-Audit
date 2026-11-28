@@ -1,7 +1,7 @@
 """Chain driver: send one chain's requests to the agent, one round at a time (plan Jarred-5).
 
 Usage:
-    python tools/run_chain.py <app> <chain> --agent real|stub [--suffix -rep]
+    python tools/run_chain.py <app> <chain> --agent real|stub [--suffix=-rep]
                               [--raw DIR] [--backend NAME] [--settings FILE]
 
     <app>    folder under apps/, its own git repository with tag `baseline`

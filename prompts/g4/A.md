@@ -1,0 +1,1 @@
+Let people upload a profile picture, and show it next to their name on their posts and comments.
